@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yang33 Home</title>
-    <link>https://yang33-kassa.jp/</link>
-    <description>Recent content on Yang33 Home</description>
+    <title>Posts on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/post/</link>
+    <description>Recent content in Posts on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 20 May 2017 12:10:51 +0200</lastBuildDate>
     
-	<atom:link href="https://yang33-kassa.jp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yang33-kassa.jp/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

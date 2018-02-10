@@ -1,0 +1,11 @@
+body,
+.search-form-input,
+.search-form-input.ins-search-input,
+.search-form-input.st-ui-search-input,
+.search-form-input.st-default-search-input,
+.article-entry blockquote,
+.article-entry blockquote footer,
+.article-share-input,
+.ins-search-input {
+  font: 14px "open sans", "Helvetica Neue", "游ゴシック Medium", "Yu Gothic Medium", Helvetica, Arial, sans-serif;
+}
