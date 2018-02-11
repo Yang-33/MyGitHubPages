@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 02 Oct 2015 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2018 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About Yang33</title>
+      <link>https://yang33-kassa.jp/tags/about-yang33/</link>
+      <pubDate>Sat, 10 Feb 2018 21:49:20 +0200</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/about-yang33/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Golang</title>

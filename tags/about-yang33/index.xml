@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About Yang33 on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/about-yang33/</link>
+    <description>Recent content in About Yang33 on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 10 Feb 2018 21:49:20 +0200</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/about-yang33/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://yang33-kassa.jp/about/</link>
+      <pubDate>Sat, 10 Feb 2018 21:49:20 +0200</pubDate>
+      
+      <guid>https://yang33-kassa.jp/about/</guid>
+      <description>まだ書く気がない
+星だけつけた
+きれいに書かないとちょっとバラバラで汚いね
+このページについて ブログ / なにかしらの解説記事 / アルゴリズムの実装
+🌟About Yang33 学生。
+🌟 興味 たくさんだね
+🌟アカウント Account (LINKをいれる)
+🌟 つかえるもの Skills ここインデント入れたいけどいれるとこわれるサイズで察して
+🌟 Programing Language  C/C++ Python Java/C# shellscript  🌟 Others  MongoDB HTML + CSS  🌟 Service &amp;amp; Software?  hugo  🌟 資格 License あるのかな
+🌟 経歴 Affiliation  生まれる 生きている  🌟 賞 Achievement あるのかな
+🌟 作ったもの Production  このページ [Coding Univの訳]( ) VjudgeでatcoderのIDを簡単に得て精進を加速させるやつ  リンクはまだはってないね</description>
+    </item>
+    
+  </channel>
+</rss>
