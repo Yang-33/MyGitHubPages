@@ -3,3 +3,70 @@ hr {
   border-top: 1px solid black;
   border-bottom: 1px solid #fff;
 }
+
+body{
+  font-family : 'Yu Gothic UI', 'Meirio UI';
+}
+
+.article-header .article-title {
+  display: block;
+  margin-bottom: 14px;
+}
+.article-title {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 30px;
+    color: #1863A1;
+}
+
+.article-entry h1,
+.widget h1 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 30px;
+    border-left: 8px solid #337ab7;
+    padding: 7px;
+    border-bottom: 2px solid #337ab7;
+}
+
+.article-entry h2,
+.widget h2 {
+    margin-bottom: 15px;
+    margin-top: 24px;
+    font-size: 20px;
+    border-left: 8px solid #337ab7;
+    padding: 7px;
+    border-bottom: 2px solid #337ab7;
+}
+
+.article-entry h3,
+.widget h3 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    /*margin-left: 15px;*/
+    font-size: 14px;
+    padding: 7px 0px 5px 8px;
+    border-left: 4px solid #337ab7;
+    border-bottom: 1px solid #337ab7;
+}
+
+.article-entry h4,
+.widget h4 {
+  font-size: 1.2em;
+}
+
+.article-entry h5,
+.widget h5 {
+  font-size: 1em;
+}
+
+.article-entry h6,
+.widget h6 {
+  font-size: 1em;
+  color: #999;
+}
+
+.article-entry hr,
+.widget hr {
+  border: 1px solid #000000;
+}

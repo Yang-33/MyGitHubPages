@@ -1,3 +1,10 @@
+@font-face{
+	font-family:'Migu 1M';
+	src: url("/static/fonts/migu-1m-bold.eot");
+	url("/static/fonts/migu-1m-bold.woff") format("woff"),
+	url("/static/fonts/migu-1m-bold.ttf") format("truetype");
+}
+
 body,
 .search-form-input,
 .search-form-input.ins-search-input,
@@ -7,5 +14,11 @@ body,
 .article-entry blockquote footer,
 .article-share-input,
 .ins-search-input {
-  font: 14px "open sans", "Helvetica Neue", "游ゴシック Medium", "Yu Gothic Medium", Helvetica, Arial, sans-serif;
+  font: 16px "open sans", "Helvetica Neue", "游ゴシック Medium", "Yu Gothic UI", Helvetica, Arial, sans-serif;
+}
+
+pre{
+  font-family : 'Migu 1M';
+  overflow:auto;
+
 }

@@ -22,8 +22,6 @@ h3,
 h4,
 h5,
 h6,
-hr{
-}
 p,
 blockquote,
 pre,
@@ -243,26 +241,15 @@ code {
   font-size: 2em;
 }
 .article-entry h2,
-.widget h2{
-    margin-bottom: 15px;
-    margin-top: 24px;
-    font-size: 24px;
-    border-left: 8px solid #337ab7;
-    padding: 7px;
-    border-bottom: 2px solid #337ab7;
+.widget h2 {
+  font-size: 1.5em;
 }
 .article-entry h3,
 .widget h3 {
-
+  font-size: 1.3em;
 }
 .article-entry h4,
 .widget h4 {
-    margin-bottom: 15px;
-    margin-top: 24px;
-    font-size: 24px;
-    border-left: 4px solid #337ab7;
-    padding: 7px;
-    border-bottom: 1px solid #337ab7;
   font-size: 1.2em;
 }
 .article-entry h5,
@@ -274,13 +261,9 @@ code {
   font-size: 1em;
   color: #999;
 }
-.article-entry hr{
-
-}
+.article-entry hr,
 .widget hr {
-  border: 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid #fff;
+  border: 1px dashed #eceff2;
 }
 .article-entry strong,
 .widget strong {
@@ -831,8 +814,8 @@ code {
   margin-bottom: 14px;
 }
 .article-title {
-  font-size: 2.7em;
-  color: #4cc3ff;
+  font-size: 2em;
+  color: #565a5f;
   text-decoration: none;
   line-height: 1.3em;
 }
@@ -902,9 +885,7 @@ a.article-title:hover {
 }
 .article-entry h1,
 .article-entry h2,
-.article-entry h3{
-}
-,
+.article-entry h3,
 .article-entry h4,
 .article-entry h5,
 .article-entry h6 {
