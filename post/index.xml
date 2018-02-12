@@ -18,8 +18,11 @@
       
       <guid>https://yang33-kassa.jp/2018/02/11/next/</guid>
       <description>&lt;p&gt;a
-&lt;hr color=&#34;#0000ff&#34;&gt;
-a
+a&lt;/p&gt;
+
+&lt;h4 id=&#34;あねね&#34;&gt;あねね&lt;/h4&gt;
+
+&lt;p&gt;a
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;margin-right:0.4em;padding:00.4em00.4em;color:#7c7c79&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:00.4em00.4em;color:#7c7c79&#34;&gt;2&lt;/span&gt;
 &lt;span style=&#34;margin-right:0.4em;padding:00.4em00.4em;color:#7c7c79&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;
