@@ -7,6 +7,10 @@ hr {
 body{
   font-family : 'Yu Gothic UI', 'Meirio UI';
 }
+.main-nav-link {
+  font-family :  'open sans';
+  font-weight: 300;
+}
 
 .article-header .article-title {
   display: block;
