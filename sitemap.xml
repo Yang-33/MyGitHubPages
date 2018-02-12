@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yang33-kassa.jp/2018/02/11/next/</loc>
+    <lastmod>2018-02-11T23:46:25+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/about/</loc>
     <lastmod>2018-02-10T21:49:20+02:00</lastmod>
   </url>
@@ -34,7 +39,27 @@
   </url>
   
   <url>
+    <loc>https://yang33-kassa.jp/algorithms/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/archives/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/blogs/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/editorials/</loc>
     <priority>0</priority>
   </url>
   
@@ -51,19 +76,19 @@
   </url>
   
   <url>
+    <loc>https://yang33-kassa.jp/links/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/tags/markdown/</loc>
     <lastmod>2017-05-20T12:10:51+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://yang33-kassa.jp/morimori/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://yang33-kassa.jp/post/</loc>
-    <lastmod>2017-05-20T12:10:51+02:00</lastmod>
+    <lastmod>2018-02-11T23:46:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -93,7 +118,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/</loc>
-    <lastmod>2017-05-20T12:10:51+02:00</lastmod>
+    <lastmod>2018-02-11T23:46:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   

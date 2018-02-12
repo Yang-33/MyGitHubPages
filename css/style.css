@@ -261,9 +261,12 @@ code {
   font-size: 1em;
   color: #999;
 }
-.article-entry hr,
+.article-entry hr{
+  border: 1px double black;
+}
 .widget hr {
-  border: 1px dashed #eceff2;
+  border-top: 1px solid black;
+  /* border: 1px dashed #eceff2; */
 }
 .article-entry strong,
 .widget strong {
