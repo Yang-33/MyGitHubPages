@@ -13,12 +13,12 @@
     
     <item>
       <title>How to add pages to the menu</title>
-      <link>https://yang33-kassa.jp/2015/10/02/how-to-add-pages-to-the-menu/</link>
+      <link>https://yang33-kassa.jp/post/linked-post/</link>
       <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
       
-      <guid>https://yang33-kassa.jp/2015/10/02/how-to-add-pages-to-the-menu/</guid>
+      <guid>https://yang33-kassa.jp/post/linked-post/</guid>
       <description>I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
-menu = &amp;quot;main&amp;quot;  </description>
+menu = &amp;quot;&amp;quot;  </description>
     </item>
     
   </channel>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>アルゴリズムまとめ on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/categories/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%BE%E3%81%A8%E3%82%81/</link>
+    <description>Recent content in アルゴリズムまとめ on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 22 Feb 2018 04:58:15 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/categories/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%BE%E3%81%A8%E3%82%81/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Algorithms</title>
+      <link>https://yang33-kassa.jp/algorithms/</link>
+      <pubDate>Thu, 22 Feb 2018 04:58:15 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/algorithms/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

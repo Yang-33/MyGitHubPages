@@ -6,28 +6,57 @@
     <description>Recent content in 2018 02 on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 11 Feb 2018 23:46:25 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 22 Feb 2018 05:04:48 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/archives/2018-02/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Links</title>
+      <link>https://yang33-kassa.jp/links/</link>
+      <pubDate>Thu, 22 Feb 2018 05:04:48 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithms</title>
+      <link>https://yang33-kassa.jp/algorithms/</link>
+      <pubDate>Thu, 22 Feb 2018 04:58:15 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/algorithms/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AOJ2230 How to Create a Good Game</title>
+      <link>https://yang33-kassa.jp/aoj/aoj2230/</link>
+      <pubDate>Thu, 22 Feb 2018 00:18:59 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/aoj/aoj2230/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>POJ3690</title>
-      <link>https://yang33-kassa.jp/2018/02/11/poj3690/</link>
+      <link>https://yang33-kassa.jp/post/next/</link>
       <pubDate>Sun, 11 Feb 2018 23:46:25 +0900</pubDate>
       
-      <guid>https://yang33-kassa.jp/2018/02/11/poj3690/</guid>
+      <guid>https://yang33-kassa.jp/post/next/</guid>
       <description>&lt;p&gt;a
 a&lt;/p&gt;
 
 &lt;h4 id=&#34;どすこい&#34;&gt;どすこい&lt;/h4&gt;
+
+&lt;p&gt;これはテスト記事なので中身が一致してません。&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;なんか日本語の確認をしていないんですが大丈夫ですか&lt;br /&gt;
 えーてすてす
 文字ちっちゃい気がする&lt;br /&gt;
-区間の処理をがんばる
+区間の処理をがんばる(これも嘘)
 &lt;/p&gt;</description>
     </item>
     
