@@ -18,8 +18,11 @@ body,
 }
 
 pre{
-  font-family : 'Migu 1M';
-  
+  font-family: source-code-pro;
+  line-height: 1.25em;
+  font-size: 1em;
+  color: gainsboro;
+  background-color: #1e1e1e;
   overflow:auto;
 
 }
