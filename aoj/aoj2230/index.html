@@ -58,7 +58,7 @@
 
 <meta itemprop="datePublished" content="2018-02-22T00:18:59&#43;09:00" />
 <meta itemprop="dateModified" content="2018-02-22T00:18:59&#43;09:00" />
-<meta itemprop="wordCount" content="559">
+<meta itemprop="wordCount" content="561">
 
 
 
@@ -398,7 +398,7 @@ $$
     \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\<br />
     1 &amp; \ldots &amp; -1 &amp; 0 &amp; 0 &amp; \ldots &amp; 1  \\<br />
     \hline
-    1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\<br />
+    -1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\<br />
   \end{array}
 \right)
 \left(
@@ -443,7 +443,7 @@ $$
 \begin{eqnarray}
 \left(
   \begin{array}{cccc|c}
-    1 &amp; 0 &amp; \ldots &amp; 1 &amp; 1 \\<br />
+    1 &amp; 0 &amp; \ldots &amp; 1 &amp; -1 \\<br />
     \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\<br />
     0 &amp; -1 &amp; \ldots &amp; -1 &amp; 1 \\<br />
     \hline
@@ -481,7 +481,9 @@ $$
 $$ i(0\leqq i\leqq E), y(i) \geqq 0  $$
 $b^t*y$ は$D*y(E) + \displaystyle \sum_{i}^{E} -c(e(i))*y(e(i))$である。<br />
 目的関数は最小化であり、制約さえなければじゃぶじゃぶ$y(e(i))$を大きくしたい。<br />
-これと非負の制約式から双対問題は最小費用流のようなものを感じ取る。実際に制約式の上から$V$本について辺のin,outとみればこれは最小費用流の定式そのものである。<br />
+これと非負の制約式から双対問題は最小費用流のようなものを感じ取る。僕は感じ取れなかった。<br />
+目的関数は辺の値*なにか0か1以上の値を取る変数である。<br />
+制約式の上から$V$本について正のものの総和を頂点への流入量、負のものの総和を流出量とみればこれは最小費用流の定式そのものである。<br />
 したがって負辺あり、下限制約あり、流量が決定していない最小費用流とみなせる。<br />
 これらはすべて解決可能である。以下その方法の参考を記す。</p>
 
@@ -919,31 +921,31 @@ $b^t*y$ は$D*y(E) + \displaystyle \sum_{i}^{E} -c(e(i))*y(e(i))$である。<br
     <div class="widget tagcloud">
         
         
-        <a href="https://yang33-kassa.jp/tags/about-yang33" style="font-size: 12px;">about-yang33</a>
+        <a href="https://yang33-kassa.jp/tags/about-yang33" style="font-size: 12px;">about-yang33(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/golang" style="font-size: 12px;">golang</a>
+        <a href="https://yang33-kassa.jp/tags/golang" style="font-size: 12px;">golang(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/hugo" style="font-size: 12px;">hugo</a>
+        <a href="https://yang33-kassa.jp/tags/hugo" style="font-size: 12px;">hugo(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/lp-dual" style="font-size: 12px;">lp-dual</a>
+        <a href="https://yang33-kassa.jp/tags/lp-dual" style="font-size: 12px;">lp-dual(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/markdown" style="font-size: 12px;">markdown</a>
+        <a href="https://yang33-kassa.jp/tags/markdown" style="font-size: 12px;">markdown(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/mincostflow" style="font-size: 12px;">mincostflow</a>
+        <a href="https://yang33-kassa.jp/tags/mincostflow" style="font-size: 12px;">mincostflow(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/programming" style="font-size: 12px;">programming</a>
+        <a href="https://yang33-kassa.jp/tags/programming" style="font-size: 12px;">programming(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/rollinghash2d" style="font-size: 12px;">rollinghash2d</a>
+        <a href="https://yang33-kassa.jp/tags/rollinghash2d" style="font-size: 12px;">rollinghash2d(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/theme" style="font-size: 12px;">theme</a>
+        <a href="https://yang33-kassa.jp/tags/theme" style="font-size: 12px;">theme(1)</a>
         
     </div>
 </div>
