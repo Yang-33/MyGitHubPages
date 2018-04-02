@@ -35,28 +35,13 @@
       <pubDate>Thu, 22 Feb 2018 00:18:59 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/aoj/aoj2230/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>POJ3690</title>
-      <link>https://yang33-kassa.jp/post/next/</link>
-      <pubDate>Sun, 11 Feb 2018 23:46:25 +0900</pubDate>
-      
-      <guid>https://yang33-kassa.jp/post/next/</guid>
-      <description>&lt;p&gt;a
-a&lt;/p&gt;
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;h4 id=&#34;どすこい&#34;&gt;どすこい&lt;/h4&gt;
-
-&lt;p&gt;これはテスト記事なので中身が一致してません。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;なんか日本語の確認をしていないんですが大丈夫ですか&lt;br /&gt;
-えーてすてす
-文字ちっちゃい気がする&lt;br /&gt;
-区間の処理をがんばる(これも嘘)
+&lt;p&gt;&lt;a href=&#34;http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2230&#34;&gt;How to Create a Good Game&lt;/a&gt;&lt;br /&gt;
+正の重み付きDAGが与えられる。&lt;br /&gt;
+0からN-1への最長距離を変えないようにそれぞれ辺の重み$c(u,v)$を$0$以上の整数だけ増やす。&lt;br /&gt;
+最大でどれだけ増やせるか。&lt;br /&gt;
+$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
 &lt;/p&gt;</description>
     </item>
     

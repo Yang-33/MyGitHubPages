@@ -18,33 +18,8 @@
   </url>
   
   <url>
-    <loc>https://yang33-kassa.jp/post/next/</loc>
-    <lastmod>2018-02-11T23:46:25+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://yang33-kassa.jp/about/</loc>
     <lastmod>2018-02-10T21:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/post/markdown-cheat-sheet/</loc>
-    <lastmod>2017-05-20T12:10:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/post/using-the-gallery-shortcode/</loc>
-    <lastmod>2017-05-20T12:00:23+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/post/formulas-with-mathjax/</loc>
-    <lastmod>2017-05-20T11:58:06+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/post/linked-post/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
   </url>
   
   <url>
@@ -90,26 +65,8 @@
   </url>
   
   <url>
-    <loc>https://yang33-kassa.jp/tags/golang/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/tags/hugo/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://yang33-kassa.jp/tags/lp-dual/</loc>
     <lastmod>2018-02-22T00:18:59+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/tags/markdown/</loc>
-    <lastmod>2017-05-20T12:10:51+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -120,44 +77,8 @@
   </url>
   
   <url>
-    <loc>https://yang33-kassa.jp/categories/poj/</loc>
-    <lastmod>2018-02-11T23:46:25+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/post/</loc>
-    <lastmod>2018-02-11T23:46:25+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/categories/programming/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/tags/programming/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/tags/rollinghash2d/</loc>
-    <lastmod>2018-02-11T23:46:25+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://yang33-kassa.jp/tags/</loc>
     <lastmod>2018-02-10T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/tags/theme/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
     <priority>0</priority>
   </url>
   
