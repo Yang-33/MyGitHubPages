@@ -21,6 +21,60 @@
     </item>
     
     <item>
+      <title>Bfs</title>
+      <link>https://yang33-kassa.jp/tags/bfs/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:03 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/bfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dijkstra</title>
+      <link>https://yang33-kassa.jp/tags/dijkstra/</link>
+      <pubDate>Sat, 07 Apr 2018 01:48:36 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/dijkstra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dp</title>
+      <link>https://yang33-kassa.jp/tags/dp/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:41 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/dp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dp復元</title>
+      <link>https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:41 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Greedy</title>
+      <link>https://yang33-kassa.jp/tags/greedy/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:14 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/greedy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grundy数</title>
+      <link>https://yang33-kassa.jp/tags/grundy%E6%95%B0/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:31 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/grundy%E6%95%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Lp Dual</title>
       <link>https://yang33-kassa.jp/tags/lp-dual/</link>
       <pubDate>Thu, 22 Feb 2018 00:18:59 +0900</pubDate>
@@ -35,6 +89,42 @@
       <pubDate>Thu, 22 Feb 2018 00:18:59 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/mincostflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nim</title>
+      <link>https://yang33-kassa.jp/tags/nim/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:31 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/nim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Priority_queue</title>
+      <link>https://yang33-kassa.jp/tags/priority_queue/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:35 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/priority_queue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>しゃくとり法</title>
+      <link>https://yang33-kassa.jp/tags/%E3%81%97%E3%82%83%E3%81%8F%E3%81%A8%E3%82%8A%E6%B3%95/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:18 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/%E3%81%97%E3%82%83%E3%81%8F%E3%81%A8%E3%82%8A%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>全探索</title>
+      <link>https://yang33-kassa.jp/tags/%E5%85%A8%E6%8E%A2%E7%B4%A2/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:35 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/%E5%85%A8%E6%8E%A2%E7%B4%A2/</guid>
       <description></description>
     </item>
     

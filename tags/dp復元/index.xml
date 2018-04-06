@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dp復元 on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83/</link>
+    <description>Recent content in Dp復元 on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 07 Apr 2018 02:16:41 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder010 ＋か×か</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder010/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:41 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder010/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;左結合の式の数値$a[i]$のみが$N$個与えられる。&amp;rdquo;+&amp;ldquo;か&amp;rdquo;*&amp;ldquo;をいれて、$Total$となるようにしたとき、辞書順最小の選択をもとめよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq50$、$a[i]\leqq10$、$Total\leqq10^5$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

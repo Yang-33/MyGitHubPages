@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grundy数 on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/grundy%E6%95%B0/</link>
+    <description>Recent content in Grundy数 on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 07 Apr 2018 02:16:31 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/grundy%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder008 N言っちゃダメゲーム</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder008/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:31 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder008/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;2人で次のゲームを行う。
+$N,K$が与えられる。
+プレイヤーは$0$から数字を$[1,K]$だけ加算し、相手にその数を渡す。
+$N$を言った方の負け。
+両者が最適に行動したときどちらが勝つか。
+$test\leqq10^2$、$2≦N\leqq1.2*10^5$、$2≦K≦1.2*10^5$
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder007 プライムナンバーゲーム</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder007/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder007/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$が与えられる。2人で次のゲームを行う。&lt;/p&gt;
+
+&lt;p&gt;・その番のプレイヤーは$N$に対して、「$N$以下（$N$も含む）の素数」のどれかで減算する、
+その数を$N&amp;rsquo;$とすると、$N&amp;rsquo;$が$0$または$1$になってしまったら、そのプレイヤーの負けである。&lt;/p&gt;
+
+&lt;p&gt;・その後$N&amp;rsquo;$を新たな$N$とし、相手にその数を渡し、以上を繰り返す。&lt;/p&gt;
+
+&lt;p&gt;$2≦N\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder002 素因数ゲーム</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder002/</link>
+      <pubDate>Sat, 07 Apr 2018 02:08:10 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder002/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$が与えられる。( $N\leqq10^8$ )&lt;/p&gt;
+
+&lt;p&gt;2人で次のゲームを行う。
+$N$の素因数を一つ選択し、相手に$N$をその素因数で割った商を新たな$N$として渡す。
+このとき同じ数であれば何回割っても良い。
+先手後手どちらが勝つか。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

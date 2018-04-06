@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bfs on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/bfs/</link>
+    <description>Recent content in Bfs on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 07 Apr 2018 02:16:03 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/bfs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder003 ビットすごろく</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder003/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:03 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder003/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$($N\leqq10^4$)が与えられます。
+この$N$を2進数表現で表したとき、1が現れている数だけ、前に進むか後ろに進むことができる。
+1からNに到達できるか判定し、もし到達できるなら、最小の移動回数を求めよ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

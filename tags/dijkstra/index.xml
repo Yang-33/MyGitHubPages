@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dijkstra on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/dijkstra/</link>
+    <description>Recent content in Dijkstra on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 07 Apr 2018 01:48:36 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/dijkstra/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder001 道のショートカット</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder001/</link>
+      <pubDate>Sat, 07 Apr 2018 01:48:36 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder001/</guid>
+      <description>&lt;p&gt;毎日解いた分の問題全部の解説を自分用に書いていたのですが、どうせならホームページに書いていこうと思って書いていくことにしました。&lt;/p&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$個の街があり、$V$個の道路がある。各道路にはコストと通過するのにかかる単位時間が定められている。
+今$C$までのコストを使っても良いので$1$から$N$の街へ移動するのに必要な最小の単位時間を答えよ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

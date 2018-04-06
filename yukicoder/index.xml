@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yukicoders on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/yukicoder/</link>
+    <description>Recent content in Yukicoders on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 07 Apr 2018 02:16:41 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/yukicoder/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder010 ＋か×か</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder010/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:41 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder010/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;左結合の式の数値$a[i]$のみが$N$個与えられる。&amp;rdquo;+&amp;ldquo;か&amp;rdquo;*&amp;ldquo;をいれて、$Total$となるようにしたとき、辞書順最小の選択をもとめよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq50$、$a[i]\leqq10$、$Total\leqq10^5$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder009 モンスターのレベル上げ</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder009/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:35 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder009/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$匹のモンスターを持っており、敵のモンスターも$N$匹いる。戦わせたとき必ず勝利でき、初期レベルの$a[i]$から戦闘をした敵のレベル$b[j]$の半分だけレベルが上がる。
+戦闘を行う際、$b$ははじめのモンスターを決定すると順番が決定する。自分はレベルが低く、最も戦闘を行っていないモンスターを戦わせる。
+このようにして戦闘を行うとき、自分が手持ちのモンスターで戦闘回数が最も多いものを最小化する。このときの戦闘回数が最も多い数は。
+$N\leqq1.5*10^3$、$a[i]\leqq10^4$、$b[i]\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder008 N言っちゃダメゲーム</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder008/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:31 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder008/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;2人で次のゲームを行う。
+$N,K$が与えられる。
+プレイヤーは$0$から数字を$[1,K]$だけ加算し、相手にその数を渡す。
+$N$を言った方の負け。
+両者が最適に行動したときどちらが勝つか。
+$test\leqq10^2$、$2≦N\leqq1.2*10^5$、$2≦K≦1.2*10^5$
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder007 プライムナンバーゲーム</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder007/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder007/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$が与えられる。2人で次のゲームを行う。&lt;/p&gt;
+
+&lt;p&gt;・その番のプレイヤーは$N$に対して、「$N$以下（$N$も含む）の素数」のどれかで減算する、
+その数を$N&amp;rsquo;$とすると、$N&amp;rsquo;$が$0$または$1$になってしまったら、そのプレイヤーの負けである。&lt;/p&gt;
+
+&lt;p&gt;・その後$N&amp;rsquo;$を新たな$N$とし、相手にその数を渡し、以上を繰り返す。&lt;/p&gt;
+
+&lt;p&gt;$2≦N\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder006 使いものにならないハッシュ</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder006/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:18 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder006/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$hash$を、整数の桁の和について、1桁になるまで再帰的に値を小さくしたものと定義する。
+このとき、$[K,N]$をみたす素数のみについて、値が重複しない最長の区間を求めこれの先頭の素数を答えよ。
+$1&amp;lt;N\leqq2*10^5$、$1≦K≦N$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder005 数字のブロック</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder005/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:14 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder005/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;幅$L$の箱がある。今$N$($N\leqq10^4$)個のブロックを持っており、それぞれのブロックの長さは$w[i]$($1\leqq w[i]\leqq L$)である。
+箱にブロックを詰めるときに最大で何個詰めることができるか。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder004 おもりと天秤</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder004/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:08 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder004/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$($N\leqq10^2$)個のおもり$w[i]$($w[i]\leqq10^2$)が与えられる。
+天秤の両端におもりを全部使って分けたとき、ちょうど釣り合うような置き方は存在するか。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder003 ビットすごろく</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder003/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:03 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder003/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$($N\leqq10^4$)が与えられます。
+この$N$を2進数表現で表したとき、1が現れている数だけ、前に進むか後ろに進むことができる。
+1からNに到達できるか判定し、もし到達できるなら、最小の移動回数を求めよ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder002 素因数ゲーム</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder002/</link>
+      <pubDate>Sat, 07 Apr 2018 02:08:10 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder002/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$が与えられる。( $N\leqq10^8$ )&lt;/p&gt;
+
+&lt;p&gt;2人で次のゲームを行う。
+$N$の素因数を一つ選択し、相手に$N$をその素因数で割った商を新たな$N$として渡す。
+このとき同じ数であれば何回割っても良い。
+先手後手どちらが勝つか。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder001 道のショートカット</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder001/</link>
+      <pubDate>Sat, 07 Apr 2018 01:48:36 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder001/</guid>
+      <description>&lt;p&gt;毎日解いた分の問題全部の解説を自分用に書いていたのですが、どうせならホームページに書いていこうと思って書いていくことにしました。&lt;/p&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$個の街があり、$V$個の道路がある。各道路にはコストと通過するのにかかる単位時間が定められている。
+今$C$までのコストを使っても良いので$1$から$N$の街へ移動するのに必要な最小の単位時間を答えよ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

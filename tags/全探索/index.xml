@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>全探索 on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/%E5%85%A8%E6%8E%A2%E7%B4%A2/</link>
+    <description>Recent content in 全探索 on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 07 Apr 2018 02:16:35 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/%E5%85%A8%E6%8E%A2%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder009 モンスターのレベル上げ</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder009/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:35 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder009/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$匹のモンスターを持っており、敵のモンスターも$N$匹いる。戦わせたとき必ず勝利でき、初期レベルの$a[i]$から戦闘をした敵のレベル$b[j]$の半分だけレベルが上がる。
+戦闘を行う際、$b$ははじめのモンスターを決定すると順番が決定する。自分はレベルが低く、最も戦闘を行っていないモンスターを戦わせる。
+このようにして戦闘を行うとき、自分が手持ちのモンスターで戦闘回数が最も多いものを最小化する。このときの戦闘回数が最も多い数は。
+$N\leqq1.5*10^3$、$a[i]\leqq10^4$、$b[i]\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
