@@ -6,10 +6,31 @@
     <description>Recent content in しゃくとり法 on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Apr 2018 02:16:18 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 00:16:38 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/%E3%81%97%E3%82%83%E3%81%8F%E3%81%A8%E3%82%8A%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder012</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder012/</link>
+      <pubDate>Fri, 13 Apr 2018 00:16:38 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder012/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;使用しなければならない数字の集合が与えれる。
+連続する区間$[K,L]$に含まれる全ての素数について、使用していい数字を全て使用しかつ、それ以外の数字が使われていないとき、&lt;br&gt;
+区間長の最大値を求めよ。
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;&lt;/p&gt;
+
+&lt;p&gt;$K,L\leqq5*10^6$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder006 使いものにならないハッシュ</title>
@@ -25,8 +46,9 @@ categories   : 記事のdirectory
 --&gt;
 
 &lt;p&gt;$hash$を、整数の桁の和について、1桁になるまで再帰的に値を小さくしたものと定義する。
-このとき、$[K,N]$をみたす素数のみについて、値が重複しない最長の区間を求めこれの先頭の素数を答えよ。
-$1&amp;lt;N\leqq2*10^5$、$1≦K≦N$&lt;/p&gt;
+このとき、$[K,N]$をみたす素数のみについて、値が重複しない最長の区間を求めこれの先頭の素数を答えよ。&lt;/p&gt;
+
+&lt;p&gt;$1&amp;lt;N\leqq2*10^5$、$1≦K≦N$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

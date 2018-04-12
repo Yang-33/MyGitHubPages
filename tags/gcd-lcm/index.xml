@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gcd Lcm on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/gcd-lcm/</link>
+    <description>Recent content in Gcd Lcm on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Apr 2018 00:29:39 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/gcd-lcm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder014</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder014/</link>
+      <pubDate>Fri, 13 Apr 2018 00:29:39 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder014/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;最小公倍数ソートというものを考える。
+まだ整列されていない数列の右端$A$を固定して他の数と$A$との最小公倍数を求め、最小公倍数が最も小さいものを右端に移動させる。
+これをソートが完了するまで繰り返す。
+最終的な数列を出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^4$、$a[i]\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

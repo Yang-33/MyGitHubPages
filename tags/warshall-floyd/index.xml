@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Warshall Floyd on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/warshall-floyd/</link>
+    <description>Recent content in Warshall Floyd on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Apr 2018 00:59:15 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/warshall-floyd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder017 2つの地点に泊まりたい</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder017/</link>
+      <pubDate>Fri, 13 Apr 2018 00:59:15 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder017/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$0$ から$N−1$までの$N$個の地点がある。
+地点から地点の移動コストが$M$個、$edge(a,b)=c$が与えられる。
+また各地点に滞在コスト$S[i]$がある。&lt;/p&gt;
+
+&lt;p&gt;$0$地点から$N−1$地点にたどり着くまでに、 $0$地点と$N−1$地点以外の異なる2つの地点に滞在しなければならない。
+滞在する地点は自由に決めて良い。
+この条件での移動コストと滞在コストの合計の最小値を求めよ。&lt;/p&gt;
+
+&lt;p&gt;都市を通るけど、滞在しないこともできます。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq50$、$M\leqq N^2$、$S[i],edge(a,b)\leqq10^3$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

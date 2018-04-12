@@ -6,10 +6,230 @@
     <description>Recent content in 2018 04 on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Apr 2018 02:16:41 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 02:02:41 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/archives/2018-04/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder020 砂漠のオアシス</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder020/</link>
+      <pubDate>Fri, 13 Apr 2018 02:02:41 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder020/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;二次元グリッド上に砂漠と、一点のみにオアシスがある。
+砂漠に行くと$L[i]$だけ体力が減り、オアシスに到達すると残った体力が2倍になる。
+体力が0になると死亡するとして、
+始点$(Ox,Oy)$から終点$(N,N)$に無事にたどり着くことができるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$V\leqq5*10^2$、$L(x,y)\leqq9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder019 ステージの選択</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder019/</link>
+      <pubDate>Fri, 13 Apr 2018 01:53:01 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder019/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;N個のゲームがある。
+各ステージには難易度$L[i]$が存在し、先に指定されたステージ$S[i]$をクリアしていれば難易度が半分になる。
+全てのステージをクリアするとき、最小でどれだけの難易度になるか。&lt;/p&gt;
+
+&lt;p&gt;$N,L[i],S[i]\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder018 うーさー暗号</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder018/</link>
+      <pubDate>Fri, 13 Apr 2018 01:07:48 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder018/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;文字列$S$が与えられる。$S[i]$(1-index)をiだけ小さいアルファベットに変える。(B→A,A→Zのように)
+変更後の文字列を出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$|S|\leqq1024$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder017 2つの地点に泊まりたい</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder017/</link>
+      <pubDate>Fri, 13 Apr 2018 00:59:15 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder017/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$0$ から$N−1$までの$N$個の地点がある。
+地点から地点の移動コストが$M$個、$edge(a,b)=c$が与えられる。
+また各地点に滞在コスト$S[i]$がある。&lt;/p&gt;
+
+&lt;p&gt;$0$地点から$N−1$地点にたどり着くまでに、 $0$地点と$N−1$地点以外の異なる2つの地点に滞在しなければならない。
+滞在する地点は自由に決めて良い。
+この条件での移動コストと滞在コストの合計の最小値を求めよ。&lt;/p&gt;
+
+&lt;p&gt;都市を通るけど、滞在しないこともできます。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq50$、$M\leqq N^2$、$S[i],edge(a,b)\leqq10^3$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder016 累乗の加算</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder016/</link>
+      <pubDate>Fri, 13 Apr 2018 00:54:38 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder016/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$x,N,$数列${a}$が与えられる。
+$x^{a1}+x^{a2}+⋯+x^{aN}$を$mod1,000,003$で求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$x\leqq10^2$、$a[i]\leqq10^8$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder015 カタログショッピング</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder015/</link>
+      <pubDate>Fri, 13 Apr 2018 00:46:52 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder015/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$N$個の商品が与えれる。それぞれの値段は$P[i]$円である。
+今$S$円だけ買ったことは覚えているので、ちょうど$S$円になる組合せを全て求めてその商品番号を辞書順最小で出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq31$、$S\leqq3.1*10^8$、$P[i]\leqq10^7$&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder014</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder014/</link>
+      <pubDate>Fri, 13 Apr 2018 00:29:39 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder014/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;最小公倍数ソートというものを考える。
+まだ整列されていない数列の右端$A$を固定して他の数と$A$との最小公倍数を求め、最小公倍数が最も小さいものを右端に移動させる。
+これをソートが完了するまで繰り返す。
+最終的な数列を出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^4$、$a[i]\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder013</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder013/</link>
+      <pubDate>Fri, 13 Apr 2018 00:24:22 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder013/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$H*W$の二次元グリッド上で、それぞれのマスに数字が割り当てられている。
+同じ数字のみをたどって上下左右のみに移動できるとき、囲みを作ることができるか。&lt;/p&gt;
+
+&lt;p&gt;$H,W\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder012</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder012/</link>
+      <pubDate>Fri, 13 Apr 2018 00:16:38 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder012/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;使用しなければならない数字の集合が与えれる。
+連続する区間$[K,L]$に含まれる全ての素数について、使用していい数字を全て使用しかつ、それ以外の数字が使われていないとき、&lt;br&gt;
+区間長の最大値を求めよ。
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;&lt;/p&gt;
+
+&lt;p&gt;$K,L\leqq5*10^6$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder011</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder011/</link>
+      <pubDate>Fri, 13 Apr 2018 00:07:08 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder011/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;一種類$Q$、各種類$H$枚のトランプがある。&lt;br&gt;
+今、手札には$N$枚のカードがあり、「手札のカード以外」のマッチするカードの枚数を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^5$、$W,H\leqq10^5$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder010 ＋か×か</title>
@@ -46,8 +266,9 @@ categories   : 記事のdirectory
 
 &lt;p&gt;$N$匹のモンスターを持っており、敵のモンスターも$N$匹いる。戦わせたとき必ず勝利でき、初期レベルの$a[i]$から戦闘をした敵のレベル$b[j]$の半分だけレベルが上がる。
 戦闘を行う際、$b$ははじめのモンスターを決定すると順番が決定する。自分はレベルが低く、最も戦闘を行っていないモンスターを戦わせる。
-このようにして戦闘を行うとき、自分が手持ちのモンスターで戦闘回数が最も多いものを最小化する。このときの戦闘回数が最も多い数は。
-$N\leqq1.5*10^3$、$a[i]\leqq10^4$、$b[i]\leqq10^4$&lt;/p&gt;
+このようにして戦闘を行うとき、自分が手持ちのモンスターで戦闘回数が最も多いものを最小化する。このときの戦闘回数が最も多い数は。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq1.5*10^3$、$a[i]\leqq10^4$、$b[i]\leqq10^4$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -64,8 +285,9 @@ $N\leqq1.5*10^3$、$a[i]\leqq10^4$、$b[i]\leqq10^4$&lt;/p&gt;
 $N,K$が与えられる。
 プレイヤーは$0$から数字を$[1,K]$だけ加算し、相手にその数を渡す。
 $N$を言った方の負け。
-両者が最適に行動したときどちらが勝つか。
-$test\leqq10^2$、$2≦N\leqq1.2*10^5$、$2≦K≦1.2*10^5$
+両者が最適に行動したときどちらが勝つか。&lt;/p&gt;
+
+&lt;p&gt;$test\leqq10^2$、$2≦N\leqq1.2*10^5$、$2≦K≦1.2*10^5$
 &lt;!-- 
 tags         : 記事のType
 categories   : 記事のdirectory
@@ -113,8 +335,9 @@ categories   : 記事のdirectory
 --&gt;
 
 &lt;p&gt;$hash$を、整数の桁の和について、1桁になるまで再帰的に値を小さくしたものと定義する。
-このとき、$[K,N]$をみたす素数のみについて、値が重複しない最長の区間を求めこれの先頭の素数を答えよ。
-$1&amp;lt;N\leqq2*10^5$、$1≦K≦N$&lt;/p&gt;
+このとき、$[K,N]$をみたす素数のみについて、値が重複しない最長の区間を求めこれの先頭の素数を答えよ。&lt;/p&gt;
+
+&lt;p&gt;$1&amp;lt;N\leqq2*10^5$、$1≦K≦N$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

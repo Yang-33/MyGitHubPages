@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powmod on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/powmod/</link>
+    <description>Recent content in Powmod on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Apr 2018 00:54:38 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/powmod/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder016 累乗の加算</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder016/</link>
+      <pubDate>Fri, 13 Apr 2018 00:54:38 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder016/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$x,N,$数列${a}$が与えられる。
+$x^{a1}+x^{a2}+⋯+x^{aN}$を$mod1,000,003$で求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$x\leqq10^2$、$a[i]\leqq10^8$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

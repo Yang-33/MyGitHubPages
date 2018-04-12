@@ -6,10 +6,31 @@
     <description>Recent content in Bfs on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Apr 2018 02:16:03 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 00:24:22 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/bfs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder013</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder013/</link>
+      <pubDate>Fri, 13 Apr 2018 00:24:22 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder013/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$H*W$の二次元グリッド上で、それぞれのマスに数字が割り当てられている。
+同じ数字のみをたどって上下左右のみに移動できるとき、囲みを作ることができるか。&lt;/p&gt;
+
+&lt;p&gt;$H,W\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder003 ビットすごろく</title>

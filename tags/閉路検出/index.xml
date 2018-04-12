@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>閉路検出 on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/%E9%96%89%E8%B7%AF%E6%A4%9C%E5%87%BA/</link>
+    <description>Recent content in 閉路検出 on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Apr 2018 00:24:22 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/%E9%96%89%E8%B7%AF%E6%A4%9C%E5%87%BA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder013</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder013/</link>
+      <pubDate>Fri, 13 Apr 2018 00:24:22 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder013/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$H*W$の二次元グリッド上で、それぞれのマスに数字が割り当てられている。
+同じ数字のみをたどって上下左右のみに移動できるとき、囲みを作ることができるか。&lt;/p&gt;
+
+&lt;p&gt;$H,W\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strongly Connected Component Decomposition on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/strongly-connected-component-decomposition/</link>
+    <description>Recent content in Strongly Connected Component Decomposition on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Apr 2018 01:53:01 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/strongly-connected-component-decomposition/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder019 ステージの選択</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder019/</link>
+      <pubDate>Fri, 13 Apr 2018 01:53:01 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder019/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;N個のゲームがある。
+各ステージには難易度$L[i]$が存在し、先に指定されたステージ$S[i]$をクリアしていれば難易度が半分になる。
+全てのステージをクリアするとき、最小でどれだけの難易度になるか。&lt;/p&gt;
+
+&lt;p&gt;$N,L[i],S[i]\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

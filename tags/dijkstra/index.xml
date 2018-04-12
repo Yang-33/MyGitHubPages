@@ -6,10 +6,33 @@
     <description>Recent content in Dijkstra on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Apr 2018 01:48:36 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 02:02:41 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/dijkstra/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder020 砂漠のオアシス</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder020/</link>
+      <pubDate>Fri, 13 Apr 2018 02:02:41 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder020/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;二次元グリッド上に砂漠と、一点のみにオアシスがある。
+砂漠に行くと$L[i]$だけ体力が減り、オアシスに到達すると残った体力が2倍になる。
+体力が0になると死亡するとして、
+始点$(Ox,Oy)$から終点$(N,N)$に無事にたどり着くことができるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$V\leqq5*10^2$、$L(x,y)\leqq9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder001 道のショートカット</title>
