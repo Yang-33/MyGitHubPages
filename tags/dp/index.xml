@@ -6,10 +6,58 @@
     <description>Recent content in Dp on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Apr 2018 02:16:41 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 14:19:25 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder027 板の準備</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder027/</link>
+      <pubDate>Fri, 13 Apr 2018 14:19:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder027/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;異なる3種類の長さ$A$、$B$、$C$の板を無数に用意できる。
+$A$、$B$、$C$は整数の値で自由に決めて良い。
+板と板はつなげて伸ばすことができる。
+指定された$V_0$、$V_1$、$V_2$、$V_3$の長さの板を作りたい。
+最低何枚の板が必要か？&lt;/p&gt;
+
+&lt;p&gt;$1\leqq V_i\leqq30$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder023 技の選択</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder023/</link>
+      <pubDate>Fri, 13 Apr 2018 11:47:13 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder023/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;体力がHの敵がいる。この敵を倒すまで、2種類の攻撃をする。&lt;br&gt;
+1: 通常攻撃　必ず$A$のダメージを与える。  &lt;br&gt;
+2: 必殺技　　確率$\frac{2}{3}$で$D$のダメージを与える。 &lt;br&gt;
+最終的に敵を倒すまでの回数の期待値を最小にするように攻撃を選んでいく。
+敵を倒すまでの攻撃数の期待値は。&lt;/p&gt;
+
+&lt;p&gt;$1\leqq H,A,D\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder010 ＋か×か</title>

@@ -6,10 +6,230 @@
     <description>Recent content in 2018 on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Apr 2018 02:02:41 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 18:17:11 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/archives/2018/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder030 たこ焼き工場</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder030/</link>
+      <pubDate>Fri, 13 Apr 2018 18:17:11 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder030/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;頂点が$N$個,辺が$M$本の閉路のない有向グラフがある。辺に値が定められており、これを端の頂点から頂点$N$まで伝搬していく。最終的に頂点$N$の値は何になるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$M\leqq1.5*10^3$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder029 パワーアップ</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder029/</link>
+      <pubDate>Fri, 13 Apr 2018 18:13:06 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder029/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;RPGをする。同じアイテムを2つ揃えるか、別のアイテムを4つ揃えるとパワーアップできる。
+アイテムのidが$A[i],B[i],C[i]$と$N$回与えられる。&lt;br /&gt;
+最大で何回パワーアップするか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$A[i],B[i],C[i]\leqq10$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder028 末尾最適化</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder028/</link>
+      <pubDate>Fri, 13 Apr 2018 14:23:50 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder028/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$X[0]=seed$&lt;br /&gt;
+$X[n] = 1 + (X[n-1]^2 + 12345*X[n-1])\%100000009$&lt;br /&gt;
+$(1≦n≦N)$&lt;br /&gt;
+とする。
+上の定義から作られる $N+1$ 個の要素を持つ数列 $X$ の中から $K$ 個数字を選びそれらを掛け合わせ $T$ とおく。
+$T$ を$ B$ 進数に変換した時末尾の$0$の数が最小となる $T$ では末尾の$0$の数はいくつになるかという質問が$Q$与えられるので、それぞれ回答えよ。&lt;/p&gt;
+
+&lt;p&gt;$1≦Q≦10^3、seed≦100000009、N≦10^4、K≦N+1、2≦B≦36$
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder027 板の準備</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder027/</link>
+      <pubDate>Fri, 13 Apr 2018 14:19:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder027/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;異なる3種類の長さ$A$、$B$、$C$の板を無数に用意できる。
+$A$、$B$、$C$は整数の値で自由に決めて良い。
+板と板はつなげて伸ばすことができる。
+指定された$V_0$、$V_1$、$V_2$、$V_3$の長さの板を作りたい。
+最低何枚の板が必要か？&lt;/p&gt;
+
+&lt;p&gt;$1\leqq V_i\leqq30$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder026 シャッフルゲーム</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder026/</link>
+      <pubDate>Fri, 13 Apr 2018 14:04:56 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder026/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;カップが3つあり、1つが正解のカップである。
+2つのカップの位置$(p,q)$を$M$回交換する。
+交換し終わったあと、正解のカップの位置はどこか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq3$、$M\leqq200$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder025 有限小数</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder025/</link>
+      <pubDate>Fri, 13 Apr 2018 11:58:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder025/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$N$,$M$が与えられる。このとき$\displaystyle\frac{N}{M}$は有限小数か。
+またそのとき、0でない一番小さい桁の数字を出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$1\leqq N,M\leqq9,223,372,036,854,775,807$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder024 数当てゲーム</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder024/</link>
+      <pubDate>Fri, 13 Apr 2018 11:53:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder024/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$[0,9]$までの数字で一つを予め選択し、
+4つの候補が与えられるのでこの中にその数字が存在しているかどうかが$N$回教えられる。
+これをもとに、選択された数字が存在するかを判定せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq6$、$0\leqq a[i],b[i],c[i],d[i]\leqq9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder023 技の選択</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder023/</link>
+      <pubDate>Fri, 13 Apr 2018 11:47:13 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder023/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;体力がHの敵がいる。この敵を倒すまで、2種類の攻撃をする。&lt;br&gt;
+1: 通常攻撃　必ず$A$のダメージを与える。  &lt;br&gt;
+2: 必殺技　　確率$\frac{2}{3}$で$D$のダメージを与える。 &lt;br&gt;
+最終的に敵を倒すまでの回数の期待値を最小にするように攻撃を選んでいく。
+敵を倒すまでの攻撃数の期待値は。&lt;/p&gt;
+
+&lt;p&gt;$1\leqq H,A,D\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder022 括弧の対応</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder022/</link>
+      <pubDate>Fri, 13 Apr 2018 11:43:22 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder022/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;長さ$N$の括弧列が与えられる。1-indexで$K$番目の括弧に対応する括弧の位置を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^4$、$1\leqq K\leqq N$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder021 平均の差</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder021/</link>
+      <pubDate>Fri, 13 Apr 2018 11:36:26 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder021/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$N$個の数字$n[i]$が与えられるので$K$個のグループに分ける。
+それぞれのグループについて平均を求め、グループ間の平均値の最大-最小を最大化せよ。&lt;/p&gt;
+
+&lt;p&gt;$3\leqq N\leqq9$、$3\leqq K\leqq N$、$n[i]\leqq10^3$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder020 砂漠のオアシス</title>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brackets on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/brackets/</link>
+    <description>Recent content in Brackets on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Apr 2018 11:43:22 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/brackets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder022 括弧の対応</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder022/</link>
+      <pubDate>Fri, 13 Apr 2018 11:43:22 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder022/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;長さ$N$の括弧列が与えられる。1-indexで$K$番目の括弧に対応する括弧の位置を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^4$、$1\leqq K\leqq N$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

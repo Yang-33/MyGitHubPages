@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Factoring on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/factoring/</link>
+    <description>Recent content in Factoring on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Apr 2018 14:23:50 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/factoring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder028 末尾最適化</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder028/</link>
+      <pubDate>Fri, 13 Apr 2018 14:23:50 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder028/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$X[0]=seed$&lt;br /&gt;
+$X[n] = 1 + (X[n-1]^2 + 12345*X[n-1])\%100000009$&lt;br /&gt;
+$(1≦n≦N)$&lt;br /&gt;
+とする。
+上の定義から作られる $N+1$ 個の要素を持つ数列 $X$ の中から $K$ 個数字を選びそれらを掛け合わせ $T$ とおく。
+$T$ を$ B$ 進数に変換した時末尾の$0$の数が最小となる $T$ では末尾の$0$の数はいくつになるかという質問が$Q$与えられるので、それぞれ回答えよ。&lt;/p&gt;
+
+&lt;p&gt;$1≦Q≦10^3、seed≦100000009、N≦10^4、K≦N+1、2≦B≦36$
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder025 有限小数</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder025/</link>
+      <pubDate>Fri, 13 Apr 2018 11:58:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder025/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$N$,$M$が与えられる。このとき$\displaystyle\frac{N}{M}$は有限小数か。
+またそのとき、0でない一番小さい桁の数字を出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$1\leqq N,M\leqq9,223,372,036,854,775,807$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

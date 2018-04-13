@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Memo化再帰 on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/memo%E5%8C%96%E5%86%8D%E5%B8%B0/</link>
+    <description>Recent content in Memo化再帰 on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Apr 2018 18:17:11 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/memo%E5%8C%96%E5%86%8D%E5%B8%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder030 たこ焼き工場</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder030/</link>
+      <pubDate>Fri, 13 Apr 2018 18:17:11 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder030/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;頂点が$N$個,辺が$M$本の閉路のない有向グラフがある。辺に値が定められており、これを端の頂点から頂点$N$まで伝搬していく。最終的に頂点$N$の値は何になるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$M\leqq1.5*10^3$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

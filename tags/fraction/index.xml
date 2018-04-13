@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fraction on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/fraction/</link>
+    <description>Recent content in Fraction on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Apr 2018 11:58:28 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/fraction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder025 有限小数</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder025/</link>
+      <pubDate>Fri, 13 Apr 2018 11:58:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder025/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$N$,$M$が与えられる。このとき$\displaystyle\frac{N}{M}$は有限小数か。
+またそのとき、0でない一番小さい桁の数字を出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$1\leqq N,M\leqq9,223,372,036,854,775,807$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
