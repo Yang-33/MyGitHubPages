@@ -6,10 +6,32 @@
     <description>Recent content in Dp on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Apr 2018 18:40:21 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 23:55:55 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder037 遊園地のアトラクション</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder037/</link>
+      <pubDate>Fri, 13 Apr 2018 23:55:55 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder037/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$T$時間遊園地に滞在する。$N$個のアトラクションがあり、それぞれのアトラクションで$C[i]$時間並び$V[i]$の満足度を得る。
+同じアトラクションに乗るたびに、$V[i]$は少数切り捨てで半分になる。
+$T$時間の遊園地での滞在で最大の満足度を得たいとき、得られる満足度は。&lt;/p&gt;
+
+&lt;p&gt;$T\leqq10^4$、$N\leqq15$、$C[i]\leqq10^2$、$V[i]\leqq5*10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder031 悪のミックスジュース</title>

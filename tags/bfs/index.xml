@@ -6,10 +6,32 @@
     <description>Recent content in Bfs on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Apr 2018 00:24:22 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 19:21:50 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/bfs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder034 砂漠の行商人</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder034/</link>
+      <pubDate>Fri, 13 Apr 2018 19:21:50 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder034/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;二次元グリッドのマスに砂漠があり、ここに入ると$L(x,y)$のダメージを受ける。
+体力$V$で、始点から体力が0より大きくかつ最短時間で終点に行きたい。
+どれだけの時間がかかるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$V\leqq10^5$、$0≦L(x,y)\leqq9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder013 囲みたい！</title>

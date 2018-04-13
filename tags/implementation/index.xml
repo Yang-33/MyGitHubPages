@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Implementation on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/implementation/</link>
+    <description>Recent content in Implementation on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 14 Apr 2018 00:20:25 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/implementation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder040 多項式の割り算</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder040/</link>
+      <pubDate>Sat, 14 Apr 2018 00:20:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder040/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;与えられた多項式$A[D]*x^D+A[D-1]*x^{D-1}+&amp;hellip;+A[1]*x+A[0]$&lt;br /&gt;
+を $x^3−x$ で割った余りを出力してください。&lt;/p&gt;
+
+&lt;p&gt;$0\leqq D\leqq10^4$、$-10^2\leqq A[i]\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

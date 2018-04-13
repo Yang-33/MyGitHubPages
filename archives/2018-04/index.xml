@@ -6,10 +6,96 @@
     <description>Recent content in 2018 04 on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Apr 2018 19:37:42 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Apr 2018 00:20:25 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/archives/2018-04/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder040 多項式の割り算</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder040/</link>
+      <pubDate>Sat, 14 Apr 2018 00:20:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder040/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;与えられた多項式$A[D]*x^D+A[D-1]*x^{D-1}+&amp;hellip;+A[1]*x+A[0]$&lt;br /&gt;
+を $x^3−x$ で割った余りを出力してください。&lt;/p&gt;
+
+&lt;p&gt;$0\leqq D\leqq10^4$、$-10^2\leqq A[i]\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder039 桁の数字を入れ替え</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder039/</link>
+      <pubDate>Sat, 14 Apr 2018 00:13:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder039/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;Nが与えられる。Nの2つの桁を選択し、一回だけ交換することができる。入れ替えないという選択も可能なとき、最終的に最も数を大きくしたときの値は何か。&lt;/p&gt;
+
+&lt;p&gt;$10^2\leqq N\lt 10^{10}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder038 赤青白ブロック</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder038/</link>
+      <pubDate>Sat, 14 Apr 2018 00:06:49 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder038/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;&amp;ldquo;R&amp;rdquo;,&amp;ldquo;B&amp;rdquo;,&amp;ldquo;W&amp;rdquo;のブロックが並んでいる。
+次の条件を満たすように&amp;rdquo;R&amp;rdquo;,&amp;ldquo;B&amp;rdquo;のブロックを削除するが、残るブロックを最大化したい。
+あるブロックが&amp;rdquo;R&amp;rdquo;のとき、左右$Kr$個目のブロックは&amp;rdquo;R&amp;rdquo;であってはならない。
+あるブロックが&amp;rdquo;B&amp;rdquo;のとき、左右$Kb$個目のブロックは&amp;rdquo;B&amp;rdquo;であってはならない。&lt;/p&gt;
+
+&lt;p&gt;$1&amp;lt;=Kr,Kb&amp;lt;=29$、$|S|≦30$、各色は10個ずつ&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder037 遊園地のアトラクション</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder037/</link>
+      <pubDate>Fri, 13 Apr 2018 23:55:55 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder037/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$T$時間遊園地に滞在する。$N$個のアトラクションがあり、それぞれのアトラクションで$C[i]$時間並び$V[i]$の満足度を得る。
+同じアトラクションに乗るたびに、$V[i]$は少数切り捨てで半分になる。
+$T$時間の遊園地での滞在で最大の満足度を得たいとき、得られる満足度は。&lt;/p&gt;
+
+&lt;p&gt;$T\leqq10^4$、$N\leqq15$、$C[i]\leqq10^2$、$V[i]\leqq5*10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder036 素数が嫌い！</title>
