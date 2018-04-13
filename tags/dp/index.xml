@@ -6,10 +6,32 @@
     <description>Recent content in Dp on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Apr 2018 14:19:25 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 18:40:21 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder031 悪のミックスジュース</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder031/</link>
+      <pubDate>Fri, 13 Apr 2018 18:40:21 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder031/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;果物$[1,N]$ある。今ミックスジュースを$V$リットルだけ作らなくてはいけない。それぞれの果物は1リットル作るのに$C[i]$円必要である。
+すべての果物を購入して$V$リットル以上作りたい。
+ミックスジュースの果物$k$が占める割合pkは、$p1≥p2≥⋯≥pN$でなくてはならないという条件のもと、$V$リットルのジュースを作るコストを最小化せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$V\leqq10^9$、$C[k]\leqq10^9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder027 板の準備</title>

@@ -6,10 +6,28 @@
     <description>Recent content in Factoring on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Apr 2018 14:23:50 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 19:37:42 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/factoring/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder036 素数が嫌い！</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder036/</link>
+      <pubDate>Fri, 13 Apr 2018 19:37:42 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder036/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$N$が、&amp;rdquo;素数、1、使う数自身&amp;rdquo; 以外で割り切れるかどうか判定せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^{14}$&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder028 末尾最適化</title>

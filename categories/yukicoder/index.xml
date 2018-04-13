@@ -6,10 +6,140 @@
     <description>Recent content in Yukicoder on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Apr 2018 18:17:11 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 19:37:42 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/categories/yukicoder/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder036 素数が嫌い！</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder036/</link>
+      <pubDate>Fri, 13 Apr 2018 19:37:42 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder036/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$N$が、&amp;rdquo;素数、1、使う数自身&amp;rdquo; 以外で割り切れるかどうか判定せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^{14}$&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder035 タイパー高橋</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder035/</link>
+      <pubDate>Fri, 13 Apr 2018 19:31:44 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder035/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;タイピングゲーム$N$回をする。
+$i$回目では$T[i]$ミリ秒以内に$|S_i|$という文字をタイピングしなければならない。
+$m$ミリ秒で$ ⌊12m/1000⌋ $だけ正確にタイピングできるとして、正確にタイプできる文字数と、そうでない文字数を出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^3$、$T[i]\leqq3*10^4$、$|S_i|\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder034 砂漠の行商人</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder034/</link>
+      <pubDate>Fri, 13 Apr 2018 19:21:50 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder034/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;二次元グリッドのマスに砂漠があり、ここに入ると$L(x,y)$のダメージを受ける。
+体力$V$で、始点から体力が0より大きくかつ最短時間で終点に行きたい。
+どれだけの時間がかかるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$V\leqq10^5$、$0≦L(x,y)\leqq9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder033 アメーバがたくさん</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder033/</link>
+      <pubDate>Fri, 13 Apr 2018 19:10:35 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder033/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$N$匹のアメーバが1直線上にいます。
+各アメーバには初期座標が与えられます。
+$x$にいるアメーバは１秒後に$x-D,x,x+D$へ分裂します。
+また、アメーバは同じ座標に2匹以上いると、
+合体して1匹になります。
+最初に$N$匹いたアメーバが$T$秒後には
+何匹になっているか答えなさい。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$D,T\leqq10^9$、$-10^9\leqq X[i]\leqq10^9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder032 貯金箱の憂鬱</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder032/</link>
+      <pubDate>Fri, 13 Apr 2018 19:05:29 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder032/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;1,25,100円硬貨、1000円札がある。
+今それぞれの硬貨が複数枚与えられるので、硬貨の枚数を最小化せよ。&lt;/p&gt;
+
+&lt;p&gt;(硬貨の枚数)$≦10^3$
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder031 悪のミックスジュース</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder031/</link>
+      <pubDate>Fri, 13 Apr 2018 18:40:21 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder031/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;果物$[1,N]$ある。今ミックスジュースを$V$リットルだけ作らなくてはいけない。それぞれの果物は1リットル作るのに$C[i]$円必要である。
+すべての果物を購入して$V$リットル以上作りたい。
+ミックスジュースの果物$k$が占める割合pkは、$p1≥p2≥⋯≥pN$でなくてはならないという条件のもと、$V$リットルのジュースを作るコストを最小化せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$V\leqq10^9$、$C[k]\leqq10^9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder030 たこ焼き工場</title>
