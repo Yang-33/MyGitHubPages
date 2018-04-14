@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fibonacci on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/fibonacci/</link>
+    <description>Recent content in Fibonacci on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 14 Apr 2018 14:25:13 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/fibonacci/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder044 DPなすごろく</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder044/</link>
+      <pubDate>Sat, 14 Apr 2018 14:25:13 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder044/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;地点0から地点$N$まで移動する。移動方法は1歩進む、2歩進むのいずれかである。
+到達するパターンは何パターンあるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq50$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

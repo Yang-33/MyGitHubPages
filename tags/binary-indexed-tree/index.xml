@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Binary Indexed Tree on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/binary-indexed-tree/</link>
+    <description>Recent content in Binary Indexed Tree on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 14 Apr 2018 15:47:51 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/binary-indexed-tree/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder059 鉄道の旅</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder059/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:51 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder059/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$W[i]$を$N$回処理する。&lt;br /&gt;
+・$W$が正の数の場合は、重さ$|W|$の荷物を詰む。&lt;br /&gt;
+・$W$が負の数の場合は、重さ$|W|$の荷物を降ろす。&lt;br /&gt;
+・荷物を積むまえにすでにその荷物の重さ以上の荷物が$K$個以上列車に積まれている場合にはその荷物を積めない。&lt;br /&gt;
+また、荷物を降ろす場合に指定した重さの荷物が積まれていない場合も考えられる。&lt;br /&gt;
+この場合は指定された荷物が無いのだから荷物を降ろす必要は無い。&lt;br /&gt;
+もし指定された重さの荷物があれば必ず1つ降ろす。&lt;/p&gt;
+
+&lt;p&gt;最終的に何個の荷物を最終駅まで運ぶことになるだろうか？&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^5$、$K\leqq10^5$、$|W[i]|\leqq10^6$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

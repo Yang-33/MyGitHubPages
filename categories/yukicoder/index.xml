@@ -6,10 +6,452 @@
     <description>Recent content in Yukicoder on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Apr 2018 00:20:25 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Apr 2018 15:47:58 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/categories/yukicoder/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder060 魔法少女</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder060/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:58 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder060/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;魔法少女Madokaは魔女Walpurgisnachtと戦っていた。&lt;br /&gt;
+Walpurgisnachtは複数の使い魔を使役しているため、短時間ですべての敵にダメージを与えない限り倒せない。&lt;br /&gt;
+そこでMadokaは範囲に対する攻撃魔法を使用し、効率的に敵を倒そうと考えた。&lt;br /&gt;
+Walpurgisnachtとその使い魔の座標と体力、Madokaが攻撃した範囲と敵に与えるダメージが与えられるので、&lt;br /&gt;
+倒せていない敵の残り体力の合計を答えよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^5$、$K\leqq10^5$、$HP[k]\leqq10^4$、$damege(x,y)≦10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder059 鉄道の旅</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder059/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:51 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder059/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$W[i]$を$N$回処理する。&lt;br /&gt;
+・$W$が正の数の場合は、重さ$|W|$の荷物を詰む。&lt;br /&gt;
+・$W$が負の数の場合は、重さ$|W|$の荷物を降ろす。&lt;br /&gt;
+・荷物を積むまえにすでにその荷物の重さ以上の荷物が$K$個以上列車に積まれている場合にはその荷物を積めない。&lt;br /&gt;
+また、荷物を降ろす場合に指定した重さの荷物が積まれていない場合も考えられる。&lt;br /&gt;
+この場合は指定された荷物が無いのだから荷物を降ろす必要は無い。&lt;br /&gt;
+もし指定された重さの荷物があれば必ず1つ降ろす。&lt;/p&gt;
+
+&lt;p&gt;最終的に何個の荷物を最終駅まで運ぶことになるだろうか？&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^5$、$K\leqq10^5$、$|W[i]|\leqq10^6$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder058 イカサマなサイコロ</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder058/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:42 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder058/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;太郎君と二郎君はサイコロで勝負することになりました。&lt;br /&gt;
+太郎君は普通の6面サイコロを$N$個、二郎くんは4,5,6が2つずつあるサイコロを$K$個、普通の6面サイコロを$N-K$個振る。&lt;br /&gt;
+出目の多いほうが勝利するとき、太郎君が勝つ確率を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N,K\leqq10$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder057 ミリオンダイス</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder057/</link>
+      <pubDate>Sat, 14 Apr 2018 15:29:58 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder057/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;6面の普通のダイスの$N$個のサイコロがあります。
+全部振って出る目の合計の期待値を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^6$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder056 消費税</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder056/</link>
+      <pubDate>Sat, 14 Apr 2018 15:27:56 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder056/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;ある国の通貨単位は「ユキコダ」である。&lt;br /&gt;
+いまから$D$ユキコダの品物を買おうとしている？&lt;br /&gt;
+しかし、品物の金額に対して消費税率$P$%の消費税が加算される。&lt;br /&gt;
+実際に支払う金額はいくらか？&lt;br /&gt;
+ただし、小数点以下は切り捨てします。&lt;/p&gt;
+
+&lt;p&gt;$D\leqq10^7$、$P\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder055 正方形を描くだけの簡単なお仕事です。</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder055/</link>
+      <pubDate>Sat, 14 Apr 2018 15:24:50 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder055/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;異なる4点の整数座標を渡されました。&lt;br /&gt;
+方眼紙に4点を頂点とする正方形を描くのが仕事です。&lt;br /&gt;
+しかし、4点のうち1点だけがわからなくなってしましました。&lt;br /&gt;
+わかっているのは残りの3点の座標です。&lt;br /&gt;
+もし、1点を推測して正方形が描けるのであれば、&lt;br /&gt;
+正方形を描けるその1点の座標を答えなさい。&lt;br /&gt;
+正方形が描けない場合は-1を答えとします。&lt;/p&gt;
+
+&lt;p&gt;|点の座標値|$\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder054 Happy Hallowe&#39;en</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder054/</link>
+      <pubDate>Sat, 14 Apr 2018 15:16:55 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder054/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;今日はハロウィンなので、太郎君は近所の家におかしをもらいに行くことにしました。&lt;br /&gt;
+近所には、太郎君の家以外に $N$軒の家があります。&lt;br /&gt;
+それぞれの$i$家に行くとおかしを$Vi$個もらえるのですが、&lt;br /&gt;
+近所のこどもたちに平等におかしを配るため、&lt;br /&gt;
+すでにおかしを$Ti$個以上持っていると、おかしを一つももらえないことになっています。&lt;br /&gt;
+太郎君は、最初におかしを一つも持っていないこととし、近所の家を周るのは好きな順番で周ることができるとき、&lt;br /&gt;
+太郎君がもらえるおかしの最大の個数を求めてください。&lt;br /&gt;
+同じ家には1回しか回れないとします。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^4$、$V[i],T[i]\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder053 悪の漸化式</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder053/</link>
+      <pubDate>Sat, 14 Apr 2018 15:08:24 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder053/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;以下の漸化式で定義される無限数級 $A[k]$ の第 $N$ 項 $A[N]$ を求めるプログラムを書け。&lt;br /&gt;
+$A[0]=4,$&lt;br /&gt;
+$A[1]=3,$&lt;br /&gt;
+$4A[k]=19A[k-1]−12A[k−2],(k≥2)$&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder052 よくある文字列の問題</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder052/</link>
+      <pubDate>Sat, 14 Apr 2018 15:02:10 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder052/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;文字列$S$が与えられる。
+文字列$S$の「先頭」または「末尾」から1文字ずつ文字をとってきて、
+取った文字列とは別に、取った文字を順番につなげて新たに文字列を作る。
+$S$は、文字を取った後の文字列を新たな$S$として$S$の文字列がなくなるまで繰り返す。&lt;/p&gt;
+
+&lt;p&gt;この時、新たにできる文字列は何通りの文字列ができるか？&lt;/p&gt;
+
+&lt;p&gt;$|S|\leqq10$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder050 おもちゃ箱</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder050/</link>
+      <pubDate>Sat, 14 Apr 2018 14:48:26 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder050/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;サイズ$a[i]$のおもちゃが$N$個、サイズ$b[i]$のおもちゃ箱が$B$個ある。
+おもちゃを全て収納するのに必要な最初のおもちゃ箱の数を答えよ。&lt;/p&gt;
+
+&lt;p&gt;$N,M\leqq10$、$A[i],B[i]\leqq20$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder049 算数の宿題</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder049/</link>
+      <pubDate>Sat, 14 Apr 2018 14:44:59 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder049/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;太郎君の国では、足し算は$*$の記号で、また、掛け算は$+$の記号で表されます。
+また、足し算と掛け算に優先度はなく、左から順番に計算します。
+これを計算せよ。&lt;/p&gt;
+
+&lt;p&gt;$|S|\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder048 ロボットの操縦</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder048/</link>
+      <pubDate>Sat, 14 Apr 2018 14:40:56 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder048/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;太郎君はロボットを遠隔で操縦している。&lt;br /&gt;
+このロボットは現在$(0,0)$の座標に立っていて北の方向を向いている。&lt;br /&gt;
+太郎君はいまこのロボットを$(X,Y)$の座標に移動させたいと思っている。&lt;/p&gt;
+
+&lt;p&gt;ロボットに出来る命令は、1回につき以下のうちいずれかの命令を選んで指示することができる。&lt;br /&gt;
+・時計回りに、$90°$ その場で向き(進行方向)を変える。&lt;br /&gt;
+・反時計回りに、$90°$ その場で向き(進行方向)を変える。&lt;br /&gt;
+・向いている方向に $K$距離だけ前進する。$K$は、$(1≤K≤L)$ の範囲で、命令のたびに指定することができる。&lt;/p&gt;
+
+&lt;p&gt;$-10^9\leqq X,Y\leqq10^9$、$L\leqq10^9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder047 ポケットを叩くとビスケットが2倍</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder047/</link>
+      <pubDate>Sat, 14 Apr 2018 14:37:04 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder047/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;Saraは、「ふしぎなポケット」を手に入れた。&lt;br /&gt;
+「ふしぎなポケット」は、いくつかビスケットを入れて叩くと、入れたビスケットの数が2倍になる。&lt;br /&gt;
+Saraは最初1枚のビスケットを持っていて、「ふしぎなポケット」を使ってちょうど$N$枚のビスケットにして、全部食べたいと思っている。&lt;br /&gt;
+（食べきれないので枚数をオーバーしてはいけない）&lt;br /&gt;
+この時、ちょうど$N$枚にするには、Saraは最低何回ポケットを叩く必要があるか求めてください。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^8$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder046</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder046/</link>
+      <pubDate>Sat, 14 Apr 2018 14:32:48 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder046/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;1歩でぴったり$a$センチメートル歩ける。
+$b$センチメートルの区間を歩くのに最小で何歩歩く？&lt;br /&gt;
+なお、区間はオーバーしても良い。&lt;/p&gt;
+
+&lt;p&gt;$a,b\leqq10^9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder045 回転寿司</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder045/</link>
+      <pubDate>Sat, 14 Apr 2018 14:29:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder045/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;あなたは、回転寿司にきている。&lt;br /&gt;
+お寿司は$N$皿が順番に流れてくる。$N$皿のお寿司のそれぞれの美味しさが$V[i]$で表される。&lt;/p&gt;
+
+&lt;p&gt;流れてくるお寿司が自分の前に来た時に取ることができるが、このお店のルールで、
+連続で皿を取ることが出来ない。
+もちろん、自分の前を過ぎたお寿司も取ることが出来ない。&lt;/p&gt;
+
+&lt;p&gt;この時、あなたが得られる美味しさの最大の合計値を求めてください。
+お寿司は一周回ってくることはないとする。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^3$、$V[i]\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder044 DPなすごろく</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder044/</link>
+      <pubDate>Sat, 14 Apr 2018 14:25:13 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder044/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;地点0から地点$N$まで移動する。移動方法は1歩進む、2歩進むのいずれかである。
+到達するパターンは何パターンあるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq50$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder043 野球の試合</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder043/</link>
+      <pubDate>Sat, 14 Apr 2018 14:20:12 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder043/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;Nチームの総当たり戦の結果が与えられる。まだ試合が行われていない場合もある。チーム0が最高の順位を取るとき、何位になるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq6$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder042 貯金箱の溜息</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder042/</link>
+      <pubDate>Sat, 14 Apr 2018 13:53:46 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder042/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;1,5,10,50,100,500円玉硬貨がある。今$M[i]$円の買い物をしたい。&lt;br /&gt;
+$T$回$M[i]$が与えられるので、$M[i]$円払うときの硬貨の組合せを$10^9+9$で割ったあまりで求めよ。&lt;/p&gt;
+
+&lt;p&gt;$T\leqq10^4$、$M[i]\leqq10^{18}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder041 貯金箱の溜息EASY)</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder041/</link>
+      <pubDate>Sat, 14 Apr 2018 13:43:46 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder041/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$T\leqq10^4$、$M[i]\leqq10^{10}$&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder040 多項式の割り算</title>

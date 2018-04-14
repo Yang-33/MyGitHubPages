@@ -6,10 +6,145 @@
     <description>Recent content in Dp on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Apr 2018 23:55:55 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Apr 2018 15:47:42 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder058 イカサマなサイコロ</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder058/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:42 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder058/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;太郎君と二郎君はサイコロで勝負することになりました。&lt;br /&gt;
+太郎君は普通の6面サイコロを$N$個、二郎くんは4,5,6が2つずつあるサイコロを$K$個、普通の6面サイコロを$N-K$個振る。&lt;br /&gt;
+出目の多いほうが勝利するとき、太郎君が勝つ確率を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N,K\leqq10$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder054 Happy Hallowe&#39;en</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder054/</link>
+      <pubDate>Sat, 14 Apr 2018 15:16:55 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder054/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;今日はハロウィンなので、太郎君は近所の家におかしをもらいに行くことにしました。&lt;br /&gt;
+近所には、太郎君の家以外に $N$軒の家があります。&lt;br /&gt;
+それぞれの$i$家に行くとおかしを$Vi$個もらえるのですが、&lt;br /&gt;
+近所のこどもたちに平等におかしを配るため、&lt;br /&gt;
+すでにおかしを$Ti$個以上持っていると、おかしを一つももらえないことになっています。&lt;br /&gt;
+太郎君は、最初におかしを一つも持っていないこととし、近所の家を周るのは好きな順番で周ることができるとき、&lt;br /&gt;
+太郎君がもらえるおかしの最大の個数を求めてください。&lt;br /&gt;
+同じ家には1回しか回れないとします。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^4$、$V[i],T[i]\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder045 回転寿司</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder045/</link>
+      <pubDate>Sat, 14 Apr 2018 14:29:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder045/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;あなたは、回転寿司にきている。&lt;br /&gt;
+お寿司は$N$皿が順番に流れてくる。$N$皿のお寿司のそれぞれの美味しさが$V[i]$で表される。&lt;/p&gt;
+
+&lt;p&gt;流れてくるお寿司が自分の前に来た時に取ることができるが、このお店のルールで、
+連続で皿を取ることが出来ない。
+もちろん、自分の前を過ぎたお寿司も取ることが出来ない。&lt;/p&gt;
+
+&lt;p&gt;この時、あなたが得られる美味しさの最大の合計値を求めてください。
+お寿司は一周回ってくることはないとする。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^3$、$V[i]\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder044 DPなすごろく</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder044/</link>
+      <pubDate>Sat, 14 Apr 2018 14:25:13 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder044/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;地点0から地点$N$まで移動する。移動方法は1歩進む、2歩進むのいずれかである。
+到達するパターンは何パターンあるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq50$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder042 貯金箱の溜息</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder042/</link>
+      <pubDate>Sat, 14 Apr 2018 13:53:46 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder042/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;1,5,10,50,100,500円玉硬貨がある。今$M[i]$円の買い物をしたい。&lt;br /&gt;
+$T$回$M[i]$が与えられるので、$M[i]$円払うときの硬貨の組合せを$10^9+9$で割ったあまりで求めよ。&lt;/p&gt;
+
+&lt;p&gt;$T\leqq10^4$、$M[i]\leqq10^{18}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder041 貯金箱の溜息EASY)</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder041/</link>
+      <pubDate>Sat, 14 Apr 2018 13:43:46 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder041/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$T\leqq10^4$、$M[i]\leqq10^{10}$&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder037 遊園地のアトラクション</title>

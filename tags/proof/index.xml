@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Proof on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/proof/</link>
+    <description>Recent content in Proof on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 14 Apr 2018 15:16:55 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/proof/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder054 Happy Hallowe&#39;en</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder054/</link>
+      <pubDate>Sat, 14 Apr 2018 15:16:55 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder054/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;今日はハロウィンなので、太郎君は近所の家におかしをもらいに行くことにしました。&lt;br /&gt;
+近所には、太郎君の家以外に $N$軒の家があります。&lt;br /&gt;
+それぞれの$i$家に行くとおかしを$Vi$個もらえるのですが、&lt;br /&gt;
+近所のこどもたちに平等におかしを配るため、&lt;br /&gt;
+すでにおかしを$Ti$個以上持っていると、おかしを一つももらえないことになっています。&lt;br /&gt;
+太郎君は、最初におかしを一つも持っていないこととし、近所の家を周るのは好きな順番で周ることができるとき、&lt;br /&gt;
+太郎君がもらえるおかしの最大の個数を求めてください。&lt;br /&gt;
+同じ家には1回しか回れないとします。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^4$、$V[i],T[i]\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

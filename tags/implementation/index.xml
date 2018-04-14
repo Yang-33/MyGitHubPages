@@ -6,10 +6,30 @@
     <description>Recent content in Implementation on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Apr 2018 00:20:25 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Apr 2018 14:20:12 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/implementation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder043 野球の試合</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder043/</link>
+      <pubDate>Sat, 14 Apr 2018 14:20:12 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder043/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;Nチームの総当たり戦の結果が与えられる。まだ試合が行われていない場合もある。チーム0が最高の順位を取るとき、何位になるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq6$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder040 多項式の割り算</title>

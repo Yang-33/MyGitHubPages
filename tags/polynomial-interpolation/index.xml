@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Polynomial Interpolation on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/polynomial-interpolation/</link>
+    <description>Recent content in Polynomial Interpolation on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 14 Apr 2018 13:53:46 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/polynomial-interpolation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder042 貯金箱の溜息</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder042/</link>
+      <pubDate>Sat, 14 Apr 2018 13:53:46 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder042/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;1,5,10,50,100,500円玉硬貨がある。今$M[i]$円の買い物をしたい。&lt;br /&gt;
+$T$回$M[i]$が与えられるので、$M[i]$円払うときの硬貨の組合せを$10^9+9$で割ったあまりで求めよ。&lt;/p&gt;
+
+&lt;p&gt;$T\leqq10^4$、$M[i]\leqq10^{18}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

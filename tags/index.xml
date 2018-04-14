@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>2d Imos法</title>
+      <link>https://yang33-kassa.jp/tags/2d-imos%E6%B3%95/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:58 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/2d-imos%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>About Yang33</title>
       <link>https://yang33-kassa.jp/tags/about-yang33/</link>
       <pubDate>Sat, 10 Feb 2018 21:49:20 +0200</pubDate>
@@ -35,6 +44,15 @@
       <pubDate>Fri, 13 Apr 2018 19:21:50 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/bfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Binary Indexed Tree</title>
+      <link>https://yang33-kassa.jp/tags/binary-indexed-tree/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:51 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/binary-indexed-tree/</guid>
       <description></description>
     </item>
     
@@ -68,7 +86,7 @@
     <item>
       <title>Dp</title>
       <link>https://yang33-kassa.jp/tags/dp/</link>
-      <pubDate>Fri, 13 Apr 2018 23:55:55 +0900</pubDate>
+      <pubDate>Sat, 14 Apr 2018 15:47:42 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/dp/</guid>
       <description></description>
@@ -93,6 +111,15 @@
     </item>
     
     <item>
+      <title>Fibonacci</title>
+      <link>https://yang33-kassa.jp/tags/fibonacci/</link>
+      <pubDate>Sat, 14 Apr 2018 14:25:13 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/fibonacci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fraction</title>
       <link>https://yang33-kassa.jp/tags/fraction/</link>
       <pubDate>Fri, 13 Apr 2018 11:58:28 +0900</pubDate>
@@ -107,6 +134,15 @@
       <pubDate>Fri, 13 Apr 2018 11:58:28 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/gcd-lcm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geometry</title>
+      <link>https://yang33-kassa.jp/tags/geometry/</link>
+      <pubDate>Sat, 14 Apr 2018 15:24:50 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/geometry/</guid>
       <description></description>
     </item>
     
@@ -131,7 +167,7 @@
     <item>
       <title>Implementation</title>
       <link>https://yang33-kassa.jp/tags/implementation/</link>
-      <pubDate>Sat, 14 Apr 2018 00:20:25 +0900</pubDate>
+      <pubDate>Sat, 14 Apr 2018 14:20:12 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/implementation/</guid>
       <description></description>
@@ -201,6 +237,15 @@
     </item>
     
     <item>
+      <title>Polynomial Interpolation</title>
+      <link>https://yang33-kassa.jp/tags/polynomial-interpolation/</link>
+      <pubDate>Sat, 14 Apr 2018 13:53:46 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/polynomial-interpolation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Powmod</title>
       <link>https://yang33-kassa.jp/tags/powmod/</link>
       <pubDate>Fri, 13 Apr 2018 00:54:38 +0900</pubDate>
@@ -224,6 +269,33 @@
       <pubDate>Sat, 07 Apr 2018 02:16:35 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/priority_queue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probability</title>
+      <link>https://yang33-kassa.jp/tags/probability/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:42 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/probability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proof</title>
+      <link>https://yang33-kassa.jp/tags/proof/</link>
+      <pubDate>Sat, 14 Apr 2018 15:16:55 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/proof/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simulation</title>
+      <link>https://yang33-kassa.jp/tags/simulation/</link>
+      <pubDate>Sat, 14 Apr 2018 14:58:40 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/simulation/</guid>
       <description></description>
     </item>
     
@@ -260,6 +332,15 @@
       <pubDate>Sat, 07 Apr 2018 02:16:35 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/%E5%85%A8%E6%8E%A2%E7%B4%A2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>誤差</title>
+      <link>https://yang33-kassa.jp/tags/%E8%AA%A4%E5%B7%AE/</link>
+      <pubDate>Sat, 14 Apr 2018 15:08:24 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/%E8%AA%A4%E5%B7%AE/</guid>
       <description></description>
     </item>
     

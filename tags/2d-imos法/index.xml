@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2d Imos法 on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/2d-imos%E6%B3%95/</link>
+    <description>Recent content in 2d Imos法 on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 14 Apr 2018 15:47:58 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/2d-imos%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder060 魔法少女</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder060/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:58 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder060/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;魔法少女Madokaは魔女Walpurgisnachtと戦っていた。&lt;br /&gt;
+Walpurgisnachtは複数の使い魔を使役しているため、短時間ですべての敵にダメージを与えない限り倒せない。&lt;br /&gt;
+そこでMadokaは範囲に対する攻撃魔法を使用し、効率的に敵を倒そうと考えた。&lt;br /&gt;
+Walpurgisnachtとその使い魔の座標と体力、Madokaが攻撃した範囲と敵に与えるダメージが与えられるので、&lt;br /&gt;
+倒せていない敵の残り体力の合計を答えよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^5$、$K\leqq10^5$、$HP[k]\leqq10^4$、$damege(x,y)≦10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

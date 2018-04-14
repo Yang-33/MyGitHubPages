@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/probability/</link>
+    <description>Recent content in Probability on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 14 Apr 2018 15:47:42 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder058 イカサマなサイコロ</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder058/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:42 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder058/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;太郎君と二郎君はサイコロで勝負することになりました。&lt;br /&gt;
+太郎君は普通の6面サイコロを$N$個、二郎くんは4,5,6が2つずつあるサイコロを$K$個、普通の6面サイコロを$N-K$個振る。&lt;br /&gt;
+出目の多いほうが勝利するとき、太郎君が勝つ確率を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N,K\leqq10$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
