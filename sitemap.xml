@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yang33-kassa.jp/post/problems_sites/</loc>
+    <lastmod>2018-04-14T16:23:25+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/yukicoder/yukicoder060/</loc>
     <lastmod>2018-04-14T15:47:58+09:00</lastmod>
   </url>
@@ -324,7 +329,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2018/</loc>
-    <lastmod>2018-04-14T15:47:58+09:00</lastmod>
+    <lastmod>2018-04-14T16:23:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -336,7 +341,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2018-04/</loc>
-    <lastmod>2018-04-14T15:47:58+09:00</lastmod>
+    <lastmod>2018-04-14T16:23:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -372,7 +377,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/</loc>
-    <lastmod>2018-04-14T15:47:58+09:00</lastmod>
+    <lastmod>2018-04-14T16:23:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -385,6 +390,12 @@
   <url>
     <loc>https://yang33-kassa.jp/tags/binary-indexed-tree/</loc>
     <lastmod>2018-04-14T15:47:51+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/categories/blog/</loc>
+    <lastmod>2018-04-14T16:23:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -521,6 +532,12 @@
   </url>
   
   <url>
+    <loc>https://yang33-kassa.jp/post/</loc>
+    <lastmod>2018-04-14T16:23:25+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/tags/powmod/</loc>
     <lastmod>2018-04-13T00:54:38+09:00</lastmod>
     <priority>0</priority>
@@ -576,7 +593,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/</loc>
-    <lastmod>2018-04-14T15:47:58+09:00</lastmod>
+    <lastmod>2018-04-14T16:23:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -613,6 +630,12 @@
   <url>
     <loc>https://yang33-kassa.jp/tags/%E5%85%A8%E6%8E%A2%E7%B4%A2/</loc>
     <lastmod>2018-04-07T02:16:35+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/tags/%E5%95%8F%E9%A1%8C%E9%9B%86%E3%81%BE%E3%81%A8%E3%82%81/</loc>
+    <lastmod>2018-04-14T16:23:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,76 +6,21 @@
     <description>Recent content in Posts on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 11 Feb 2018 23:46:25 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Apr 2018 16:23:25 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>POJ3690</title>
-      <link>https://yang33-kassa.jp/post/next/</link>
-      <pubDate>Sun, 11 Feb 2018 23:46:25 +0900</pubDate>
+      <title>問題集　まとめ</title>
+      <link>https://yang33-kassa.jp/post/problems_sites/</link>
+      <pubDate>Sat, 14 Apr 2018 16:23:25 +0900</pubDate>
       
-      <guid>https://yang33-kassa.jp/post/next/</guid>
-      <description>&lt;p&gt;a
-a&lt;/p&gt;
-
-&lt;h4 id=&#34;どすこい&#34;&gt;どすこい&lt;/h4&gt;
-
-&lt;p&gt;これはテスト記事なので中身が一致してません。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;なんか日本語の確認をしていないんですが大丈夫ですか&lt;br /&gt;
-えーてすてす
-文字ちっちゃい気がする&lt;br /&gt;
-区間の処理をがんばる(これも嘘)
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Markdown Cheat Sheet</title>
-      <link>https://yang33-kassa.jp/post/markdown-cheat-sheet/</link>
-      <pubDate>Sat, 20 May 2017 12:10:51 +0200</pubDate>
-      
-      <guid>https://yang33-kassa.jp/post/markdown-cheat-sheet/</guid>
-      <description>&lt;p&gt;This note demonstrates some of what &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; is capable of doing.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Note: Feel free to play with this page. Unlike regular notes, this doesn&amp;rsquo;t automatically save itself.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Using the gallery shortcode</title>
-      <link>https://yang33-kassa.jp/post/using-the-gallery-shortcode/</link>
-      <pubDate>Sat, 20 May 2017 12:00:23 +0200</pubDate>
-      
-      <guid>https://yang33-kassa.jp/post/using-the-gallery-shortcode/</guid>
-      <description>&lt;p&gt;This way you can easily include a gallery into your page. Copy the code below into your content file and enter the relative paths to your images.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Formulas with MathJax</title>
-      <link>https://yang33-kassa.jp/post/formulas-with-mathjax/</link>
-      <pubDate>Sat, 20 May 2017 11:58:06 +0200</pubDate>
-      
-      <guid>https://yang33-kassa.jp/post/formulas-with-mathjax/</guid>
-      <description>&lt;p&gt;Mathematical equations in form of LaTeX or MathML code can be rendered with the support of &lt;a href=&#34;https://www.mathjax.org&#34;&gt;MathJax&lt;/a&gt;. MathML works out of the box. If you&amp;rsquo;re using LaTeX you need to wrap your equation with &lt;code&gt;$$&lt;/code&gt; as shown in the following example:&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to add pages to the menu</title>
-      <link>https://yang33-kassa.jp/post/linked-post/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
-      
-      <guid>https://yang33-kassa.jp/post/linked-post/</guid>
-      <description>I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
-menu = &amp;quot;&amp;quot;  </description>
+      <guid>https://yang33-kassa.jp/post/problems_sites/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;</description>
     </item>
     
   </channel>
