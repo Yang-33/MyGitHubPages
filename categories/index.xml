@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 22 Feb 2018 00:18:59 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Apr 2018 22:35:54 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://yang33-kassa.jp/categories/</link>
+      <pubDate>Sat, 28 Apr 2018 22:35:54 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/categories/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Aoj</title>
