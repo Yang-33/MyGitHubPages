@@ -6,10 +6,42 @@
     <description>Recent content on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Apr 2018 16:23:25 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Apr 2018 16:15:11 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Top</title>
+      <link>https://yang33-kassa.jp/summary/top/</link>
+      <pubDate>Sat, 28 Apr 2018 16:15:11 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/summary/top/</guid>
+      <description>yang33 まとめ記事 [構成] ・反省点
+・知見
+・知識
+・考察
+・NP困難/っぽい問題に対する向き合い方
+・など…
+$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
+問題名を書く
+反省点 問題を細部まで読む(当然…)
+初手、問題のサイズで考察するのは良くない
+vectorでuniqueな要素をeraseでとっても、メモリは開放されていない
+unorder_set/unorder_map殺しが存在するのでCodeforces/SRMでの安易な使用はまずい
+…
+数論 オイラーのファイ関数   与えられた数から1までの間にある互いに素の数の個数を返す。
+ex:n=6 なら 1,5の2つ
+ex:n=7 なら 1,2,3,4,5,6の6つ
+Eularのtotient関数とも呼ばれる。
+性質など 素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)
+$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $
+乗法的 $m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)
+→
+$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、
+$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$
+　$ = n Π_{k=1}^{d} (1 - 1/p_k) $</description>
+    </item>
     
     <item>
       <title>問題集　まとめ</title>

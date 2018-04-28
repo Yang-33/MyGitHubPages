@@ -242,7 +242,12 @@ code {
 }
 .article-entry h2,
 .widget h2 {
-  font-size: 1.5em;
+   margin-bottom: 15px;
+    margin-top: 24px;
+    font-size: 20px;
+    border-left: 8px solid #337ab7;
+    padding: 7px;
+    border-bottom: 2px solid #337ab7;
 }
 .article-entry h3,
 .widget h3 {

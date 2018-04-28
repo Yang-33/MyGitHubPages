@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title>Yukicoder &middot; Yang33 Home</title>
+    <title>Top &middot; Yang33 Home</title>
     <meta name="generator" content="Hugo 0.37-DEV" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,10 +10,7 @@
       <meta name="description" content="サイトの説明">
     
     
-      <link href="https://yang33-kassa.jp/categories/yukicoder/index.xml" rel="alternate" type="application/rss+xml" title="Yang33 Home" />
-      <link href="https://yang33-kassa.jp/categories/yukicoder/index.xml" rel="feed" type="application/rss+xml" title="Yang33 Home" />
-    
-    <link rel="canonical" href="https://yang33-kassa.jp/categories/yukicoder/"/>
+    <link rel="canonical" href="https://yang33-kassa.jp/summary/top/"/>
     <link rel="icon" href="https://yang33-kassa.jp/favicon.ico">
     <link rel="apple-touch-icon" href="https://yang33-kassa.jp/apple-touch-icon.png"/>
     <link rel="stylesheet" href="https://yang33-kassa.jp/css/style.css">
@@ -32,14 +29,40 @@
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="Yukicoder" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://yang33-kassa.jp/categories/yukicoder/" />
+    <meta property="og:title" content="Top" />
+<meta property="og:description" content="yang33 まとめ記事 [構成] ・反省点
+・知見
+・知識
+・考察
+・NP困難/っぽい問題に対する向き合い方
+・など…
+$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
+問題名を書く
+反省点 問題を細部まで読む(当然…)
+初手、問題のサイズで考察するのは良くない
+vectorでuniqueな要素をeraseでとっても、メモリは開放されていない
+unorder_set/unorder_map殺しが存在するのでCodeforces/SRMでの安易な使用はまずい
+…
+数論 オイラーのファイ関数   与えられた数から1までの間にある互いに素の数の個数を返す。
+ex:n=6 なら 1,5の2つ
+ex:n=7 なら 1,2,3,4,5,6の6つ
+Eularのtotient関数とも呼ばれる。
+性質など 素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)
+$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $
+乗法的 $m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)
+→
+$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、
+$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$
+　$ = n Π_{k=1}^{d} (1 - 1/p_k) $" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yang33-kassa.jp/summary/top/" />
 
 
 
-<meta property="og:updated_time" content="2018-04-13T01:53:01&#43;09:00"/>
+<meta property="article:published_time" content="2018-04-28T16:15:11&#43;09:00"/>
+
+<meta property="article:modified_time" content="2018-04-28T16:15:11&#43;09:00"/>
+
 
 
 
@@ -52,13 +75,67 @@
 
     
     
-<meta itemprop="name" content="Yukicoder">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="Top">
+<meta itemprop="description" content="yang33 まとめ記事 [構成] ・反省点
+・知見
+・知識
+・考察
+・NP困難/っぽい問題に対する向き合い方
+・など…
+$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
+問題名を書く
+反省点 問題を細部まで読む(当然…)
+初手、問題のサイズで考察するのは良くない
+vectorでuniqueな要素をeraseでとっても、メモリは開放されていない
+unorder_set/unorder_map殺しが存在するのでCodeforces/SRMでの安易な使用はまずい
+…
+数論 オイラーのファイ関数   与えられた数から1までの間にある互いに素の数の個数を返す。
+ex:n=6 なら 1,5の2つ
+ex:n=7 なら 1,2,3,4,5,6の6つ
+Eularのtotient関数とも呼ばれる。
+性質など 素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)
+$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $
+乗法的 $m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)
+→
+$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、
+$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$
+　$ = n Π_{k=1}^{d} (1 - 1/p_k) $">
 
+
+<meta itemprop="datePublished" content="2018-04-28T16:15:11&#43;09:00" />
+<meta itemprop="dateModified" content="2018-04-28T16:15:11&#43;09:00" />
+<meta itemprop="wordCount" content="103">
+
+
+
+<meta itemprop="keywords" content="" />
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Yukicoder"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Top"/>
+<meta name="twitter:description" content="yang33 まとめ記事 [構成] ・反省点
+・知見
+・知識
+・考察
+・NP困難/っぽい問題に対する向き合い方
+・など…
+$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
+問題名を書く
+反省点 問題を細部まで読む(当然…)
+初手、問題のサイズで考察するのは良くない
+vectorでuniqueな要素をeraseでとっても、メモリは開放されていない
+unorder_set/unorder_map殺しが存在するのでCodeforces/SRMでの安易な使用はまずい
+…
+数論 オイラーのファイ関数   与えられた数から1までの間にある互いに素の数の個数を返す。
+ex:n=6 なら 1,5の2つ
+ex:n=7 なら 1,2,3,4,5,6の6つ
+Eularのtotient関数とも呼ばれる。
+性質など 素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)
+$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $
+乗法的 $m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)
+→
+$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、
+$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$
+　$ = n Π_{k=1}^{d} (1 - 1/p_k) $"/>
 <meta name="twitter:site" content="@__KasSA"/>
 
     
@@ -303,254 +380,257 @@
 
     <section id="main">
     
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+
+        <header class="article-header">
+    <a href="https://yang33-kassa.jp/summary/top/">
+    <h1 class="article-title" itemprop="name">
+        Top
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2018-04-28 16:15:11 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+       
+        </div>
+        
+        
+            
+            
+        
+
+        
+            
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+-->
+
+<h2 id="yang33-まとめ記事">yang33 まとめ記事</h2>
+
+<h3 id="構成">[構成]</h3>
+
+<p>・反省点<br />
+・知見<br />
+・知識<br />
+・考察<br />
+・NP困難/っぽい問題に対する向き合い方<br />
+・など…</p>
+
+<p>$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$</p>
+
+<p><a href="URLを書く">問題名を書く</a></p>
+
+<h2 id="反省点">反省点</h2>
+
+<p>問題を細部まで読む(当然…)<br />
+初手、問題のサイズで考察するのは良くない<br />
+vectorでuniqueな要素をeraseでとっても、メモリは開放されていない<br />
+unorder_set/unorder_map殺しが存在するのでCodeforces/SRMでの安易な使用はまずい<br />
+…</p>
+
+<h2 id="数論">数論</h2>
+
+<!-- 折り畳み展開ポインタ id変えような -->
+
+<p><div onclick="obj=document.getElementById('eular-phi').style; obj.display=(obj.display=='none')?'block':'none';">
+<a style="cursor:pointer;"></p>
+
+<h5 id="オイラーのファイ関数">オイラーのファイ関数</h5>
+
+<p></a>
+</div>
+<!--// 折り畳み展開ポインタ --></p>
+
+<p><!-- Contests Begin --><div id="eular-phi" style="display:none;clear:both;"><!-- id変えような -->
+与えられた数から1までの間にある互いに素の数の個数を返す。<br />
+ex:n=6 なら 1,5の2つ<br />
+ex:n=7 なら 1,2,3,4,5,6の6つ<br />
+Eularのtotient関数とも呼ばれる。</p>
+
+<h5 id="性質など">性質など</h5>
+
+<p>素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)<br />
+$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $</p>
+
+<h6 id="乗法的">乗法的</h6>
+
+<p>$m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)<br />
+→<br />
+$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、</p>
+
+<p>$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$</p>
+
+<p>　　　$ = n Π_{k=1}^{d} (1 - 1/p_k) $<br />
+　　　$ = n (1 - 1/p_1) &hellip; (1 - 1/p_d)$  [$p_d$ は $n$ をなす素数（当然重複を認めない）]</p>
+
+<h6 id="σ-d-n-φ-d-n">$Σ_{d|n} φ(d) = n$</h6>
+
+<p>ある約数$d$について、$[1,n]$までの自然数のうち$n$との最大公約数が$n/d$である数は、$φ(d)$個、
+特に、$[1,n]$の自然数は$n$との最大公約数によって類別されるため。</p>
+
+<h6 id="素数でない逆元">素数でない逆元</h6>
+
+<p>互いに素な$x,m$について、$x^{φ(m)}≡1 (mod$ $m)$ [フェルマーの小定理の拡張とみなせる]</p>
+
+<h6 id="計算量">計算量</h6>
+
+<p>ある$N$について $O(\sqrt N)$<br />
+$N$までのテーブルを作成 $O(N)$</p>
+
+<h5 id="問題">問題</h5>
+
+<p><a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_D&amp;lang=jp">AOJ verify問題</a><br />
+蟻本ポリアの定理<br />
+[]()</p>
+
+<p></div><!-- Contents End --></p>
+
+<h2 id="ソース">ソース</h2>
+
+<!-- 4 -->
+
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://yang33-kassa.jp/summary/top/" data-id="4c94e56b29f086f553a9e1f09317b1ed" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://yang33-kassa.jp/summary/top/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+    <div style="float:left;" class="hatena">
+    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/summary/top/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+    <div style="float:left;" class="twitter">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/summary/top/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/summary/top/" ></a>
+    </div>
+   
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
     
     
-    
-    <section class="archives-wrap">
-        <div class="archive-category-wrap">
-            <span class="archive-category">Yukicoder</span>
-        </div>
-        <div class="archives">
-            
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://yang33-kassa.jp/yukicoder/yukicoder019/" class="thumbnail">
-                <span style="background-image:url(https://yang33-kassa.jp/)" alt="Yukicoder019 ステージの選択" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://yang33-kassa.jp/yukicoder/yukicoder019/">Yukicoder019 ステージの選択</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2018-04-13 01:53:01 &#43;0900 DST" itemprop="datePublished">2018-04-13</time>
-            </div>
-        </header>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</footer>
+
     </div>
-</article>
- 
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://yang33-kassa.jp/yukicoder/yukicoder018/" class="thumbnail">
-                <span style="background-image:url(https://yang33-kassa.jp/)" alt="Yukicoder018 うーさー暗号" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://yang33-kassa.jp/yukicoder/yukicoder018/">Yukicoder018 うーさー暗号</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2018-04-13 01:07:48 &#43;0900 DST" itemprop="datePublished">2018-04-13</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://yang33-kassa.jp/yukicoder/yukicoder017/" class="thumbnail">
-                <span style="background-image:url(https://yang33-kassa.jp/)" alt="Yukicoder017 2つの地点に泊まりたい" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://yang33-kassa.jp/yukicoder/yukicoder017/">Yukicoder017 2つの地点に泊まりたい</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2018-04-13 00:59:15 &#43;0900 DST" itemprop="datePublished">2018-04-13</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://yang33-kassa.jp/yukicoder/yukicoder016/" class="thumbnail">
-                <span style="background-image:url(https://yang33-kassa.jp/)" alt="Yukicoder016 累乗の加算" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://yang33-kassa.jp/yukicoder/yukicoder016/">Yukicoder016 累乗の加算</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2018-04-13 00:54:38 &#43;0900 DST" itemprop="datePublished">2018-04-13</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://yang33-kassa.jp/yukicoder/yukicoder015/" class="thumbnail">
-                <span style="background-image:url(https://yang33-kassa.jp/)" alt="Yukicoder015 カタログショッピング" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://yang33-kassa.jp/yukicoder/yukicoder015/">Yukicoder015 カタログショッピング</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2018-04-13 00:46:52 &#43;0900 DST" itemprop="datePublished">2018-04-13</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://yang33-kassa.jp/yukicoder/yukicoder014/" class="thumbnail">
-                <span style="background-image:url(https://yang33-kassa.jp/)" alt="Yukicoder014 最小公倍数ソート" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://yang33-kassa.jp/yukicoder/yukicoder014/">Yukicoder014 最小公倍数ソート</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2018-04-13 00:29:39 &#43;0900 DST" itemprop="datePublished">2018-04-13</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://yang33-kassa.jp/yukicoder/yukicoder013/" class="thumbnail">
-                <span style="background-image:url(https://yang33-kassa.jp/)" alt="Yukicoder013 囲みたい！" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://yang33-kassa.jp/yukicoder/yukicoder013/">Yukicoder013 囲みたい！</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2018-04-13 00:24:22 &#43;0900 DST" itemprop="datePublished">2018-04-13</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://yang33-kassa.jp/yukicoder/yukicoder012/" class="thumbnail">
-                <span style="background-image:url(https://yang33-kassa.jp/)" alt="Yukicoder012 限定された素数" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://yang33-kassa.jp/yukicoder/yukicoder012/">Yukicoder012 限定された素数</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2018-04-13 00:16:38 &#43;0900 DST" itemprop="datePublished">2018-04-13</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://yang33-kassa.jp/yukicoder/yukicoder011/" class="thumbnail">
-                <span style="background-image:url(https://yang33-kassa.jp/)" alt="Yukicoder011 カードマッチ" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://yang33-kassa.jp/yukicoder/yukicoder011/">Yukicoder011 カードマッチ</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2018-04-13 00:07:08 &#43;0900 DST" itemprop="datePublished">2018-04-13</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://yang33-kassa.jp/yukicoder/yukicoder010/" class="thumbnail">
-                <span style="background-image:url(https://yang33-kassa.jp/)" alt="Yukicoder010 ＋か×か" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://yang33-kassa.jp/yukicoder/yukicoder010/">Yukicoder010 ＋か×か</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2018-04-07 02:16:41 &#43;0900 DST" itemprop="datePublished">2018-04-07</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-        </div>
-    </section>
-    <nav id="page-nav">
 
     
-        <a class="extend prev" rel="prev" href="https://yang33-kassa.jp/categories/yukicoder/page/4/">
-            « Prev
-        </a>
-    
-    
-        <a class="extend next" rel="next" href="https://yang33-kassa.jp/categories/yukicoder/page/6/">
-            Next »
-        </a>
-    
 
-</nav>
+</article>
 
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
     
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yang33-kassa-jp" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
 
     </section>
 
