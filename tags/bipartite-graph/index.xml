@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bipartite Graph on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/bipartite-graph/</link>
+    <description>Recent content in Bipartite Graph on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 05 May 2018 01:25:12 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/bipartite-graph/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder085 TVザッピング(1)</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder085/</link>
+      <pubDate>Sat, 05 May 2018 01:25:12 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder085/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;yuki君が持っているテレビのリモコンには、ボタンが縦$N$段、横$M$列の長方形状に計$N×M$個並んでいる。&lt;br /&gt;
+リモコンの$X$段目$Y$列目のボタンを押すと、テレビでチャンネル$((X−1)×M+Y)$を見ることができる。&lt;br /&gt;
+（サンプルケース1の解説に具体例が記載されている）&lt;/p&gt;
+
+&lt;p&gt;yuki君はさっきチャンネル$C$のボタンを押し、そのままチャンネル$C$を見ている。&lt;br /&gt;
+ところがyuki君は途中で他のチャンネルの内容を一通り見てみたくなった。&lt;br /&gt;
+yuki君は素早く全チャンネルを巡回して元のチャンネル$C$に戻るため、以下のルールで順にボタンを押す。&lt;br /&gt;
+最初に押すボタンは、さっき押したチャンネル$C$のボタンと上下左右いずれかに隣接したボタンである。&lt;br /&gt;
+以降、直前に押したボタンと上下左右いずれかに隣接したボタンを押していく。&lt;br /&gt;
+チャンネル$C$以外の全てのチャンネルのボタンをちょうど1回ずつ押した上で、最後にまたチャンネル$C$のボタンを押す。&lt;br /&gt;
+$N, M, C$が与えられたとき、上記ルールをすべて満たすボタンの押し順が存在するか答えよ。&lt;/p&gt;
+
+&lt;p&gt;$N,M\leqq10^2$、$C\leqq N*M$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

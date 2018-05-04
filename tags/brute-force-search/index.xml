@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brute Force Search on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/brute-force-search/</link>
+    <description>Recent content in Brute Force Search on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 05 May 2018 01:49:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/brute-force-search/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder090 品物の並び替え</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder090/</link>
+      <pubDate>Sat, 05 May 2018 01:49:00 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder090/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;ここに0番〜(N-1)番の品物がある。&lt;br /&gt;
+また、  $item1$ $item2$ $score$
+という形式で書かれた得点表がある。&lt;br /&gt;
+品物を並べた時、item1がitem2よりも前であればscore点を獲得できるという意味である。&lt;/p&gt;
+
+&lt;p&gt;得点表が与えられるので、品物を適切に並び替えた時、獲得できる得点を最大化したい。そのときの得点を出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq9$、$M\leqq N*(N-1)$、$item1,item2 &amp;lt; N$、$1≦score≦10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder080 四角形を描こう</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder080/</link>
+      <pubDate>Sat, 05 May 2018 00:48:59 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder080/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;A君は四角形を描こうとしています。&lt;br /&gt;
+描く四角形は正方形か長方形でなければなりません。&lt;br /&gt;
+また、どの辺の長さも整数cmでなければなりません。&lt;br /&gt;
+A君の持っている鉛筆はあとちょうど$D$cmしか線が引けなさそうです。&lt;br /&gt;
+A君が描ける最も大きな四角形の面積を答えなさい。&lt;br /&gt;
+なお、四角形が描けないときの面積は0とせよ。&lt;/p&gt;
+
+&lt;p&gt;$D\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder077 レンガのピラミッド</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder077/</link>
+      <pubDate>Sat, 05 May 2018 00:23:37 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder077/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;長いので見て下さい。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder009 モンスターのレベル上げ</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder009/</link>
+      <pubDate>Sat, 07 Apr 2018 02:16:35 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder009/</guid>
+      <description>&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;$N$匹のモンスターを持っており、敵のモンスターも$N$匹いる。戦わせたとき必ず勝利でき、初期レベルの$a[i]$から戦闘をした敵のレベル$b[j]$の半分だけレベルが上がる。
+戦闘を行う際、$b$ははじめのモンスターを決定すると順番が決定する。自分はレベルが低く、最も戦闘を行っていないモンスターを戦わせる。
+このようにして戦闘を行うとき、自分が手持ちのモンスターで戦闘回数が最も多いものを最小化する。このときの戦闘回数が最も多い数は。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq1.5*10^3$、$a[i]\leqq10^4$、$b[i]\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

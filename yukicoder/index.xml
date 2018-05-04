@@ -6,10 +6,390 @@
     <description>Recent content in Yukicoders on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 05 May 2018 00:04:28 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 05 May 2018 01:49:00 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/yukicoder/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder090 品物の並び替え</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder090/</link>
+      <pubDate>Sat, 05 May 2018 01:49:00 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder090/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;ここに0番〜(N-1)番の品物がある。&lt;br /&gt;
+また、  $item1$ $item2$ $score$
+という形式で書かれた得点表がある。&lt;br /&gt;
+品物を並べた時、item1がitem2よりも前であればscore点を獲得できるという意味である。&lt;/p&gt;
+
+&lt;p&gt;得点表が与えられるので、品物を適切に並び替えた時、獲得できる得点を最大化したい。そのときの得点を出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq9$、$M\leqq N*(N-1)$、$item1,item2 &amp;lt; N$、$1≦score≦10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder089 どんどんドーナツどーんといこう！</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder089/</link>
+      <pubDate>Sat, 05 May 2018 01:46:17 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder089/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;とある高校のアニメーション同好会が文化祭に向けドーナツで誓いを立てていた。&lt;br /&gt;
+彼女たちは女子高生なのでカロリーが気になる。しかし、買ってきたドーナツにはカロリーが記載されていなかった。&lt;br /&gt;
+買ってきたドーナツを上から見るときれいな2重円に見え、またドーナツの輪っかを切断するときれいな円になっていた。(つまり円環体ということ)&lt;br /&gt;
+そこで彼女たちはドーナツが$1cm^3$あたり$C$ $kcal$であることを利用してカロリーを求めることにした。&lt;/p&gt;
+
+&lt;p&gt;$C\leqq10$、$R_{いろいろ}\leqq20$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder088 次はどっちだ</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder088/</link>
+      <pubDate>Sat, 05 May 2018 01:43:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder088/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;オセロの盤面が与えられる。次の手番の色を予測せよ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder087 Advent Calendar Problem</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder087/</link>
+      <pubDate>Sat, 05 May 2018 01:38:08 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder087/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$2015$年-$N$年の間($2015$や$N$も含む)で&lt;br /&gt;
+yukicoder no.1の出題日（記事中に記載有り）が2014年と同じ曜日になる回数を求めてください。&lt;/p&gt;
+
+&lt;p&gt;カレンダーは現実世界と同じものを用いる。&lt;/p&gt;
+
+&lt;p&gt;うるう年は通常の判定方法を用いる。&lt;br /&gt;
+・4で割れる年はうるう年である。&lt;br /&gt;
+・ただし、100で割れるときは、うるう年ではない。&lt;br /&gt;
+・ただし、400で割れるときは、うるう年である。&lt;br /&gt;
+西暦N年の時点でもグレゴリオ暦を用いるとする。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^{10}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder086 TVザッピング(2)</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder086/</link>
+      <pubDate>Sat, 05 May 2018 01:32:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder086/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;yuki君は旅行先でテレビを見ようとした。&lt;br /&gt;
+旅行先のテレビのリモコンには、ボタンが縦$N$段、横$M$列の長方形状に計$N×M$個並んでおり、それぞれを押すとテレビの表示が対応するチャンネルに切り替わる。&lt;br /&gt;
+しかし、この地方のテレビでは視聴可能なチャンネルと視聴できないチャンネルとがあった。&lt;/p&gt;
+
+&lt;p&gt;yuki君は視聴可能なチャンネルだけをすべて巡回したくなった。&lt;br /&gt;
+ただし、yuki君は旅行で疲れているので、複雑な順番でボタンを押したくない。&lt;br /&gt;
+そこで、yuki君は以下のルールで順にボタンを押す事を考えた。&lt;/p&gt;
+
+&lt;p&gt;最初は任意の視聴可能なチャンネルのボタンを押すことができる。そして次に押すボタンを上下左右いずれかに隣接するボタンのうちから1つ選択する。&lt;br /&gt;
+以降、隣接するボタンを順に押していく。その際、次に押すボタンは、前と同じ向きに移動した先にあるボタンか、向きを左に90度回転した先にあるボタンのいずれかを選択する。&lt;br /&gt;
+（たとえば、今押したボタンが１つ前に押したボタンの上にある場合、次に押せるのはもう1つ上にあるボタンか、左にあるボタンのどちらかである。）&lt;br /&gt;
+視聴できないチャンネルのボタンは押してはならない。&lt;br /&gt;
+視聴可能なチャンネルのボタンを全てちょうど１回ずつ押し、最後に最初に押したボタンを押す。（例外として、最初に押したボタンだけは最後と合わせ2回押してよい）&lt;/p&gt;
+
+&lt;p&gt;入力として$N, M$,各ボタンに対応するチャンネルの視聴可否が与えられたとき、上記ルールをすべて満たすボタンの押し順が存在するか答えよ。&lt;/p&gt;
+
+&lt;p&gt;$N,N\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder085 TVザッピング(1)</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder085/</link>
+      <pubDate>Sat, 05 May 2018 01:25:12 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder085/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;yuki君が持っているテレビのリモコンには、ボタンが縦$N$段、横$M$列の長方形状に計$N×M$個並んでいる。&lt;br /&gt;
+リモコンの$X$段目$Y$列目のボタンを押すと、テレビでチャンネル$((X−1)×M+Y)$を見ることができる。&lt;br /&gt;
+（サンプルケース1の解説に具体例が記載されている）&lt;/p&gt;
+
+&lt;p&gt;yuki君はさっきチャンネル$C$のボタンを押し、そのままチャンネル$C$を見ている。&lt;br /&gt;
+ところがyuki君は途中で他のチャンネルの内容を一通り見てみたくなった。&lt;br /&gt;
+yuki君は素早く全チャンネルを巡回して元のチャンネル$C$に戻るため、以下のルールで順にボタンを押す。&lt;br /&gt;
+最初に押すボタンは、さっき押したチャンネル$C$のボタンと上下左右いずれかに隣接したボタンである。&lt;br /&gt;
+以降、直前に押したボタンと上下左右いずれかに隣接したボタンを押していく。&lt;br /&gt;
+チャンネル$C$以外の全てのチャンネルのボタンをちょうど1回ずつ押した上で、最後にまたチャンネル$C$のボタンを押す。&lt;br /&gt;
+$N, M, C$が与えられたとき、上記ルールをすべて満たすボタンの押し順が存在するか答えよ。&lt;/p&gt;
+
+&lt;p&gt;$N,M\leqq10^2$、$C\leqq N*M$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder084 悪の算盤</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder084/</link>
+      <pubDate>Sat, 05 May 2018 01:21:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder084/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;太郎君はそろばんが苦手で、特に、珠の位置によってその珠が表す数が違うことに納得ができなかった。&lt;br /&gt;
+そこで、太郎君は二次元の各場所に珠があるかどうかのみで表す整数を決めるような新しい方法を考えだした。&lt;br /&gt;
+以下ではわかりやすさを優先して、抽象化して説明する。&lt;br /&gt;
+$R$行$C$列のマス目があり、各マスには珠があるかどうかである。&lt;br /&gt;
+珠は合計で$RC−1$個ある。つまり、1 マスだけ珠がないマスが存在する。&lt;br /&gt;
+各盤面に対して 0 以上の整数を対応させる。&lt;br /&gt;
+また、対応させる整数の最大値を$K$とすると、0 以上$K$以下の全ての整数に対して対応する盤面が存在しなければいけない。&lt;br /&gt;
+ただし、そろばんはひっくり返すことはできないが、回転することができるため、回転して一致する盤面に対しては同じ整数を対応させなくてはいけない。&lt;br /&gt;
+$R$と$C$が与えられるので、対応させる整数の最大値$K$の最大値を求めるプログラムを書いてください。&lt;/p&gt;
+
+&lt;p&gt;$R,C\leqq10^9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder083 最大マッチング</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder083/</link>
+      <pubDate>Sat, 05 May 2018 01:18:34 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder083/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;あなたは「最大マッチング問題」という有名問題に取り組んでいる。&lt;br /&gt;
+これは、何本かのマッチ棒が与えられたとき、それらを並べて表記できる最大の数を求める問題である。&lt;br /&gt;
+数の表記は、0 から 9 までの数字を横に並べることによって行う。&lt;br /&gt;
+マッチ棒は折ってはいけないが、すべて使い切る必要はない。&lt;br /&gt;
+さて、$N$本のマッチ棒が与えられたとき、それらを並べて表記できる最大の数を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$2\leqq N\leqq10^5$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder082 市松模様</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder082/</link>
+      <pubDate>Sat, 05 May 2018 01:16:05 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder082/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;幅$W$と高さ$H$と左上の色が指定されるので市松模様を描け。&lt;br /&gt;
+市松模様は、黒と白が交互に現れる模様である。&lt;br /&gt;
+模様は黒を&amp;rsquo;B&amp;rsquo;、白を&amp;rsquo;W&amp;rsquo;を使って描くものとする。&lt;/p&gt;
+
+&lt;p&gt;$W,H\leqq50$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder081 すべて足すだけの簡単なお仕事です。</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder081/</link>
+      <pubDate>Sat, 05 May 2018 00:51:59 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder081/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;与えられるN個の値の総和を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$-10^{10}\leqq a[i]\leqq10^{10}$、$a[i]$は小数点第10位まで与えられる。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder080 四角形を描こう</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder080/</link>
+      <pubDate>Sat, 05 May 2018 00:48:59 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder080/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;A君は四角形を描こうとしています。&lt;br /&gt;
+描く四角形は正方形か長方形でなければなりません。&lt;br /&gt;
+また、どの辺の長さも整数cmでなければなりません。&lt;br /&gt;
+A君の持っている鉛筆はあとちょうど$D$cmしか線が引けなさそうです。&lt;br /&gt;
+A君が描ける最も大きな四角形の面積を答えなさい。&lt;br /&gt;
+なお、四角形が描けないときの面積は0とせよ。&lt;/p&gt;
+
+&lt;p&gt;$D\leqq10^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder079 過小評価ダメ・ゼッタイ</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder079/</link>
+      <pubDate>Sat, 05 May 2018 00:45:44 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder079/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;競技プログラミングの出題サイト yurucoder では問題ごとにレベルが設定されています。&lt;/p&gt;
+
+&lt;p&gt;問題のレベルはユーザーからアンケートを取り以下のルールで決められます。&lt;br /&gt;
+$N$人のユーザーは問題のレベルをそれぞれ $L_i$ として評価する。 $(1≤i≤N)$&lt;br /&gt;
+多数決を取り、最もユーザーからの回答が多いレベルをその問題のレベルとする。&lt;br /&gt;
+最も多い回答を得たものが複数ある場合は、よりレベルの高い方を採用する。&lt;/p&gt;
+
+&lt;p&gt;このルールに従い、ユーザーから得た評価から問題のレベルを求めてください。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^5$、$L_i\leqq6$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder078 クジ付きアイスバー</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder078/</link>
+      <pubDate>Sat, 05 May 2018 00:29:04 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder078/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;A君は当たりクジ付きのアイスバーが大好きである。&lt;br /&gt;
+アイスバーには「ハズレ」と「1本当たり」と「2本当たり」がある。&lt;br /&gt;
+ハズレは何ももらえないが、当たりだとその本数をタダでもらえる。&lt;/p&gt;
+
+&lt;p&gt;お店ではアイスバーが箱詰めされて売られている。&lt;br /&gt;
+1つの箱には$N$本のアイスバーが入っている。&lt;br /&gt;
+A君は箱の先頭から順にしかアイスバーを取り出すことはできない。&lt;br /&gt;
+買う場合も当たりと引き換えの場合もこの箱からアイスバーを取り出す。&lt;br /&gt;
+1つの箱の中のハズレと当たりクジの配置はどの箱も同じである。&lt;br /&gt;
+お店には1つのアイスバーの箱があり、売り切れると1つの新しい箱を補充する。&lt;br /&gt;
+いまお店には新しい手つかずのアイスバーの箱がある。&lt;br /&gt;
+A君は最初は「当たり」クジを持っておらず予算は無限にある。&lt;br /&gt;
+$K$本のアイスバーを食べるためにはA君は最低何本のアイスを買う必要があるか?&lt;/p&gt;
+
+&lt;p&gt;$N\leqq50$、$K\leqq2*10^9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder077 レンガのピラミッド</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder077/</link>
+      <pubDate>Sat, 05 May 2018 00:23:37 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder077/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;長いので見て下さい。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder076 回数の期待値で練習</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder076/</link>
+      <pubDate>Sat, 05 May 2018 00:19:55 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder076/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;サイコロXは 6 つの面を持っていてそれぞれの面には 1 から 6 までの整数が書かれています。&lt;br /&gt;
+出目の和が$N$ 以上となるまでサイコロXを振り続けます。&lt;br /&gt;
+何回振ることになるか、期待値を求めるプログラムを書いてください。&lt;br /&gt;
+何回か振った時のサイコロの出目は独立であると仮定してください。&lt;br /&gt;
+（サイコロの各面が出る確率は等しいとは限りません）&lt;br /&gt;
+テストケースの数:50&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^6$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder075 回数の期待値の問題</title>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Calendar on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/calendar/</link>
+    <description>Recent content in Calendar on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 05 May 2018 01:38:08 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/calendar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder087 Advent Calendar Problem</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder087/</link>
+      <pubDate>Sat, 05 May 2018 01:38:08 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder087/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$2015$年-$N$年の間($2015$や$N$も含む)で&lt;br /&gt;
+yukicoder no.1の出題日（記事中に記載有り）が2014年と同じ曜日になる回数を求めてください。&lt;/p&gt;
+
+&lt;p&gt;カレンダーは現実世界と同じものを用いる。&lt;/p&gt;
+
+&lt;p&gt;うるう年は通常の判定方法を用いる。&lt;br /&gt;
+・4で割れる年はうるう年である。&lt;br /&gt;
+・ただし、100で割れるときは、うるう年ではない。&lt;br /&gt;
+・ただし、400で割れるときは、うるう年である。&lt;br /&gt;
+西暦N年の時点でもグレゴリオ暦を用いるとする。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^{10}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

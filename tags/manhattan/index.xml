@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manhattan on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/manhattan/</link>
+    <description>Recent content in Manhattan on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 05 May 2018 01:16:05 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/manhattan/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder082 市松模様</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder082/</link>
+      <pubDate>Sat, 05 May 2018 01:16:05 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder082/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;幅$W$と高さ$H$と左上の色が指定されるので市松模様を描け。&lt;br /&gt;
+市松模様は、黒と白が交互に現れる模様である。&lt;br /&gt;
+模様は黒を&amp;rsquo;B&amp;rsquo;、白を&amp;rsquo;W&amp;rsquo;を使って描くものとする。&lt;/p&gt;
+
+&lt;p&gt;$W,H\leqq50$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

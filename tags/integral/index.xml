@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Integral on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/integral/</link>
+    <description>Recent content in Integral on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 05 May 2018 01:46:17 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/integral/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder089 どんどんドーナツどーんといこう！</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder089/</link>
+      <pubDate>Sat, 05 May 2018 01:46:17 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder089/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;とある高校のアニメーション同好会が文化祭に向けドーナツで誓いを立てていた。&lt;br /&gt;
+彼女たちは女子高生なのでカロリーが気になる。しかし、買ってきたドーナツにはカロリーが記載されていなかった。&lt;br /&gt;
+買ってきたドーナツを上から見るときれいな2重円に見え、またドーナツの輪っかを切断するときれいな円になっていた。(つまり円環体ということ)&lt;br /&gt;
+そこで彼女たちはドーナツが$1cm^3$あたり$C$ $kcal$であることを利用してカロリーを求めることにした。&lt;/p&gt;
+
+&lt;p&gt;$C\leqq10$、$R_{いろいろ}\leqq20$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

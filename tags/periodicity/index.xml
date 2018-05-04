@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Periodicity on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/periodicity/</link>
+    <description>Recent content in Periodicity on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 05 May 2018 01:38:08 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/periodicity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder087 Advent Calendar Problem</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder087/</link>
+      <pubDate>Sat, 05 May 2018 01:38:08 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder087/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$2015$年-$N$年の間($2015$や$N$も含む)で&lt;br /&gt;
+yukicoder no.1の出題日（記事中に記載有り）が2014年と同じ曜日になる回数を求めてください。&lt;/p&gt;
+
+&lt;p&gt;カレンダーは現実世界と同じものを用いる。&lt;/p&gt;
+
+&lt;p&gt;うるう年は通常の判定方法を用いる。&lt;br /&gt;
+・4で割れる年はうるう年である。&lt;br /&gt;
+・ただし、100で割れるときは、うるう年ではない。&lt;br /&gt;
+・ただし、400で割れるときは、うるう年である。&lt;br /&gt;
+西暦N年の時点でもグレゴリオ暦を用いるとする。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^{10}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder078 クジ付きアイスバー</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder078/</link>
+      <pubDate>Sat, 05 May 2018 00:29:04 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder078/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;A君は当たりクジ付きのアイスバーが大好きである。&lt;br /&gt;
+アイスバーには「ハズレ」と「1本当たり」と「2本当たり」がある。&lt;br /&gt;
+ハズレは何ももらえないが、当たりだとその本数をタダでもらえる。&lt;/p&gt;
+
+&lt;p&gt;お店ではアイスバーが箱詰めされて売られている。&lt;br /&gt;
+1つの箱には$N$本のアイスバーが入っている。&lt;br /&gt;
+A君は箱の先頭から順にしかアイスバーを取り出すことはできない。&lt;br /&gt;
+買う場合も当たりと引き換えの場合もこの箱からアイスバーを取り出す。&lt;br /&gt;
+1つの箱の中のハズレと当たりクジの配置はどの箱も同じである。&lt;br /&gt;
+お店には1つのアイスバーの箱があり、売り切れると1つの新しい箱を補充する。&lt;br /&gt;
+いまお店には新しい手つかずのアイスバーの箱がある。&lt;br /&gt;
+A君は最初は「当たり」クジを持っておらず予算は無限にある。&lt;br /&gt;
+$K$本のアイスバーを食べるためにはA君は最低何本のアイスを買う必要があるか?&lt;/p&gt;
+
+&lt;p&gt;$N\leqq50$、$K\leqq2*10^9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,30 @@
     <description>Recent content in 誤差 on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Apr 2018 15:08:24 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 05 May 2018 00:51:59 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/%E8%AA%A4%E5%B7%AE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder081 すべて足すだけの簡単なお仕事です。</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder081/</link>
+      <pubDate>Sat, 05 May 2018 00:51:59 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder081/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;与えられるN個の値の総和を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$-10^{10}\leqq a[i]\leqq10^{10}$、$a[i]$は小数点第10位まで与えられる。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder053 悪の漸化式</title>

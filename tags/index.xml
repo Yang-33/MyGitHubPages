@@ -75,11 +75,38 @@
     </item>
     
     <item>
+      <title>Bipartite Graph</title>
+      <link>https://yang33-kassa.jp/tags/bipartite-graph/</link>
+      <pubDate>Sat, 05 May 2018 01:25:12 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/bipartite-graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Brackets</title>
       <link>https://yang33-kassa.jp/tags/brackets/</link>
       <pubDate>Fri, 13 Apr 2018 11:43:22 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/brackets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brute Force Search</title>
+      <link>https://yang33-kassa.jp/tags/brute-force-search/</link>
+      <pubDate>Sat, 05 May 2018 01:49:00 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/brute-force-search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calendar</title>
+      <link>https://yang33-kassa.jp/tags/calendar/</link>
+      <pubDate>Sat, 05 May 2018 01:38:08 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/calendar/</guid>
       <description></description>
     </item>
     
@@ -131,7 +158,7 @@
     <item>
       <title>Expected Value</title>
       <link>https://yang33-kassa.jp/tags/expected-value/</link>
-      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
+      <pubDate>Sat, 05 May 2018 00:19:55 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/expected-value/</guid>
       <description></description>
@@ -219,11 +246,29 @@
     </item>
     
     <item>
+      <title>Hamiltonian Cycle</title>
+      <link>https://yang33-kassa.jp/tags/hamiltonian-cycle/</link>
+      <pubDate>Sat, 05 May 2018 01:32:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/hamiltonian-cycle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Implementation</title>
       <link>https://yang33-kassa.jp/tags/implementation/</link>
       <pubDate>Sat, 14 Apr 2018 14:20:12 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/implementation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integral</title>
+      <link>https://yang33-kassa.jp/tags/integral/</link>
+      <pubDate>Sat, 05 May 2018 01:46:17 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/integral/</guid>
       <description></description>
     </item>
     
@@ -237,11 +282,29 @@
     </item>
     
     <item>
+      <title>Leap Year</title>
+      <link>https://yang33-kassa.jp/tags/leap-year/</link>
+      <pubDate>Sat, 05 May 2018 01:38:08 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/leap-year/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Lp Dual</title>
       <link>https://yang33-kassa.jp/tags/lp-dual/</link>
       <pubDate>Thu, 22 Feb 2018 00:18:59 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/lp-dual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manhattan</title>
+      <link>https://yang33-kassa.jp/tags/manhattan/</link>
+      <pubDate>Sat, 05 May 2018 01:16:05 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/manhattan/</guid>
       <description></description>
     </item>
     
@@ -287,6 +350,24 @@
       <pubDate>Sat, 07 Apr 2018 02:16:31 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/nim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pazzle</title>
+      <link>https://yang33-kassa.jp/tags/pazzle/</link>
+      <pubDate>Sat, 05 May 2018 01:32:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/pazzle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Periodicity</title>
+      <link>https://yang33-kassa.jp/tags/periodicity/</link>
+      <pubDate>Sat, 05 May 2018 01:38:08 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/periodicity/</guid>
       <description></description>
     </item>
     
@@ -350,6 +431,15 @@
       <pubDate>Fri, 04 May 2018 23:32:52 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/quadratic-function/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Right First Search</title>
+      <link>https://yang33-kassa.jp/tags/right-first-search/</link>
+      <pubDate>Sat, 05 May 2018 01:32:25 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/right-first-search/</guid>
       <description></description>
     </item>
     
@@ -426,15 +516,6 @@
     </item>
     
     <item>
-      <title>全探索</title>
-      <link>https://yang33-kassa.jp/tags/%E5%85%A8%E6%8E%A2%E7%B4%A2/</link>
-      <pubDate>Sat, 07 Apr 2018 02:16:35 +0900</pubDate>
-      
-      <guid>https://yang33-kassa.jp/tags/%E5%85%A8%E6%8E%A2%E7%B4%A2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>問題集まとめ</title>
       <link>https://yang33-kassa.jp/tags/%E5%95%8F%E9%A1%8C%E9%9B%86%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sat, 14 Apr 2018 16:23:25 +0900</pubDate>
@@ -455,7 +536,7 @@
     <item>
       <title>誤差</title>
       <link>https://yang33-kassa.jp/tags/%E8%AA%A4%E5%B7%AE/</link>
-      <pubDate>Sat, 14 Apr 2018 15:08:24 +0900</pubDate>
+      <pubDate>Sat, 05 May 2018 00:51:59 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/%E8%AA%A4%E5%B7%AE/</guid>
       <description></description>
