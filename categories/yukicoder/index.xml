@@ -578,6 +578,35 @@ $S$は、文字を取った後の文字列を新たな$S$として$S$の文字�
     </item>
     
     <item>
+      <title>Yukicoder051 やる気の問題</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder051/</link>
+      <pubDate>Sat, 14 Apr 2018 14:58:40 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder051/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;Thomasのやる気は、簡単に計算できる。&lt;/p&gt;
+
+&lt;p&gt;締め切りまでの残りの日数を$D$日とし、
+残りの作業量を$W$とすると その日のやる気は$\displaystyle \frac{W}{D^2}$となる。
+そして、やる気の小数切り捨ての値が、その日の作業量になる。&lt;/p&gt;
+
+&lt;p&gt;Thomasは、最終日にどれだけ作業をしないといけなくなるかが気になっている。&lt;/p&gt;
+
+&lt;p&gt;最初の日に与えられた作業量$W$と締め切りまでの日数$D$が与えられるので
+あなたは、Thomasが最後の日にどれだけの作業量があるか計算してあげてください。&lt;/p&gt;
+
+&lt;p&gt;$W,D\leqq10^5$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Yukicoder050 おもちゃ箱</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder050/</link>
       <pubDate>Sat, 14 Apr 2018 14:48:26 +0900</pubDate>
