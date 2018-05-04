@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Yukicoder065</title>
+      <title>Yukicoder065 回数の期待値の練習</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder065/</link>
       <pubDate>Sat, 28 Apr 2018 22:35:54 +0900</pubDate>
       
@@ -24,13 +24,19 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+&lt;p&gt;1個のサイコロを何回か振って目の合計を$K$以上にしたい。&lt;br /&gt;
+サイコロを振る回数の期待値を求めよ。&lt;br /&gt;
+なお、今回のサイコロの場合に回数の期待値$(E(x)$の公式は以下であることが知られている&lt;br /&gt;
+$E(x)$ := これまでの目の合計が$x$のとき、合計が$K$に達するまでにあと振ることになる回数の期待値&lt;br /&gt;
+E(x)=E(x+1)∗1/6+E(x+2)∗1/6+E(x+3)∗1/6+E(x+4)∗1/6+E(x+5)∗1/6+E(x+6)∗1/6+1&lt;/p&gt;
+
+&lt;p&gt;$K\leqq20$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Yukicoder064</title>
+      <title>Yukicoder064 XORフィボナッチ数列</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder064/</link>
       <pubDate>Sat, 28 Apr 2018 22:35:52 +0900</pubDate>
       
@@ -42,13 +48,20 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+&lt;p&gt;整数列 {Fk} を次の漸化式で定義する。&lt;/p&gt;
+
+&lt;p&gt;$F[k]=F[k−1] ⊕ F[k−2].(k≥2)$&lt;/p&gt;
+
+&lt;p&gt;ただし、$⊕$ は$bitwise$ $xor$の記号である。
+$F[0],F[1]$ が与えられたとき、$F[N]$ を計算せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^{18}$、$1\leqq F[0],F[1]\leqq10^{18}$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Yukicoder063</title>
+      <title>Yukicoder063 ポッキーゲーム</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder063/</link>
       <pubDate>Sat, 28 Apr 2018 22:35:50 +0900</pubDate>
       
@@ -60,13 +73,21 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+&lt;p&gt;ハルカちゃんとユウちゃんはとっても仲良しなので、$2$人でポッキーゲームをすることにしました。&lt;br /&gt;
+長さが $L$(mm) のポッキーを２人はそれぞれ両端から中央に向かって齧っていきます。&lt;br /&gt;
+$2$人とも毎回$K$(mm) ずつ同じタイミングでポッキーを齧ります。&lt;br /&gt;
+ユウちゃんは恥ずかしがり屋さんなので、&lt;br /&gt;
+次のタイミングで$2$人ともポッキーを齧ろうとしたら唇が触れてしまうと分かった時点で齧り進めるのを止めて、&lt;br /&gt;
+残りは全部ハルカちゃんが食べてしまいます。&lt;br /&gt;
+このとき、ユウちゃんが食べるポッキーの長さは何mmか？&lt;/p&gt;
+
+&lt;p&gt;$L\leqq10^9$、$K\leqq50$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Yukicoder062</title>
+      <title>Yukicoder062 リベリオン</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder062/</link>
       <pubDate>Sat, 28 Apr 2018 22:35:49 +0900</pubDate>
       
@@ -78,13 +99,15 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+&lt;p&gt;二次元平面上$(H,W)$で、弾丸が発射される。的が$Q$個あり、それぞれにhitするかを判定せよ。&lt;/p&gt;
+
+&lt;p&gt;$Q\leqq10^4$、$H,W\leqq10^9$、(諸所の制限)$\leqq10^9$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Yukicoder061</title>
+      <title>Yukicoder061 リベリオン</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder061/</link>
       <pubDate>Sat, 28 Apr 2018 22:35:47 +0900</pubDate>
       
@@ -96,7 +119,9 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+&lt;p&gt;二次元平面上$(H,W)$で、弾丸が発射される。的が$Q$個あり、それぞれにhitするかを判定せよ。&lt;/p&gt;
+
+&lt;p&gt;$Q\leqq10^4$、$H,W\leqq15$、(諸所の制限)$\leqq15$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

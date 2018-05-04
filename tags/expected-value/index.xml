@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Expected Value on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/expected-value/</link>
+    <description>Recent content in Expected Value on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 05 May 2018 00:04:28 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/expected-value/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder075 回数の期待値の問題</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder075/</link>
+      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder075/</guid>
+      <description>&lt;!--  
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;1個のサイコロを何回か振って目の合計をちょうど$K$にしたい。&lt;br /&gt;
+もし$K$を超えてしまったら合計を0にリセットする。&lt;br /&gt;
+ただしサイコロを振った回数はリセットされない。&lt;br /&gt;
+例えば、$K=5$のときサイコロを1回振って6が出たとする。&lt;br /&gt;
+この場合は$K$を超えてしまったので合計を0に戻し2回目を振ることになる。&lt;br /&gt;
+サイコロは目の合計がちょうど$K$になるまで振り続ける。&lt;br /&gt;
+サイコロを振る回数の期待値を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$K\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder065 回数の期待値の練習</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder065/</link>
+      <pubDate>Sat, 28 Apr 2018 22:35:54 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder065/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;1個のサイコロを何回か振って目の合計を$K$以上にしたい。&lt;br /&gt;
+サイコロを振る回数の期待値を求めよ。&lt;br /&gt;
+なお、今回のサイコロの場合に回数の期待値$(E(x)$の公式は以下であることが知られている&lt;br /&gt;
+$E(x)$ := これまでの目の合計が$x$のとき、合計が$K$に達するまでにあと振ることになる回数の期待値&lt;br /&gt;
+E(x)=E(x+1)∗1/6+E(x+2)∗1/6+E(x+3)∗1/6+E(x+4)∗1/6+E(x+5)∗1/6+E(x+6)∗1/6+1&lt;/p&gt;
+
+&lt;p&gt;$K\leqq20$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

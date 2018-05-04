@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xor on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/xor/</link>
+    <description>Recent content in Xor on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 28 Apr 2018 22:35:52 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/xor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder064 XORフィボナッチ数列</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder064/</link>
+      <pubDate>Sat, 28 Apr 2018 22:35:52 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder064/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;整数列 {Fk} を次の漸化式で定義する。&lt;/p&gt;
+
+&lt;p&gt;$F[k]=F[k−1] ⊕ F[k−2].(k≥2)$&lt;/p&gt;
+
+&lt;p&gt;ただし、$⊕$ は$bitwise$ $xor$の記号である。
+$F[0],F[1]$ が与えられたとき、$F[N]$ を計算せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^{18}$、$1\leqq F[0],F[1]\leqq10^{18}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

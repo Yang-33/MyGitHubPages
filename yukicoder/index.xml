@@ -6,13 +6,244 @@
     <description>Recent content in Yukicoders on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Apr 2018 22:35:54 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 05 May 2018 00:04:28 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/yukicoder/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Yukicoder065</title>
+      <title>Yukicoder075 回数の期待値の問題</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder075/</link>
+      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder075/</guid>
+      <description>&lt;!--  
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;1個のサイコロを何回か振って目の合計をちょうど$K$にしたい。&lt;br /&gt;
+もし$K$を超えてしまったら合計を0にリセットする。&lt;br /&gt;
+ただしサイコロを振った回数はリセットされない。&lt;br /&gt;
+例えば、$K=5$のときサイコロを1回振って6が出たとする。&lt;br /&gt;
+この場合は$K$を超えてしまったので合計を0に戻し2回目を振ることになる。&lt;br /&gt;
+サイコロは目の合計がちょうど$K$になるまで振り続ける。&lt;br /&gt;
+サイコロを振る回数の期待値を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$K\leqq10^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder074 貯金箱の退屈</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder074/</link>
+      <pubDate>Fri, 04 May 2018 23:46:32 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder074/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;貯金箱くんはとても退屈していました。&lt;br /&gt;
+そこで自分が持っている硬貨で遊ぶことにしました。&lt;/p&gt;
+
+&lt;p&gt;まず自分の持っている硬貨を床にばらまき、そこから$N$枚硬貨を選び円形に並べます。&lt;br /&gt;
+次に$N$枚の硬貨から適当に1枚選びます。選んだ硬貨の額面を$D$円としたとき、選んだ硬貨から時計回りに$D$個先の硬貨と、反時計回りに$D$個先の硬貨をひっくり返します。&lt;br /&gt;
+ただし時計回りでも反時計回りでも同じ硬貨だった場合はその硬貨を1回だけひっくり返します。&lt;br /&gt;
+貯金箱くんは、この操作を繰り返しすべての硬貨を表向きにしたいです。&lt;/p&gt;
+
+&lt;p&gt;硬貨の並び、額面、最初の裏表が与えられるのですべての硬貨を表向きにできるか判定してください。&lt;br /&gt;
+ただし同じ硬貨を複数回選んでもよいとします。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$D_i\leqq10^3$、$W_i\leqq1$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder073 helloworld</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder073/</link>
+      <pubDate>Fri, 04 May 2018 23:37:02 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder073/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;A君は、helloworldを愛してやまない． 文字列Sのhelloworld数を次を満たす組$(i_0,⋯,i_9)$の個数とする。&lt;/p&gt;
+
+&lt;p&gt;$S[i_0]S[i_1]⋯S[i_9]=&amp;ldquo;helloworld&amp;rdquo;$,$(i_0&amp;lt;i_1&amp;lt;⋯&amp;lt;i_9 )$&lt;br /&gt;
+アルファベットの個数が与えられるので、 それぞれのアルファベットをちょうどその個数だけ使ってできる文字列におけるhelloworld数の最大値を求めよ。&lt;/p&gt;
+
+&lt;p&gt;$C_i\leqq10^2$
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder072 そろばん Med</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder072/</link>
+      <pubDate>Fri, 04 May 2018 23:32:52 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder072/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://yang33-kassa.jp/yukicoder/yukicoder071/&#34;&gt;no71&lt;/a&gt;の制約の強化版。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^{15}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder071 そろばん</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder071/</link>
+      <pubDate>Fri, 04 May 2018 23:26:43 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder071/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;N個の珠が一列に並んだそろばんがある。上と下にそろばんを分けるとき、適切な分け方をすると最大どれだけの数字を表現できるか。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^6$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder070 睡眠の重要性!</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder070/</link>
+      <pubDate>Fri, 04 May 2018 23:23:00 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder070/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;太郎君は健康のために、毎日、寝た時刻と起きた時刻の記録をとっています。&lt;br /&gt;
+入力に、寝た時刻と起きた時刻のリストが与えられるので、&lt;br /&gt;
+睡眠時間の合計を出力してください。&lt;br /&gt;
+太郎君は、1回につき24時間以上眠り続けることは無いものとします。&lt;br /&gt;
+太郎君の世界は1日あたり24時間、1時間は60分で表されます。&lt;br /&gt;
+記録の数は$N$個与えられる。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq30$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder069 文字を自由に並び替え</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder069/</link>
+      <pubDate>Fri, 04 May 2018 23:20:15 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder069/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;同じ長さの文字列$A$と文字列$B$が与えられる。
+文字列$A$の順番を自由に並び替えることができる。
+文字列$A$と文字列$B$を同じにできるか判定せよ。&lt;/p&gt;
+
+&lt;p&gt;$|A|,|B|\leqq 10$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder068 よくある棒を切る問題(2)</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder068/</link>
+      <pubDate>Fri, 04 May 2018 23:09:18 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder068/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;ユウキさんは$N$本の棒を持っていて、$i$番目の棒の長さは$L_i$です。
+棒は(長さを分割する方向に)自由に切ることができますが、繋げることはできません。
+ユウキさんは同じ長さの棒を作りたいのですが、何本であればどのぐらいの長さにできるかが気になっています。&lt;br /&gt;
+同じ長さの棒を$K_1,K_2,…,K_Q$ 本作るとしたら、その時の棒の長さの最大値をそれぞれ求めるプログラムを書いて下さい。&lt;/p&gt;
+
+&lt;p&gt;$N,Q\leqq10^5$、$L_i\leqq10^9$、$K_i\leqq5*10^5$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder067 よくある棒を切る問題(1)</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder067/</link>
+      <pubDate>Fri, 04 May 2018 23:04:50 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder067/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;ユキさんは$N$本の棒を持っていて、$i$番目の棒の長さは$L_i$です。&lt;br /&gt;
+棒は(長さを分割する方向に)自由に切ることができますが、繋げることはできません。&lt;br /&gt;
+ユキさんは同じ長さの$K$本の棒を作りたいのです。&lt;br /&gt;
+作れる$K$本の棒の長さの最大値を求めるプログラムを書いて下さい。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq2*10^5$、$L_i\leqq10^9$、$K\leqq10^{10}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder066 輝け☆全国たこやき杯</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder066/</link>
+      <pubDate>Fri, 04 May 2018 22:58:17 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder066/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;$2^M$人でトーナメントを行う。1人目の人が優勝する確率は？&lt;br /&gt;
+ある人とある人との勝率は与えられる。&lt;/p&gt;
+
+&lt;p&gt;$M\leqq10$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder065 回数の期待値の練習</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder065/</link>
       <pubDate>Sat, 28 Apr 2018 22:35:54 +0900</pubDate>
       
@@ -24,13 +255,19 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+&lt;p&gt;1個のサイコロを何回か振って目の合計を$K$以上にしたい。&lt;br /&gt;
+サイコロを振る回数の期待値を求めよ。&lt;br /&gt;
+なお、今回のサイコロの場合に回数の期待値$(E(x)$の公式は以下であることが知られている&lt;br /&gt;
+$E(x)$ := これまでの目の合計が$x$のとき、合計が$K$に達するまでにあと振ることになる回数の期待値&lt;br /&gt;
+E(x)=E(x+1)∗1/6+E(x+2)∗1/6+E(x+3)∗1/6+E(x+4)∗1/6+E(x+5)∗1/6+E(x+6)∗1/6+1&lt;/p&gt;
+
+&lt;p&gt;$K\leqq20$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Yukicoder064</title>
+      <title>Yukicoder064 XORフィボナッチ数列</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder064/</link>
       <pubDate>Sat, 28 Apr 2018 22:35:52 +0900</pubDate>
       
@@ -42,13 +279,20 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+&lt;p&gt;整数列 {Fk} を次の漸化式で定義する。&lt;/p&gt;
+
+&lt;p&gt;$F[k]=F[k−1] ⊕ F[k−2].(k≥2)$&lt;/p&gt;
+
+&lt;p&gt;ただし、$⊕$ は$bitwise$ $xor$の記号である。
+$F[0],F[1]$ が与えられたとき、$F[N]$ を計算せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^{18}$、$1\leqq F[0],F[1]\leqq10^{18}$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Yukicoder063</title>
+      <title>Yukicoder063 ポッキーゲーム</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder063/</link>
       <pubDate>Sat, 28 Apr 2018 22:35:50 +0900</pubDate>
       
@@ -60,13 +304,21 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+&lt;p&gt;ハルカちゃんとユウちゃんはとっても仲良しなので、$2$人でポッキーゲームをすることにしました。&lt;br /&gt;
+長さが $L$(mm) のポッキーを２人はそれぞれ両端から中央に向かって齧っていきます。&lt;br /&gt;
+$2$人とも毎回$K$(mm) ずつ同じタイミングでポッキーを齧ります。&lt;br /&gt;
+ユウちゃんは恥ずかしがり屋さんなので、&lt;br /&gt;
+次のタイミングで$2$人ともポッキーを齧ろうとしたら唇が触れてしまうと分かった時点で齧り進めるのを止めて、&lt;br /&gt;
+残りは全部ハルカちゃんが食べてしまいます。&lt;br /&gt;
+このとき、ユウちゃんが食べるポッキーの長さは何mmか？&lt;/p&gt;
+
+&lt;p&gt;$L\leqq10^9$、$K\leqq50$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Yukicoder062</title>
+      <title>Yukicoder062 リベリオン</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder062/</link>
       <pubDate>Sat, 28 Apr 2018 22:35:49 +0900</pubDate>
       
@@ -78,13 +330,15 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+&lt;p&gt;二次元平面上$(H,W)$で、弾丸が発射される。的が$Q$個あり、それぞれにhitするかを判定せよ。&lt;/p&gt;
+
+&lt;p&gt;$Q\leqq10^4$、$H,W\leqq10^9$、(諸所の制限)$\leqq10^9$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Yukicoder061</title>
+      <title>Yukicoder061 リベリオン</title>
       <link>https://yang33-kassa.jp/yukicoder/yukicoder061/</link>
       <pubDate>Sat, 28 Apr 2018 22:35:47 +0900</pubDate>
       
@@ -96,7 +350,9 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$&lt;/p&gt;
+&lt;p&gt;二次元平面上$(H,W)$で、弾丸が発射される。的が$Q$個あり、それぞれにhitするかを判定せよ。&lt;/p&gt;
+
+&lt;p&gt;$Q\leqq10^4$、$H,W\leqq15$、(諸所の制限)$\leqq15$&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

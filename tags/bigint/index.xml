@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bigint on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/bigint/</link>
+    <description>Recent content in Bigint on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 28 Apr 2018 22:35:49 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/bigint/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder062 リベリオン</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder062/</link>
+      <pubDate>Sat, 28 Apr 2018 22:35:49 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder062/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;二次元平面上$(H,W)$で、弾丸が発射される。的が$Q$個あり、それぞれにhitするかを判定せよ。&lt;/p&gt;
+
+&lt;p&gt;$Q\leqq10^4$、$H,W\leqq10^9$、(諸所の制限)$\leqq10^9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

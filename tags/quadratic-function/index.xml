@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quadratic Function on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/quadratic-function/</link>
+    <description>Recent content in Quadratic Function on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 04 May 2018 23:32:52 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/quadratic-function/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder072 そろばん Med</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder072/</link>
+      <pubDate>Fri, 04 May 2018 23:32:52 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder072/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://yang33-kassa.jp/yukicoder/yukicoder071/&#34;&gt;no71&lt;/a&gt;の制約の強化版。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^{15}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

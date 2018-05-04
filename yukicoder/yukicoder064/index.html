@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title>Yukicoder064 &middot; Yang33 Home</title>
+    <title>Yukicoder064 XORフィボナッチ数列 &middot; Yang33 Home</title>
     <meta name="generator" content="Hugo 0.37-DEV" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,12 +29,19 @@
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="Yukicoder064" />
+    <meta property="og:title" content="Yukicoder064 XORフィボナッチ数列" />
 <meta property="og:description" content="
 
 問題概要
 
-$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
+整数列 {Fk} を次の漸化式で定義する。
+
+$F[k]=F[k−1] ⊕ F[k−2].(k≥2)$
+
+ただし、$⊕$ は$bitwise$ $xor$の記号である。
+$F[0],F[1]$ が与えられたとき、$F[N]$ を計算せよ。
+
+$N\leqq10^{18}$、$1\leqq F[0],F[1]\leqq10^{18}$
 
 " />
 <meta property="og:type" content="article" />
@@ -58,31 +65,45 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
 
     
     
-<meta itemprop="name" content="Yukicoder064">
+<meta itemprop="name" content="Yukicoder064 XORフィボナッチ数列">
 <meta itemprop="description" content="
 
 問題概要
 
-$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
+整数列 {Fk} を次の漸化式で定義する。
+
+$F[k]=F[k−1] ⊕ F[k−2].(k≥2)$
+
+ただし、$⊕$ は$bitwise$ $xor$の記号である。
+$F[0],F[1]$ が与えられたとき、$F[N]$ を計算せよ。
+
+$N\leqq10^{18}$、$1\leqq F[0],F[1]\leqq10^{18}$
 
 ">
 
 
 <meta itemprop="datePublished" content="2018-04-28T22:35:52&#43;09:00" />
 <meta itemprop="dateModified" content="2018-04-28T22:35:52&#43;09:00" />
-<meta itemprop="wordCount" content="6">
+<meta itemprop="wordCount" content="52">
 
 
 
-<meta itemprop="keywords" content="," />
+<meta itemprop="keywords" content="xor," />
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Yukicoder064"/>
+<meta name="twitter:title" content="Yukicoder064 XORフィボナッチ数列"/>
 <meta name="twitter:description" content="
 
 問題概要
 
-$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
+整数列 {Fk} を次の漸化式で定義する。
+
+$F[k]=F[k−1] ⊕ F[k−2].(k≥2)$
+
+ただし、$⊕$ は$bitwise$ $xor$の記号である。
+$F[0],F[1]$ が与えられたとき、$F[N]$ を計算せよ。
+
+$N\leqq10^{18}$、$1\leqq F[0],F[1]\leqq10^{18}$
 
 "/>
 <meta name="twitter:site" content="@__KasSA"/>
@@ -247,12 +268,12 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        68
+        79
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          40
+          51
         
         <span>
             Tags
@@ -336,7 +357,7 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
         <header class="article-header">
     <a href="https://yang33-kassa.jp/yukicoder/yukicoder064/">
     <h1 class="article-title" itemprop="name">
-        Yukicoder064
+        Yukicoder064 XORフィボナッチ数列
     </h1>
     </a>
     <div class="article-meta">
@@ -355,7 +376,7 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
                 <i class="fa fa-folder"></i>
                 
                 
-                <a class="article-category-link" href="https://yang33-kassa.jp/categories/"></a>
+                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
                 
                 
             </div>
@@ -369,7 +390,7 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
                 <i class="fa fa-tags"></i>
                 
                 
-                <a class="article-category-link" href="https://yang33-kassa.jp/tags/"></a>
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/xor">xor</a>
                 
                 
             </div>
@@ -386,19 +407,46 @@ categories   : 記事のdirectory
 
 <h2 id="問題概要">問題概要</h2>
 
-<p>$N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$</p>
+<p>整数列 {Fk} を次の漸化式で定義する。</p>
+
+<p>$F[k]=F[k−1] ⊕ F[k−2].(k≥2)$</p>
+
+<p>ただし、$⊕$ は$bitwise$ $xor$の記号である。
+$F[0],F[1]$ が与えられたとき、$F[N]$ を計算せよ。</p>
+
+<p>$N\leqq10^{18}$、$1\leqq F[0],F[1]\leqq10^{18}$</p>
 
 <p></p>
 
-<p><a href="URLを書く">問題名を書く</a></p>
+<p><a href="https://yukicoder.me/problems/no/064">yukicoder064</a></p>
 
 <h2 id="解法">解法</h2>
 
-<p>計算量:$O()$</p>
+<p>$XOR$の性質、$X ⊕ X = 1$より、$A=B⊕C $-&gt;$ A⊕C=B$である。<br />
+したがって順番に数を生成したとき、生成される数は3種類のみ。</p>
+
+<p>計算量:$O(1)$</p>
 
 <h2 id="ソース">ソース</h2>
 
-<!-- 4 -->
+<pre style="font-family:Migu 1M;color:gainsboro;background:#1e1e1e;">&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d89483;">&lt;bits/stdc++.h&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">using</span>&nbsp;<span class="keyword" style="color:#569cd6;">namespace</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">using</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">LL</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="keyword" style="color:#569cd6;">long</span>&nbsp;<span class="keyword" style="color:#569cd6;">long</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">using</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">VL</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">vector</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">LL</span><span class="operator" style="color:#b4b4b4;">&gt;;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">main</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">cin</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">tie</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#66ff8c;">0</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">ios_base</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppStaticMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">sync_with_stdio</span><span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">false</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">VL</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">F</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#66ff8c;">3</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="number" style="color:#66ff8c;">0</span><span class="operator" style="color:#b4b4b4;">);</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">LL</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">N</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">cin</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&gt;&gt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">F</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="number" style="color:#66ff8c;">0</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&gt;&gt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">F</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="number" style="color:#66ff8c;">1</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&gt;&gt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">N</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">F</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="number" style="color:#66ff8c;">2</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">F</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="number" style="color:#66ff8c;">1</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">^</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">F</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="number" style="color:#66ff8c;">0</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">LL</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ans</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">F</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">N</span>&nbsp;<span class="operator" style="color:#b4b4b4;">%</span>&nbsp;<span class="number" style="color:#66ff8c;">3</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">cout</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ans</span>&nbsp;<span class="cppOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="string" style="color:#d89483;">&quot;\n&quot;</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="number" style="color:#66ff8c;">0</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator" style="color:#b4b4b4;">}</span>
+</pre>
         </div>
         <footer class="article-footer">
     <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder064/" data-id="543818284be992bd191440112065d413" class="article-share-link">
@@ -504,7 +552,7 @@ categories   : 記事のdirectory
       <strong class="article-nav-caption">
           Older
       </strong>
-      <div class="article-nav-title">Yukicoder063</div>
+      <div class="article-nav-title">Yukicoder063 ポッキーゲーム</div>
     </a>
     
 
@@ -513,7 +561,7 @@ categories   : 記事のdirectory
       <strong class="article-nav-caption">
           Newer
       </strong>
-      <div class="article-nav-title">Yukicoder065</div>
+      <div class="article-nav-title">Yukicoder065 回数の期待値の練習</div>
     </a>
     
 </nav>
@@ -562,7 +610,7 @@ categories   : 記事のdirectory
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder065/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder075/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -573,22 +621,22 @@ categories   : 記事のdirectory
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/">
-                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder065/" class="title">Yukicoder065</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder075/" class="title">Yukicoder075 回数の期待値の問題</a></p>
                     <p class="item-date">
-                        <time datetime="2018-04-28 22:35:54 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+                        <time datetime="2018-05-05 00:04:28 &#43;0900 DST" itemprop="datePublished">2018-05-05</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder064/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder074/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -599,22 +647,22 @@ categories   : 記事のdirectory
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/">
-                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder064/" class="title">Yukicoder064</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder074/" class="title">Yukicoder074 貯金箱の退屈</a></p>
                     <p class="item-date">
-                        <time datetime="2018-04-28 22:35:52 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+                        <time datetime="2018-05-04 23:46:32 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder063/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder073/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -625,22 +673,22 @@ categories   : 記事のdirectory
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/">
-                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder063/" class="title">Yukicoder063</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder073/" class="title">Yukicoder073 helloworld</a></p>
                     <p class="item-date">
-                        <time datetime="2018-04-28 22:35:50 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+                        <time datetime="2018-05-04 23:37:02 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder062/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder072/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -651,22 +699,22 @@ categories   : 記事のdirectory
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/">
-                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder062/" class="title">Yukicoder062</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder072/" class="title">Yukicoder072 そろばん Med</a></p>
                     <p class="item-date">
-                        <time datetime="2018-04-28 22:35:49 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+                        <time datetime="2018-05-04 23:32:52 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder061/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder071/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -677,15 +725,15 @@ categories   : 記事のdirectory
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/">
-                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder061/" class="title">Yukicoder061</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder071/" class="title">Yukicoder071 そろばん</a></p>
                     <p class="item-date">
-                        <time datetime="2018-04-28 22:35:47 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+                        <time datetime="2018-05-04 23:26:43 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
                     </p>
                 </div>
             </li>
@@ -705,9 +753,6 @@ categories   : 記事のdirectory
     <div class="widget tagcloud">
         
         
-        <a href="https://yang33-kassa.jp/tags/" style="font-size: 12px;">(5)</a>
-        
-        
         <a href="https://yang33-kassa.jp/tags/2d-grid" style="font-size: 12px;">2d-grid(3)</a>
         
         
@@ -720,10 +765,19 @@ categories   : 記事のdirectory
         <a href="https://yang33-kassa.jp/tags/bfs" style="font-size: 12px;">bfs(3)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/bigint" style="font-size: 12px;">bigint(1)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/binary-indexed-tree" style="font-size: 12px;">binary-indexed-tree(1)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/binary-search" style="font-size: 12px;">binary-search(2)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/brackets" style="font-size: 12px;">brackets(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/combination" style="font-size: 12px;">combination(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/dfs" style="font-size: 12px;">dfs(1)</a>
@@ -732,10 +786,13 @@ categories   : 記事のdirectory
         <a href="https://yang33-kassa.jp/tags/dijkstra" style="font-size: 12px;">dijkstra(2)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/dp" style="font-size: 12px;">dp(12)</a>
+        <a href="https://yang33-kassa.jp/tags/dp" style="font-size: 12px;">dp(15)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83" style="font-size: 12px;">dp復元(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/expected-value" style="font-size: 12px;">expected-value(2)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/factoring" style="font-size: 12px;">factoring(3)</a>
@@ -747,10 +804,16 @@ categories   : 記事のdirectory
         <a href="https://yang33-kassa.jp/tags/fraction" style="font-size: 12px;">fraction(1)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/gauss-seidel" style="font-size: 12px;">gauss-seidel(1)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/gcd-lcm" style="font-size: 12px;">gcd-lcm(2)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/geometry" style="font-size: 12px;">geometry(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/graph" style="font-size: 12px;">graph(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/greedy" style="font-size: 12px;">greedy(3)</a>
@@ -792,7 +855,7 @@ categories   : 記事のdirectory
         <a href="https://yang33-kassa.jp/tags/prime-number" style="font-size: 12px;">prime-number(3)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/priority_queue" style="font-size: 12px;">priority_queue(1)</a>
+        <a href="https://yang33-kassa.jp/tags/priority-queue" style="font-size: 12px;">priority-queue(2)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/probability" style="font-size: 12px;">probability(1)</a>
@@ -801,13 +864,28 @@ categories   : 記事のdirectory
         <a href="https://yang33-kassa.jp/tags/proof" style="font-size: 12px;">proof(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/simulation" style="font-size: 12px;">simulation(1)</a>
+        <a href="https://yang33-kassa.jp/tags/quadratic-function" style="font-size: 12px;">quadratic-function(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simulation" style="font-size: 12px;">simulation(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simultaneous-equations" style="font-size: 12px;">simultaneous-equations(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simultaneous-linear-congruences" style="font-size: 12px;">simultaneous-linear-congruences(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/strongly-connected-component-decomposition" style="font-size: 12px;">strongly-connected-component-decomposition(1)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/union-find" style="font-size: 12px;">union-find(1)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/warshall-floyd" style="font-size: 12px;">warshall-floyd(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/xor" style="font-size: 12px;">xor(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/%E3%81%97%E3%82%83%E3%81%8F%E3%81%A8%E3%82%8A%E6%B3%95" style="font-size: 12px;">しゃくとり法(2)</a>
@@ -817,6 +895,9 @@ categories   : 記事のdirectory
         
         
         <a href="https://yang33-kassa.jp/tags/%E5%95%8F%E9%A1%8C%E9%9B%86%E3%81%BE%E3%81%A8%E3%82%81" style="font-size: 12px;">問題集まとめ(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E5%BE%A9%E7%BF%92" style="font-size: 12px;">復習(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/%E8%AA%A4%E5%B7%AE" style="font-size: 12px;">誤差(1)</a>
@@ -837,14 +918,6 @@ categories   : 記事のdirectory
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
         <ul class="category-list">
-            
-            <li class="category-list-item">
-                
-                <a class="category-list-link" href="https://yang33-kassa.jp/categories/">
-                    
-                </a>
-                <span class="category-list-count">5</span>
-            </li>
             
             <li class="category-list-item">
                 
@@ -875,7 +948,7 @@ categories   : 記事のdirectory
                 <a class="category-list-link" href="https://yang33-kassa.jp/categories/yukicoder">
                     yukicoder
                 </a>
-                <span class="category-list-count">59</span>
+                <span class="category-list-count">74</span>
             </li>
             
             <li class="category-list-item">

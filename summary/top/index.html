@@ -43,17 +43,26 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
 vectorでuniqueな要素をeraseでとっても、メモリは開放されていない
 unorder_set/unorder_map殺しが存在するのでCodeforces/SRMでの安易な使用はまずい
 …
-数論 オイラーのファイ関数   与えられた数から1までの間にある互いに素の数の個数を返す。
-ex:n=6 なら 1,5の2つ
-ex:n=7 なら 1,2,3,4,5,6の6つ
-Eularのtotient関数とも呼ばれる。
-性質など 素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)
-$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $
-乗法的 $m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)
-→
-$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、
-$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$
-　$ = n Π_{k=1}^{d} (1 - 1/p_k) $" />
+以下、知見,考察,知識などまとめ 数論 数論まとめ
+データ構造 データ構造まとめ
+文字列 文字列まとめ
+フロー フローまとめ
+木 数論まとめ
+グラフ理論 グラフ理論まとめ
+DP DPまとめ
+幾何 幾何まとめ
+ゲーム理論 ゲーム理論まとめ
+テクニック? テクニックまとめ
+おもしろいと思った問題 おもしろいと思ったまとめ
+だまされたと思った問題 だまされたと思ったまとめ
+ソース テンプレ ▼ボタン   (概要)
+性質など (なんかあれば#5で増やす)
+計算量 ある$N$について $O(\sqrt N)$
+$N$までのテーブルを作成 $O(N)$
+問題 AOJ verify問題
+蟻本ポリアの定理
+[]()
+参考 蟻本第二版p.261、p.270" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yang33-kassa.jp/summary/top/" />
 
@@ -89,22 +98,31 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
 vectorでuniqueな要素をeraseでとっても、メモリは開放されていない
 unorder_set/unorder_map殺しが存在するのでCodeforces/SRMでの安易な使用はまずい
 …
-数論 オイラーのファイ関数   与えられた数から1までの間にある互いに素の数の個数を返す。
-ex:n=6 なら 1,5の2つ
-ex:n=7 なら 1,2,3,4,5,6の6つ
-Eularのtotient関数とも呼ばれる。
-性質など 素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)
-$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $
-乗法的 $m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)
-→
-$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、
-$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$
-　$ = n Π_{k=1}^{d} (1 - 1/p_k) $">
+以下、知見,考察,知識などまとめ 数論 数論まとめ
+データ構造 データ構造まとめ
+文字列 文字列まとめ
+フロー フローまとめ
+木 数論まとめ
+グラフ理論 グラフ理論まとめ
+DP DPまとめ
+幾何 幾何まとめ
+ゲーム理論 ゲーム理論まとめ
+テクニック? テクニックまとめ
+おもしろいと思った問題 おもしろいと思ったまとめ
+だまされたと思った問題 だまされたと思ったまとめ
+ソース テンプレ ▼ボタン   (概要)
+性質など (なんかあれば#5で増やす)
+計算量 ある$N$について $O(\sqrt N)$
+$N$までのテーブルを作成 $O(N)$
+問題 AOJ verify問題
+蟻本ポリアの定理
+[]()
+参考 蟻本第二版p.261、p.270">
 
 
 <meta itemprop="datePublished" content="2018-04-28T16:15:11&#43;09:00" />
 <meta itemprop="dateModified" content="2018-04-28T16:15:11&#43;09:00" />
-<meta itemprop="wordCount" content="103">
+<meta itemprop="wordCount" content="61">
 
 
 
@@ -125,17 +143,26 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
 vectorでuniqueな要素をeraseでとっても、メモリは開放されていない
 unorder_set/unorder_map殺しが存在するのでCodeforces/SRMでの安易な使用はまずい
 …
-数論 オイラーのファイ関数   与えられた数から1までの間にある互いに素の数の個数を返す。
-ex:n=6 なら 1,5の2つ
-ex:n=7 なら 1,2,3,4,5,6の6つ
-Eularのtotient関数とも呼ばれる。
-性質など 素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)
-$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $
-乗法的 $m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)
-→
-$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、
-$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$
-　$ = n Π_{k=1}^{d} (1 - 1/p_k) $"/>
+以下、知見,考察,知識などまとめ 数論 数論まとめ
+データ構造 データ構造まとめ
+文字列 文字列まとめ
+フロー フローまとめ
+木 数論まとめ
+グラフ理論 グラフ理論まとめ
+DP DPまとめ
+幾何 幾何まとめ
+ゲーム理論 ゲーム理論まとめ
+テクニック? テクニックまとめ
+おもしろいと思った問題 おもしろいと思ったまとめ
+だまされたと思った問題 だまされたと思ったまとめ
+ソース テンプレ ▼ボタン   (概要)
+性質など (なんかあれば#5で増やす)
+計算量 ある$N$について $O(\sqrt N)$
+$N$までのテーブルを作成 $O(N)$
+問題 AOJ verify問題
+蟻本ポリアの定理
+[]()
+参考 蟻本第二版p.261、p.270"/>
 <meta name="twitter:site" content="@__KasSA"/>
 
     
@@ -298,12 +325,12 @@ $ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        68
+        79
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          40
+          51
         
         <span>
             Tags
@@ -442,66 +469,96 @@ vectorでuniqueな要素をeraseでとっても、メモリは開放されてい
 unorder_set/unorder_map殺しが存在するのでCodeforces/SRMでの安易な使用はまずい<br />
 …</p>
 
+<h1 id="以下-知見-考察-知識などまとめ">以下、知見,考察,知識などまとめ</h1>
+
 <h2 id="数論">数論</h2>
 
-<!-- 折り畳み展開ポインタ id変えような -->
+<p><a href="https://yang33-kassa.jp/summary/top/math/">数論まとめ</a></p>
 
-<p><div onclick="obj=document.getElementById('eular-phi').style; obj.display=(obj.display=='none')?'block':'none';">
+<h2 id="データ構造">データ構造</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">データ構造まとめ</a></p>
+
+<h2 id="文字列">文字列</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">文字列まとめ</a></p>
+
+<h2 id="フロー">フロー</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">フローまとめ</a></p>
+
+<h2 id="木">木</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">数論まとめ</a></p>
+
+<h2 id="グラフ理論">グラフ理論</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">グラフ理論まとめ</a></p>
+
+<h2 id="dp">DP</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">DPまとめ</a></p>
+
+<h2 id="幾何">幾何</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">幾何まとめ</a></p>
+
+<h2 id="ゲーム理論">ゲーム理論</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">ゲーム理論まとめ</a></p>
+
+<h2 id="テクニック">テクニック?</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">テクニックまとめ</a></p>
+
+<h2 id="おもしろいと思った問題">おもしろいと思った問題</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">おもしろいと思ったまとめ</a></p>
+
+<h2 id="だまされたと思った問題">だまされたと思った問題</h2>
+
+<p><a href="https://yang33-kassa.jp/summary/top/math/">だまされたと思ったまとめ</a></p>
+
+<h3 id="ソース">ソース</h3>
+
+<!-- 4 -->
+
+<h4 id="テンプレ">テンプレ</h4>
+
+<!----------------- 折り畳み展開ポインタ id変えような ---------------------------------------------------------------------------------->
+
+<p><div onclick="obj=document.getElementById('xxxxx-yyyy').style; obj.display=(obj.display=='none')?'block':'none';">
 <a style="cursor:pointer;"></p>
 
-<h5 id="オイラーのファイ関数">オイラーのファイ関数</h5>
+<h5 id="ボタン">▼ボタン</h5>
 
 <p></a>
 </div>
 <!--// 折り畳み展開ポインタ --></p>
 
-<p><!-- Contests Begin --><div id="eular-phi" style="display:none;clear:both;"><!-- id変えような -->
-与えられた数から1までの間にある互いに素の数の個数を返す。<br />
-ex:n=6 なら 1,5の2つ<br />
-ex:n=7 なら 1,2,3,4,5,6の6つ<br />
-Eularのtotient関数とも呼ばれる。</p>
+<p><!-- Contests Begin --><div id="xxxxx-yyyy" style="display:none;clear:both;"><!-- id変えような ----------------------------------------->
+(概要)</p>
 
 <h5 id="性質など">性質など</h5>
 
-<p>素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)<br />
-$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $</p>
-
-<h6 id="乗法的">乗法的</h6>
-
-<p>$m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)<br />
-→<br />
-$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、</p>
-
-<p>$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$</p>
-
-<p>　　　$ = n Π_{k=1}^{d} (1 - 1/p_k) $<br />
-　　　$ = n (1 - 1/p_1) &hellip; (1 - 1/p_d)$  [$p_d$ は $n$ をなす素数（当然重複を認めない）]</p>
-
-<h6 id="σ-d-n-φ-d-n">$Σ_{d|n} φ(d) = n$</h6>
-
-<p>ある約数$d$について、$[1,n]$までの自然数のうち$n$との最大公約数が$n/d$である数は、$φ(d)$個、
-特に、$[1,n]$の自然数は$n$との最大公約数によって類別されるため。</p>
-
-<h6 id="素数でない逆元">素数でない逆元</h6>
-
-<p>互いに素な$x,m$について、$x^{φ(m)}≡1 (mod$ $m)$ [フェルマーの小定理の拡張とみなせる]</p>
+<p>(なんかあれば#5で増やす)</p>
 
 <h6 id="計算量">計算量</h6>
 
 <p>ある$N$について $O(\sqrt N)$<br />
 $N$までのテーブルを作成 $O(N)$</p>
 
-<h5 id="問題">問題</h5>
+<h3 id="問題">問題</h3>
 
 <p><a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_D&amp;lang=jp">AOJ verify問題</a><br />
 蟻本ポリアの定理<br />
 []()</p>
 
-<p></div><!-- Contents End --></p>
+<h6 id="参考">参考</h6>
 
-<h2 id="ソース">ソース</h2>
+<p>蟻本第二版p.261、p.270</p>
 
-<!-- 4 -->
+<p></div><!------------------------ Contents End ------------------------------------------------------------------------------------------></p>
 
         </div>
         <footer class="article-footer">
@@ -602,6 +659,19 @@ $N$までのテーブルを作成 $O(N)$</p>
     </div>
 
     
+<nav id="article-nav">
+    
+
+    
+    <a href="https://yang33-kassa.jp/summary/top/math/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">Math</div>
+    </a>
+    
+</nav>
+
 
 </article>
 
@@ -646,7 +716,7 @@ $N$までのテーブルを作成 $O(N)$</p>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder065/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder075/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -657,22 +727,22 @@ $N$までのテーブルを作成 $O(N)$</p>
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/">
-                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder065/" class="title">Yukicoder065</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder075/" class="title">Yukicoder075 回数の期待値の問題</a></p>
                     <p class="item-date">
-                        <time datetime="2018-04-28 22:35:54 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+                        <time datetime="2018-05-05 00:04:28 &#43;0900 DST" itemprop="datePublished">2018-05-05</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder064/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder074/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -683,22 +753,22 @@ $N$までのテーブルを作成 $O(N)$</p>
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/">
-                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder064/" class="title">Yukicoder064</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder074/" class="title">Yukicoder074 貯金箱の退屈</a></p>
                     <p class="item-date">
-                        <time datetime="2018-04-28 22:35:52 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+                        <time datetime="2018-05-04 23:46:32 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder063/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder073/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -709,22 +779,22 @@ $N$までのテーブルを作成 $O(N)$</p>
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/">
-                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder063/" class="title">Yukicoder063</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder073/" class="title">Yukicoder073 helloworld</a></p>
                     <p class="item-date">
-                        <time datetime="2018-04-28 22:35:50 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+                        <time datetime="2018-05-04 23:37:02 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder062/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder072/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -735,22 +805,22 @@ $N$までのテーブルを作成 $O(N)$</p>
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/">
-                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder062/" class="title">Yukicoder062</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder072/" class="title">Yukicoder072 そろばん Med</a></p>
                     <p class="item-date">
-                        <time datetime="2018-04-28 22:35:49 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+                        <time datetime="2018-05-04 23:32:52 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder061/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder071/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -761,15 +831,15 @@ $N$までのテーブルを作成 $O(N)$</p>
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/">
-                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder061/" class="title">Yukicoder061</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder071/" class="title">Yukicoder071 そろばん</a></p>
                     <p class="item-date">
-                        <time datetime="2018-04-28 22:35:47 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
+                        <time datetime="2018-05-04 23:26:43 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
                     </p>
                 </div>
             </li>
@@ -789,9 +859,6 @@ $N$までのテーブルを作成 $O(N)$</p>
     <div class="widget tagcloud">
         
         
-        <a href="https://yang33-kassa.jp/tags/" style="font-size: 12px;">(5)</a>
-        
-        
         <a href="https://yang33-kassa.jp/tags/2d-grid" style="font-size: 12px;">2d-grid(3)</a>
         
         
@@ -804,10 +871,19 @@ $N$までのテーブルを作成 $O(N)$</p>
         <a href="https://yang33-kassa.jp/tags/bfs" style="font-size: 12px;">bfs(3)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/bigint" style="font-size: 12px;">bigint(1)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/binary-indexed-tree" style="font-size: 12px;">binary-indexed-tree(1)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/binary-search" style="font-size: 12px;">binary-search(2)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/brackets" style="font-size: 12px;">brackets(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/combination" style="font-size: 12px;">combination(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/dfs" style="font-size: 12px;">dfs(1)</a>
@@ -816,10 +892,13 @@ $N$までのテーブルを作成 $O(N)$</p>
         <a href="https://yang33-kassa.jp/tags/dijkstra" style="font-size: 12px;">dijkstra(2)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/dp" style="font-size: 12px;">dp(12)</a>
+        <a href="https://yang33-kassa.jp/tags/dp" style="font-size: 12px;">dp(15)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83" style="font-size: 12px;">dp復元(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/expected-value" style="font-size: 12px;">expected-value(2)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/factoring" style="font-size: 12px;">factoring(3)</a>
@@ -831,10 +910,16 @@ $N$までのテーブルを作成 $O(N)$</p>
         <a href="https://yang33-kassa.jp/tags/fraction" style="font-size: 12px;">fraction(1)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/gauss-seidel" style="font-size: 12px;">gauss-seidel(1)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/gcd-lcm" style="font-size: 12px;">gcd-lcm(2)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/geometry" style="font-size: 12px;">geometry(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/graph" style="font-size: 12px;">graph(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/greedy" style="font-size: 12px;">greedy(3)</a>
@@ -876,7 +961,7 @@ $N$までのテーブルを作成 $O(N)$</p>
         <a href="https://yang33-kassa.jp/tags/prime-number" style="font-size: 12px;">prime-number(3)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/priority_queue" style="font-size: 12px;">priority_queue(1)</a>
+        <a href="https://yang33-kassa.jp/tags/priority-queue" style="font-size: 12px;">priority-queue(2)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/probability" style="font-size: 12px;">probability(1)</a>
@@ -885,13 +970,28 @@ $N$までのテーブルを作成 $O(N)$</p>
         <a href="https://yang33-kassa.jp/tags/proof" style="font-size: 12px;">proof(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/simulation" style="font-size: 12px;">simulation(1)</a>
+        <a href="https://yang33-kassa.jp/tags/quadratic-function" style="font-size: 12px;">quadratic-function(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simulation" style="font-size: 12px;">simulation(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simultaneous-equations" style="font-size: 12px;">simultaneous-equations(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simultaneous-linear-congruences" style="font-size: 12px;">simultaneous-linear-congruences(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/strongly-connected-component-decomposition" style="font-size: 12px;">strongly-connected-component-decomposition(1)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/union-find" style="font-size: 12px;">union-find(1)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/warshall-floyd" style="font-size: 12px;">warshall-floyd(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/xor" style="font-size: 12px;">xor(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/%E3%81%97%E3%82%83%E3%81%8F%E3%81%A8%E3%82%8A%E6%B3%95" style="font-size: 12px;">しゃくとり法(2)</a>
@@ -901,6 +1001,9 @@ $N$までのテーブルを作成 $O(N)$</p>
         
         
         <a href="https://yang33-kassa.jp/tags/%E5%95%8F%E9%A1%8C%E9%9B%86%E3%81%BE%E3%81%A8%E3%82%81" style="font-size: 12px;">問題集まとめ(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E5%BE%A9%E7%BF%92" style="font-size: 12px;">復習(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/%E8%AA%A4%E5%B7%AE" style="font-size: 12px;">誤差(1)</a>
@@ -921,14 +1024,6 @@ $N$までのテーブルを作成 $O(N)$</p>
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
         <ul class="category-list">
-            
-            <li class="category-list-item">
-                
-                <a class="category-list-link" href="https://yang33-kassa.jp/categories/">
-                    
-                </a>
-                <span class="category-list-count">5</span>
-            </li>
             
             <li class="category-list-item">
                 
@@ -959,7 +1054,7 @@ $N$までのテーブルを作成 $O(N)$</p>
                 <a class="category-list-link" href="https://yang33-kassa.jp/categories/yukicoder">
                     yukicoder
                 </a>
-                <span class="category-list-count">59</span>
+                <span class="category-list-count">74</span>
             </li>
             
             <li class="category-list-item">

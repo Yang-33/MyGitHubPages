@@ -6,10 +6,37 @@
     <description>Recent content in Summaries on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Apr 2018 16:15:11 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 29 Apr 2018 01:08:13 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/summary/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Math</title>
+      <link>https://yang33-kassa.jp/summary/top/math/</link>
+      <pubDate>Sun, 29 Apr 2018 01:08:13 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/summary/top/math/</guid>
+      <description>▼写像12相(DP)(まだ)   (概要)
+性質など (なんかあれば#5で増やす)
+計算量 ある$N$について $O(\sqrt N)$
+$N$までのテーブルを作成 $O(N)$
+問題 AOJ verify問題
+蟻本ポリアの定理
+[]()
+参考 蟻本第二版p.261、p.270
+▼オイラーのファイ関数   与えられた数から1までの間にある互いに素の数の個数を返す。
+ex:n=6 なら 1,5の2つ
+ex:n=7 なら 1,2,3,4,5,6の6つ
+Eularのtotient関数とも呼ばれる。
+性質など 素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)
+$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $
+乗法的 $m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)
+→
+$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、
+$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$
+　$ = n Π_{k=1}^{d} (1 - 1/p_k) $</description>
+    </item>
     
     <item>
       <title>Top</title>
@@ -30,17 +57,26 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
 vectorでuniqueな要素をeraseでとっても、メモリは開放されていない
 unorder_set/unorder_map殺しが存在するのでCodeforces/SRMでの安易な使用はまずい
 …
-数論 オイラーのファイ関数   与えられた数から1までの間にある互いに素の数の個数を返す。
-ex:n=6 なら 1,5の2つ
-ex:n=7 なら 1,2,3,4,5,6の6つ
-Eularのtotient関数とも呼ばれる。
-性質など 素数$p$,自然数$k$に対して$[1,p^k]$の中で$p$の倍数は$p^{k-1}$個あるので、($p^k$をのぞく)
-$φ(p^k) = p^k - p^{k-1} = p^{k-1}×(p-1) = p^k×(1-1/p) $
-乗法的 $m,n$を互いに素な自然数とすると、$φ(m*n) = φ(m) * φ(n)$. (互いに素な数の積に関して乗法的)
-→
-$n = Π_{k=1}^{d}p_k^{e_k}$ のとき、
-$ φ(n) = Π_{k=1}^{d} (p_k^{e_k} - p_k^{e_k-1})$
-　$ = n Π_{k=1}^{d} (1 - 1/p_k) $</description>
+以下、知見,考察,知識などまとめ 数論 数論まとめ
+データ構造 データ構造まとめ
+文字列 文字列まとめ
+フロー フローまとめ
+木 数論まとめ
+グラフ理論 グラフ理論まとめ
+DP DPまとめ
+幾何 幾何まとめ
+ゲーム理論 ゲーム理論まとめ
+テクニック? テクニックまとめ
+おもしろいと思った問題 おもしろいと思ったまとめ
+だまされたと思った問題 だまされたと思ったまとめ
+ソース テンプレ ▼ボタン   (概要)
+性質など (なんかあれば#5で増やす)
+計算量 ある$N$について $O(\sqrt N)$
+$N$までのテーブルを作成 $O(N)$
+問題 AOJ verify問題
+蟻本ポリアの定理
+[]()
+参考 蟻本第二版p.261、p.270</description>
     </item>
     
   </channel>

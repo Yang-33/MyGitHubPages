@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Union Find on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/union-find/</link>
+    <description>Recent content in Union Find on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 04 May 2018 23:46:32 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/union-find/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder074 貯金箱の退屈</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder074/</link>
+      <pubDate>Fri, 04 May 2018 23:46:32 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder074/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;貯金箱くんはとても退屈していました。&lt;br /&gt;
+そこで自分が持っている硬貨で遊ぶことにしました。&lt;/p&gt;
+
+&lt;p&gt;まず自分の持っている硬貨を床にばらまき、そこから$N$枚硬貨を選び円形に並べます。&lt;br /&gt;
+次に$N$枚の硬貨から適当に1枚選びます。選んだ硬貨の額面を$D$円としたとき、選んだ硬貨から時計回りに$D$個先の硬貨と、反時計回りに$D$個先の硬貨をひっくり返します。&lt;br /&gt;
+ただし時計回りでも反時計回りでも同じ硬貨だった場合はその硬貨を1回だけひっくり返します。&lt;br /&gt;
+貯金箱くんは、この操作を繰り返しすべての硬貨を表向きにしたいです。&lt;/p&gt;
+
+&lt;p&gt;硬貨の並び、額面、最初の裏表が与えられるのですべての硬貨を表向きにできるか判定してください。&lt;br /&gt;
+ただし同じ硬貨を複数回選んでもよいとします。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$D_i\leqq10^3$、$W_i\leqq1$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

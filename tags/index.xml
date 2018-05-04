@@ -6,19 +6,10 @@
     <description>Recent content in Tags on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Apr 2018 22:35:54 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 19:21:50 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://yang33-kassa.jp/tags/</link>
-      <pubDate>Sat, 28 Apr 2018 22:35:54 +0900</pubDate>
-      
-      <guid>https://yang33-kassa.jp/tags/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>2d Grid</title>
@@ -57,6 +48,15 @@
     </item>
     
     <item>
+      <title>Bigint</title>
+      <link>https://yang33-kassa.jp/tags/bigint/</link>
+      <pubDate>Sat, 28 Apr 2018 22:35:49 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/bigint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Binary Indexed Tree</title>
       <link>https://yang33-kassa.jp/tags/binary-indexed-tree/</link>
       <pubDate>Sat, 14 Apr 2018 15:47:51 +0900</pubDate>
@@ -66,11 +66,29 @@
     </item>
     
     <item>
+      <title>Binary Search</title>
+      <link>https://yang33-kassa.jp/tags/binary-search/</link>
+      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/binary-search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Brackets</title>
       <link>https://yang33-kassa.jp/tags/brackets/</link>
       <pubDate>Fri, 13 Apr 2018 11:43:22 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/brackets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Combination</title>
+      <link>https://yang33-kassa.jp/tags/combination/</link>
+      <pubDate>Fri, 04 May 2018 23:37:02 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/combination/</guid>
       <description></description>
     </item>
     
@@ -95,7 +113,7 @@
     <item>
       <title>Dp</title>
       <link>https://yang33-kassa.jp/tags/dp/</link>
-      <pubDate>Sat, 14 Apr 2018 15:47:42 +0900</pubDate>
+      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/dp/</guid>
       <description></description>
@@ -107,6 +125,15 @@
       <pubDate>Sat, 07 Apr 2018 02:16:41 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Expected Value</title>
+      <link>https://yang33-kassa.jp/tags/expected-value/</link>
+      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/expected-value/</guid>
       <description></description>
     </item>
     
@@ -138,6 +165,15 @@
     </item>
     
     <item>
+      <title>Gauss Seidel</title>
+      <link>https://yang33-kassa.jp/tags/gauss-seidel/</link>
+      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/gauss-seidel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Gcd Lcm</title>
       <link>https://yang33-kassa.jp/tags/gcd-lcm/</link>
       <pubDate>Fri, 13 Apr 2018 11:58:28 +0900</pubDate>
@@ -152,6 +188,15 @@
       <pubDate>Sat, 14 Apr 2018 15:24:50 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/geometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph</title>
+      <link>https://yang33-kassa.jp/tags/graph/</link>
+      <pubDate>Fri, 04 May 2018 23:46:32 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/graph/</guid>
       <description></description>
     </item>
     
@@ -273,11 +318,11 @@
     </item>
     
     <item>
-      <title>Priority_queue</title>
-      <link>https://yang33-kassa.jp/tags/priority_queue/</link>
-      <pubDate>Sat, 07 Apr 2018 02:16:35 +0900</pubDate>
+      <title>Priority Queue</title>
+      <link>https://yang33-kassa.jp/tags/priority-queue/</link>
+      <pubDate>Fri, 04 May 2018 23:09:18 +0900</pubDate>
       
-      <guid>https://yang33-kassa.jp/tags/priority_queue/</guid>
+      <guid>https://yang33-kassa.jp/tags/priority-queue/</guid>
       <description></description>
     </item>
     
@@ -300,11 +345,38 @@
     </item>
     
     <item>
+      <title>Quadratic Function</title>
+      <link>https://yang33-kassa.jp/tags/quadratic-function/</link>
+      <pubDate>Fri, 04 May 2018 23:32:52 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/quadratic-function/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Simulation</title>
       <link>https://yang33-kassa.jp/tags/simulation/</link>
-      <pubDate>Sat, 14 Apr 2018 14:58:40 +0900</pubDate>
+      <pubDate>Sat, 28 Apr 2018 22:35:49 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/simulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simultaneous Equations</title>
+      <link>https://yang33-kassa.jp/tags/simultaneous-equations/</link>
+      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/simultaneous-equations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simultaneous Linear Congruences</title>
+      <link>https://yang33-kassa.jp/tags/simultaneous-linear-congruences/</link>
+      <pubDate>Fri, 04 May 2018 23:46:32 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/simultaneous-linear-congruences/</guid>
       <description></description>
     </item>
     
@@ -318,11 +390,29 @@
     </item>
     
     <item>
+      <title>Union Find</title>
+      <link>https://yang33-kassa.jp/tags/union-find/</link>
+      <pubDate>Fri, 04 May 2018 23:46:32 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/union-find/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Warshall Floyd</title>
       <link>https://yang33-kassa.jp/tags/warshall-floyd/</link>
       <pubDate>Fri, 13 Apr 2018 00:59:15 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/warshall-floyd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xor</title>
+      <link>https://yang33-kassa.jp/tags/xor/</link>
+      <pubDate>Sat, 28 Apr 2018 22:35:52 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/xor/</guid>
       <description></description>
     </item>
     
@@ -350,6 +440,15 @@
       <pubDate>Sat, 14 Apr 2018 16:23:25 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/%E5%95%8F%E9%A1%8C%E9%9B%86%E3%81%BE%E3%81%A8%E3%82%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>復習</title>
+      <link>https://yang33-kassa.jp/tags/%E5%BE%A9%E7%BF%92/</link>
+      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/%E5%BE%A9%E7%BF%92/</guid>
       <description></description>
     </item>
     
