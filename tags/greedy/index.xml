@@ -6,10 +6,25 @@
     <description>Recent content in Greedy on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Apr 2018 18:40:21 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jul 2018 14:54:47 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/greedy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder095-100</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder095-100/</link>
+      <pubDate>Sat, 07 Jul 2018 14:54:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder095-100/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;概要を書くのが面倒なので、まとめることにした。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder031 悪のミックスジュース</title>

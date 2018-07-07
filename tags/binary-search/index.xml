@@ -6,10 +6,32 @@
     <description>Recent content in Binary Search on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 05 May 2018 00:04:28 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jul 2018 14:01:26 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/binary-search/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder091 赤、緑、青の石</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder091/</link>
+      <pubDate>Sat, 07 Jul 2018 14:01:26 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder091/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;赤、緑、青の3種類の石を1つずつ使って1つのアクセサリーができる。
+石は同じ色の石2個を別の色の石1個に交換することができる。
+最初に持っている赤、緑、青の石から最大何個のアクセサリーを作ることができるか？&lt;/p&gt;
+
+&lt;p&gt;$R,G,B\leqq10^7$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder075 回数の期待値の問題</title>

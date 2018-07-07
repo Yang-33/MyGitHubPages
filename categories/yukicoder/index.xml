@@ -6,10 +6,124 @@
     <description>Recent content in Yukicoder on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 05 May 2018 01:49:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jul 2018 14:54:47 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/categories/yukicoder/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder095-100</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder095-100/</link>
+      <pubDate>Sat, 07 Jul 2018 14:54:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder095-100/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;概要を書くのが面倒なので、まとめることにした。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder094 圏外です。(EASY)</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder094/</link>
+      <pubDate>Sat, 07 Jul 2018 14:31:26 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder094/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;太郎君と二郎君は、無線機を使って会話をしています。&lt;/p&gt;
+
+&lt;p&gt;二人が使用している無線機は、電波を使ってお互いに直接通信し、
+1kmの距離まで会話をすることができます。
+またそれ以外にも、中継局を1つ以上間に挟むことで通信距離を延長することもできます。&lt;/p&gt;
+
+&lt;p&gt;無線機と中継局の間は、1km以内までしか通信できませんが、
+中継局と中継局の間は、10km以内まで通信することができます。
+(それぞれ1kmちょうど、10kmちょうどを含みます。)&lt;/p&gt;
+
+&lt;p&gt;2次元平面上に N本の中継局が立っており、
+その位置は $Xi,Yi (1≤i≤N)$で表されます。&lt;/p&gt;
+
+&lt;p&gt;太郎君と二郎君はこれらの中継局をすべて自由に使用することができ、
+また、太郎君と二郎君は無線機を持って2次元平面上を自由に移動できるとするとき、
+太郎君と二郎君が、「直接」または「中継局を用いて間接的に」会話ができる
+太郎君と二郎君の直線距離(ユークリッド距離)の最大を求めてください。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^3$、$|p(x,y)|\leqq10^3$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder093 ペガサス</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder093/</link>
+      <pubDate>Sat, 07 Jul 2018 14:17:39 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder093/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;将棋での、飛車と桂馬をあわせた駒を$N×N$の盤面に$N$個置く。
+ある駒から他の駒を取れないように置くとして、何通り置くことができるか。$mod 10^9+7$で出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^3$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder092 逃走経路</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder092/</link>
+      <pubDate>Sat, 07 Jul 2018 14:11:40 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder092/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;重み付きの連結な双方向グラフがある。グラフの移動コストが$K$回与えられるので最後にいる頂点の候補を挙げろ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^2$、$M,K\leqq10^3$、$c(u,v)\leqq10^9$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yukicoder091 赤、緑、青の石</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder091/</link>
+      <pubDate>Sat, 07 Jul 2018 14:01:26 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder091/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;赤、緑、青の3種類の石を1つずつ使って1つのアクセサリーができる。
+石は同じ色の石2個を別の色の石1個に交換することができる。
+最初に持っている赤、緑、青の石から最大何個のアクセサリーを作ることができるか？&lt;/p&gt;
+
+&lt;p&gt;$R,G,B\leqq10^7$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder090 品物の並び替え</title>

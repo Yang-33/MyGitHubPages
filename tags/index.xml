@@ -68,7 +68,7 @@
     <item>
       <title>Binary Search</title>
       <link>https://yang33-kassa.jp/tags/binary-search/</link>
-      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
+      <pubDate>Sat, 07 Jul 2018 14:01:26 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/binary-search/</guid>
       <description></description>
@@ -80,6 +80,15 @@
       <pubDate>Sat, 05 May 2018 01:25:12 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/bipartite-graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bitdp</title>
+      <link>https://yang33-kassa.jp/tags/bitdp/</link>
+      <pubDate>Sat, 07 Jul 2018 14:54:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/bitdp/</guid>
       <description></description>
     </item>
     
@@ -111,11 +120,29 @@
     </item>
     
     <item>
+      <title>Caliper</title>
+      <link>https://yang33-kassa.jp/tags/caliper/</link>
+      <pubDate>Sat, 07 Jul 2018 14:54:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/caliper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Combination</title>
       <link>https://yang33-kassa.jp/tags/combination/</link>
       <pubDate>Fri, 04 May 2018 23:37:02 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/combination/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cyclic Group</title>
+      <link>https://yang33-kassa.jp/tags/cyclic-group/</link>
+      <pubDate>Sat, 07 Jul 2018 14:54:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/cyclic-group/</guid>
       <description></description>
     </item>
     
@@ -140,7 +167,7 @@
     <item>
       <title>Dp</title>
       <link>https://yang33-kassa.jp/tags/dp/</link>
-      <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
+      <pubDate>Sat, 07 Jul 2018 14:11:40 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/dp/</guid>
       <description></description>
@@ -212,7 +239,7 @@
     <item>
       <title>Geometry</title>
       <link>https://yang33-kassa.jp/tags/geometry/</link>
-      <pubDate>Sat, 14 Apr 2018 15:24:50 +0900</pubDate>
+      <pubDate>Sat, 07 Jul 2018 14:54:47 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/geometry/</guid>
       <description></description>
@@ -230,7 +257,7 @@
     <item>
       <title>Greedy</title>
       <link>https://yang33-kassa.jp/tags/greedy/</link>
-      <pubDate>Fri, 13 Apr 2018 18:40:21 +0900</pubDate>
+      <pubDate>Sat, 07 Jul 2018 14:54:47 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/greedy/</guid>
       <description></description>
@@ -471,6 +498,15 @@
     </item>
     
     <item>
+      <title>Sqrt Decomposition</title>
+      <link>https://yang33-kassa.jp/tags/sqrt-decomposition/</link>
+      <pubDate>Sat, 07 Jul 2018 14:54:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/sqrt-decomposition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Strongly Connected Component Decomposition</title>
       <link>https://yang33-kassa.jp/tags/strongly-connected-component-decomposition/</link>
       <pubDate>Fri, 13 Apr 2018 01:53:01 +0900</pubDate>
@@ -482,9 +518,18 @@
     <item>
       <title>Union Find</title>
       <link>https://yang33-kassa.jp/tags/union-find/</link>
-      <pubDate>Fri, 04 May 2018 23:46:32 +0900</pubDate>
+      <pubDate>Sat, 07 Jul 2018 14:31:26 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/union-find/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unionfind</title>
+      <link>https://yang33-kassa.jp/tags/unionfind/</link>
+      <pubDate>Sat, 07 Jul 2018 14:54:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/unionfind/</guid>
       <description></description>
     </item>
     
@@ -530,6 +575,15 @@
       <pubDate>Sat, 05 May 2018 00:04:28 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/tags/%E5%BE%A9%E7%BF%92/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>挿入dp</title>
+      <link>https://yang33-kassa.jp/tags/%E6%8C%BF%E5%85%A5dp/</link>
+      <pubDate>Sat, 07 Jul 2018 14:17:39 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/tags/%E6%8C%BF%E5%85%A5dp/</guid>
       <description></description>
     </item>
     

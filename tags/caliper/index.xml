@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Caliper on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/caliper/</link>
+    <description>Recent content in Caliper on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 07 Jul 2018 14:54:47 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/caliper/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder095-100</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder095-100/</link>
+      <pubDate>Sat, 07 Jul 2018 14:54:47 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder095-100/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;p&gt;概要を書くのが面倒なので、まとめることにした。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

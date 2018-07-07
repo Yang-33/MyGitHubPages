@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>挿入dp on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/%E6%8C%BF%E5%85%A5dp/</link>
+    <description>Recent content in 挿入dp on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 07 Jul 2018 14:17:39 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/%E6%8C%BF%E5%85%A5dp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder093 ペガサス</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder093/</link>
+      <pubDate>Sat, 07 Jul 2018 14:17:39 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder093/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;将棋での、飛車と桂馬をあわせた駒を$N×N$の盤面に$N$個置く。
+ある駒から他の駒を取れないように置くとして、何通り置くことができるか。$mod 10^9+7$で出力せよ。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^3$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

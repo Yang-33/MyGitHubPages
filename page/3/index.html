@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <title>Yang33 Home</title>
-    <meta name="generator" content="Hugo 0.37-DEV" />
+    <meta name="generator" content="Hugo 0.40.1" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Yang33">
@@ -39,7 +39,7 @@
 
 
 
-<meta property="og:updated_time" content="2018-05-04T23:23:00&#43;09:00"/>
+<meta property="og:updated_time" content="2018-05-05T00:04:28&#43;09:00"/>
 
 
 
@@ -221,12 +221,12 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        94
+        99
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          60
+          66
         
         <span>
             Tags
@@ -304,6 +304,887 @@
     <section id="main">
     
     
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder075/">
+    <h1 class="article-title" itemprop="name">
+        Yukicoder075 回数の期待値の問題
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2018-05-05 00:04:28 &#43;0900 DST" itemprop="datePublished">2018-05-05</time>
+       
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/expected-value">expected-value</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/simultaneous-equations">Simultaneous-equations</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/dp">dp</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/binary-search">binary-search</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/gauss-seidel">Gauss-Seidel</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/%E5%BE%A9%E7%BF%92">復習</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <!--  
+tags         : 記事のType
+categories   : 記事のdirectory
+-->
+
+<h2 id="問題概要">問題概要</h2>
+
+<p>1個のサイコロを何回か振って目の合計をちょうど$K$にしたい。<br />
+もし$K$を超えてしまったら合計を0にリセットする。<br />
+ただしサイコロを振った回数はリセットされない。<br />
+例えば、$K=5$のときサイコロを1回振って6が出たとする。<br />
+この場合は$K$を超えてしまったので合計を0に戻し2回目を振ることになる。<br />
+サイコロは目の合計がちょうど$K$になるまで振り続ける。<br />
+サイコロを振る回数の期待値を求めよ。</p>
+
+<p>$K\leqq10^2$</p>
+
+<p></p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://yang33-kassa.jp/yukicoder/yukicoder075/">
+                    続きを読む
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder075/" data-id="76fbda01c264644597f2a726e3182d33" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder075/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+    <div style="float:left;" class="hatena">
+    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder075/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+    <div style="float:left;" class="twitter">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder075/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder075/" ></a>
+    </div>
+   
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+    
+    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder074/">
+    <h1 class="article-title" itemprop="name">
+        Yukicoder074 貯金箱の退屈
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2018-05-04 23:46:32 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
+       
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/graph">graph</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/simultaneous-linear-congruences">Simultaneous-linear-congruences</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/union-find">Union-find</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+-->
+
+<h2 id="問題概要">問題概要</h2>
+
+<p>貯金箱くんはとても退屈していました。<br />
+そこで自分が持っている硬貨で遊ぶことにしました。</p>
+
+<p>まず自分の持っている硬貨を床にばらまき、そこから$N$枚硬貨を選び円形に並べます。<br />
+次に$N$枚の硬貨から適当に1枚選びます。選んだ硬貨の額面を$D$円としたとき、選んだ硬貨から時計回りに$D$個先の硬貨と、反時計回りに$D$個先の硬貨をひっくり返します。<br />
+ただし時計回りでも反時計回りでも同じ硬貨だった場合はその硬貨を1回だけひっくり返します。<br />
+貯金箱くんは、この操作を繰り返しすべての硬貨を表向きにしたいです。</p>
+
+<p>硬貨の並び、額面、最初の裏表が与えられるのですべての硬貨を表向きにできるか判定してください。<br />
+ただし同じ硬貨を複数回選んでもよいとします。</p>
+
+<p>$N\leqq10^2$、$D_i\leqq10^3$、$W_i\leqq1$</p>
+
+<p></p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://yang33-kassa.jp/yukicoder/yukicoder074/">
+                    続きを読む
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder074/" data-id="533512649e597761095e1167f96428b8" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder074/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+    <div style="float:left;" class="hatena">
+    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder074/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+    <div style="float:left;" class="twitter">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder074/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder074/" ></a>
+    </div>
+   
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+    
+    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder073/">
+    <h1 class="article-title" itemprop="name">
+        Yukicoder073 helloworld
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2018-05-04 23:37:02 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
+       
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/combination">combination</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+-->
+
+<h2 id="問題概要">問題概要</h2>
+
+<p>A君は、helloworldを愛してやまない． 文字列Sのhelloworld数を次を満たす組$(i_0,⋯,i_9)$の個数とする。</p>
+
+<p>$S[i_0]S[i_1]⋯S[i_9]=&ldquo;helloworld&rdquo;$,$(i_0&lt;i_1&lt;⋯&lt;i_9 )$<br />
+アルファベットの個数が与えられるので、 それぞれのアルファベットをちょうどその個数だけ使ってできる文字列におけるhelloworld数の最大値を求めよ。</p>
+
+<p>$C_i\leqq10^2$
+</p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://yang33-kassa.jp/yukicoder/yukicoder073/">
+                    続きを読む
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder073/" data-id="69907b997b4d06bc2b36628a95ed1310" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder073/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+    <div style="float:left;" class="hatena">
+    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder073/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+    <div style="float:left;" class="twitter">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder073/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder073/" ></a>
+    </div>
+   
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+    
+    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder072/">
+    <h1 class="article-title" itemprop="name">
+        Yukicoder072 そろばん Med
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2018-05-04 23:32:52 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
+       
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/quadratic-function">quadratic function</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+-->
+
+<h2 id="問題概要">問題概要</h2>
+
+<p><a href="https://yang33-kassa.jp/yukicoder/yukicoder071/">no71</a>の制約の強化版。</p>
+
+<p>$N\leqq10^{15}$</p>
+
+<p></p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://yang33-kassa.jp/yukicoder/yukicoder072/">
+                    続きを読む
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder072/" data-id="fafb354b975d62c47feba24f28ea29b1" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder072/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+    <div style="float:left;" class="hatena">
+    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder072/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+    <div style="float:left;" class="twitter">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder072/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder072/" ></a>
+    </div>
+   
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+    
+    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder071/">
+    <h1 class="article-title" itemprop="name">
+        Yukicoder071 そろばん
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2018-05-04 23:26:43 &#43;0900 DST" itemprop="datePublished">2018-05-04</time>
+       
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+-->
+
+<h2 id="問題概要">問題概要</h2>
+
+<p>N個の珠が一列に並んだそろばんがある。上と下にそろばんを分けるとき、適切な分け方をすると最大どれだけの数字を表現できるか。</p>
+
+<p>$N\leqq10^6$</p>
+
+<p></p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://yang33-kassa.jp/yukicoder/yukicoder071/">
+                    続きを読む
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder071/" data-id="5e30baa4af66c38e0ca1d1a6d35e9395" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder071/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+    <div style="float:left;" class="hatena">
+    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder071/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+    <div style="float:left;" class="twitter">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder071/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder071/" ></a>
+    </div>
+   
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+    
+    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</footer>
+
+    </div>
+</article>
 
 <article class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
@@ -1146,865 +2027,6 @@ categories   : 記事のdirectory
     </div>
 </article>
 
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        </a>
-
-        <header class="article-header">
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder065/">
-    <h1 class="article-title" itemprop="name">
-        Yukicoder065 回数の期待値の練習
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2018-04-28 22:35:54 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
-       
-        </div>
-        
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-folder"></i>
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
-                
-                
-            </div>
-            
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/tags/expected-value">Expected-value</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/tags/dp">dp</a>
-                
-                
-            </div>
-            
-        
-    </div>
-</header>
-
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                <!-- 
-tags         : 記事のType
-categories   : 記事のdirectory
--->
-
-<h2 id="問題概要">問題概要</h2>
-
-<p>1個のサイコロを何回か振って目の合計を$K$以上にしたい。<br />
-サイコロを振る回数の期待値を求めよ。<br />
-なお、今回のサイコロの場合に回数の期待値$(E(x)$の公式は以下であることが知られている<br />
-$E(x)$ := これまでの目の合計が$x$のとき、合計が$K$に達するまでにあと振ることになる回数の期待値<br />
-E(x)=E(x+1)∗1/6+E(x+2)∗1/6+E(x+3)∗1/6+E(x+4)∗1/6+E(x+5)∗1/6+E(x+6)∗1/6+1</p>
-
-<p>$K\leqq20$</p>
-
-<p></p>
-            </p>
-            <p class="article-more-link">
-                <a href="https://yang33-kassa.jp/yukicoder/yukicoder065/">
-                    続きを読む
-                </a>
-            </p>
-        </div>
-        <footer class="article-footer">
-    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder065/" data-id="ce56423643c2db666f3d001e74f3f9c5" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder065/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-    <div style="float:left;" class="hatena">
-    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder065/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-    </div>
-    <div style="float:left;" class="twitter">
-    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder065/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder065/" ></a>
-    </div>
-   
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-    
-    
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</footer>
-
-    </div>
-</article>
-
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        </a>
-
-        <header class="article-header">
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder064/">
-    <h1 class="article-title" itemprop="name">
-        Yukicoder064 XORフィボナッチ数列
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2018-04-28 22:35:52 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
-       
-        </div>
-        
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-folder"></i>
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
-                
-                
-            </div>
-            
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/tags/xor">xor</a>
-                
-                
-            </div>
-            
-        
-    </div>
-</header>
-
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                <!-- 
-tags         : 記事のType
-categories   : 記事のdirectory
--->
-
-<h2 id="問題概要">問題概要</h2>
-
-<p>整数列 {Fk} を次の漸化式で定義する。</p>
-
-<p>$F[k]=F[k−1] ⊕ F[k−2].(k≥2)$</p>
-
-<p>ただし、$⊕$ は$bitwise$ $xor$の記号である。
-$F[0],F[1]$ が与えられたとき、$F[N]$ を計算せよ。</p>
-
-<p>$N\leqq10^{18}$、$1\leqq F[0],F[1]\leqq10^{18}$</p>
-
-<p></p>
-            </p>
-            <p class="article-more-link">
-                <a href="https://yang33-kassa.jp/yukicoder/yukicoder064/">
-                    続きを読む
-                </a>
-            </p>
-        </div>
-        <footer class="article-footer">
-    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder064/" data-id="543818284be992bd191440112065d413" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder064/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-    <div style="float:left;" class="hatena">
-    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder064/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-    </div>
-    <div style="float:left;" class="twitter">
-    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder064/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder064/" ></a>
-    </div>
-   
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-    
-    
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</footer>
-
-    </div>
-</article>
-
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        </a>
-
-        <header class="article-header">
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder063/">
-    <h1 class="article-title" itemprop="name">
-        Yukicoder063 ポッキーゲーム
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2018-04-28 22:35:50 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
-       
-        </div>
-        
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-folder"></i>
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
-                
-                
-            </div>
-            
-        
-
-        
-            
-            
-        
-    </div>
-</header>
-
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                <!-- 
-tags         : 記事のType
-categories   : 記事のdirectory
--->
-
-<h2 id="問題概要">問題概要</h2>
-
-<p>ハルカちゃんとユウちゃんはとっても仲良しなので、$2$人でポッキーゲームをすることにしました。<br />
-長さが $L$(mm) のポッキーを２人はそれぞれ両端から中央に向かって齧っていきます。<br />
-$2$人とも毎回$K$(mm) ずつ同じタイミングでポッキーを齧ります。<br />
-ユウちゃんは恥ずかしがり屋さんなので、<br />
-次のタイミングで$2$人ともポッキーを齧ろうとしたら唇が触れてしまうと分かった時点で齧り進めるのを止めて、<br />
-残りは全部ハルカちゃんが食べてしまいます。<br />
-このとき、ユウちゃんが食べるポッキーの長さは何mmか？</p>
-
-<p>$L\leqq10^9$、$K\leqq50$</p>
-
-<p></p>
-            </p>
-            <p class="article-more-link">
-                <a href="https://yang33-kassa.jp/yukicoder/yukicoder063/">
-                    続きを読む
-                </a>
-            </p>
-        </div>
-        <footer class="article-footer">
-    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder063/" data-id="5e71fb6a7702ef3ef2e6e599d696294f" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder063/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-    <div style="float:left;" class="hatena">
-    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder063/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-    </div>
-    <div style="float:left;" class="twitter">
-    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder063/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder063/" ></a>
-    </div>
-   
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-    
-    
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</footer>
-
-    </div>
-</article>
-
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        </a>
-
-        <header class="article-header">
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder062/">
-    <h1 class="article-title" itemprop="name">
-        Yukicoder062 リベリオン
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2018-04-28 22:35:49 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
-       
-        </div>
-        
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-folder"></i>
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
-                
-                
-            </div>
-            
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/tags/simulation">simulation</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/tags/bigint">bigint</a>
-                
-                
-            </div>
-            
-        
-    </div>
-</header>
-
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                <!-- 
-tags         : 記事のType
-categories   : 記事のdirectory
--->
-
-<h2 id="問題概要">問題概要</h2>
-
-<p>二次元平面上$(H,W)$で、弾丸が発射される。的が$Q$個あり、それぞれにhitするかを判定せよ。</p>
-
-<p>$Q\leqq10^4$、$H,W\leqq10^9$、(諸所の制限)$\leqq10^9$</p>
-
-<p></p>
-            </p>
-            <p class="article-more-link">
-                <a href="https://yang33-kassa.jp/yukicoder/yukicoder062/">
-                    続きを読む
-                </a>
-            </p>
-        </div>
-        <footer class="article-footer">
-    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder062/" data-id="6ad49bbbb6247b97a01bd28597019d88" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder062/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-    <div style="float:left;" class="hatena">
-    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder062/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-    </div>
-    <div style="float:left;" class="twitter">
-    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder062/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder062/" ></a>
-    </div>
-   
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-    
-    
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</footer>
-
-    </div>
-</article>
-
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        </a>
-
-        <header class="article-header">
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder061/">
-    <h1 class="article-title" itemprop="name">
-        Yukicoder061 リベリオン
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2018-04-28 22:35:47 &#43;0900 DST" itemprop="datePublished">2018-04-28</time>
-       
-        </div>
-        
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-folder"></i>
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
-                
-                
-            </div>
-            
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
-                
-                
-                <a class="article-category-link" href="https://yang33-kassa.jp/tags/simulation">simulation</a>
-                
-                
-            </div>
-            
-        
-    </div>
-</header>
-
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                <!-- 
-tags         : 記事のType
-categories   : 記事のdirectory
--->
-
-<h2 id="問題概要">問題概要</h2>
-
-<p>二次元平面上$(H,W)$で、弾丸が発射される。的が$Q$個あり、それぞれにhitするかを判定せよ。</p>
-
-<p>$Q\leqq10^4$、$H,W\leqq15$、(諸所の制限)$\leqq15$</p>
-
-<p></p>
-            </p>
-            <p class="article-more-link">
-                <a href="https://yang33-kassa.jp/yukicoder/yukicoder061/">
-                    続きを読む
-                </a>
-            </p>
-        </div>
-        <footer class="article-footer">
-    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder061/" data-id="c86850ddf16a47c540863bb005f78a58" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder061/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-    <div style="float:left;" class="hatena">
-    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder061/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-    </div>
-    <div style="float:left;" class="twitter">
-    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder061/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder061/" ></a>
-    </div>
-   
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-    
-    
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</footer>
-
-    </div>
-</article>
-
 
 <nav id="page-nav">
 
@@ -2036,7 +2058,7 @@ categories   : 記事のdirectory
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder090/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder095-100/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -2053,16 +2075,16 @@ categories   : 記事のdirectory
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder090/" class="title">Yukicoder090 品物の並び替え</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder095-100/" class="title">Yukicoder095-100</a></p>
                     <p class="item-date">
-                        <time datetime="2018-05-05 01:49:00 &#43;0900 DST" itemprop="datePublished">2018-05-05</time>
+                        <time datetime="2018-07-07 14:54:47 &#43;0900 DST" itemprop="datePublished">2018-07-07</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder089/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder094/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -2079,16 +2101,16 @@ categories   : 記事のdirectory
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder089/" class="title">Yukicoder089 どんどんドーナツどーんといこう！</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder094/" class="title">Yukicoder094 圏外です。(EASY)</a></p>
                     <p class="item-date">
-                        <time datetime="2018-05-05 01:46:17 &#43;0900 DST" itemprop="datePublished">2018-05-05</time>
+                        <time datetime="2018-07-07 14:31:26 &#43;0900 DST" itemprop="datePublished">2018-07-07</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder088/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder093/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -2105,16 +2127,16 @@ categories   : 記事のdirectory
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder088/" class="title">Yukicoder088 次はどっちだ</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder093/" class="title">Yukicoder093 ペガサス</a></p>
                     <p class="item-date">
-                        <time datetime="2018-05-05 01:43:47 &#43;0900 DST" itemprop="datePublished">2018-05-05</time>
+                        <time datetime="2018-07-07 14:17:39 &#43;0900 DST" itemprop="datePublished">2018-07-07</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder087/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder092/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -2131,16 +2153,16 @@ categories   : 記事のdirectory
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder087/" class="title">Yukicoder087 Advent Calendar Problem</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder092/" class="title">Yukicoder092 逃走経路</a></p>
                     <p class="item-date">
-                        <time datetime="2018-05-05 01:38:08 &#43;0900 DST" itemprop="datePublished">2018-05-05</time>
+                        <time datetime="2018-07-07 14:11:40 &#43;0900 DST" itemprop="datePublished">2018-07-07</time>
                     </p>
                 </div>
             </li>
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder086/" class="thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder091/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -2157,9 +2179,9 @@ categories   : 記事のdirectory
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder086/" class="title">Yukicoder086 TVザッピング(2)</a></p>
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder091/" class="title">Yukicoder091 赤、緑、青の石</a></p>
                     <p class="item-date">
-                        <time datetime="2018-05-05 01:32:25 &#43;0900 DST" itemprop="datePublished">2018-05-05</time>
+                        <time datetime="2018-07-07 14:01:26 &#43;0900 DST" itemprop="datePublished">2018-07-07</time>
                     </p>
                 </div>
             </li>
@@ -2197,10 +2219,13 @@ categories   : 記事のdirectory
         <a href="https://yang33-kassa.jp/tags/binary-indexed-tree" style="font-size: 12px;">binary-indexed-tree(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/binary-search" style="font-size: 12px;">binary-search(2)</a>
+        <a href="https://yang33-kassa.jp/tags/binary-search" style="font-size: 12px;">binary-search(3)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/bipartite-graph" style="font-size: 12px;">bipartite-graph(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/bitdp" style="font-size: 12px;">bitdp(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/brackets" style="font-size: 12px;">brackets(1)</a>
@@ -2212,7 +2237,13 @@ categories   : 記事のdirectory
         <a href="https://yang33-kassa.jp/tags/calendar" style="font-size: 12px;">calendar(1)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/caliper" style="font-size: 12px;">caliper(1)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/combination" style="font-size: 12px;">combination(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/cyclic-group" style="font-size: 12px;">cyclic-group(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/dfs" style="font-size: 12px;">dfs(1)</a>
@@ -2221,7 +2252,7 @@ categories   : 記事のdirectory
         <a href="https://yang33-kassa.jp/tags/dijkstra" style="font-size: 12px;">dijkstra(2)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/dp" style="font-size: 12px;">dp(15)</a>
+        <a href="https://yang33-kassa.jp/tags/dp" style="font-size: 12px;">dp(16)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83" style="font-size: 12px;">dp復元(1)</a>
@@ -2245,13 +2276,13 @@ categories   : 記事のdirectory
         <a href="https://yang33-kassa.jp/tags/gcd-lcm" style="font-size: 12px;">gcd-lcm(2)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/geometry" style="font-size: 12px;">geometry(1)</a>
+        <a href="https://yang33-kassa.jp/tags/geometry" style="font-size: 12px;">geometry(2)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/graph" style="font-size: 12px;">graph(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/greedy" style="font-size: 12px;">greedy(3)</a>
+        <a href="https://yang33-kassa.jp/tags/greedy" style="font-size: 12px;">greedy(4)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/grundy%E6%95%B0" style="font-size: 12px;">grundy数(3)</a>
@@ -2332,10 +2363,16 @@ categories   : 記事のdirectory
         <a href="https://yang33-kassa.jp/tags/simultaneous-linear-congruences" style="font-size: 12px;">simultaneous-linear-congruences(1)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/sqrt-decomposition" style="font-size: 12px;">sqrt-decomposition(1)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/strongly-connected-component-decomposition" style="font-size: 12px;">strongly-connected-component-decomposition(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/union-find" style="font-size: 12px;">union-find(1)</a>
+        <a href="https://yang33-kassa.jp/tags/union-find" style="font-size: 12px;">union-find(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/unionfind" style="font-size: 12px;">unionfind(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/warshall-floyd" style="font-size: 12px;">warshall-floyd(1)</a>
@@ -2351,6 +2388,9 @@ categories   : 記事のdirectory
         
         
         <a href="https://yang33-kassa.jp/tags/%E5%BE%A9%E7%BF%92" style="font-size: 12px;">復習(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E6%8C%BF%E5%85%A5dp" style="font-size: 12px;">挿入dp(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/%E8%AA%A4%E5%B7%AE" style="font-size: 12px;">誤差(2)</a>
@@ -2393,7 +2433,7 @@ categories   : 記事のdirectory
                 <a class="category-list-link" href="https://yang33-kassa.jp/categories/yukicoder">
                     yukicoder
                 </a>
-                <span class="category-list-count">90</span>
+                <span class="category-list-count">95</span>
             </li>
             
             <li class="category-list-item">

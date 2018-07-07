@@ -6,10 +6,46 @@
     <description>Recent content in Union Find on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 04 May 2018 23:46:32 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jul 2018 14:31:26 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/union-find/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yukicoder094 圏外です。(EASY)</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder094/</link>
+      <pubDate>Sat, 07 Jul 2018 14:31:26 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder094/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
+
+&lt;p&gt;太郎君と二郎君は、無線機を使って会話をしています。&lt;/p&gt;
+
+&lt;p&gt;二人が使用している無線機は、電波を使ってお互いに直接通信し、
+1kmの距離まで会話をすることができます。
+またそれ以外にも、中継局を1つ以上間に挟むことで通信距離を延長することもできます。&lt;/p&gt;
+
+&lt;p&gt;無線機と中継局の間は、1km以内までしか通信できませんが、
+中継局と中継局の間は、10km以内まで通信することができます。
+(それぞれ1kmちょうど、10kmちょうどを含みます。)&lt;/p&gt;
+
+&lt;p&gt;2次元平面上に N本の中継局が立っており、
+その位置は $Xi,Yi (1≤i≤N)$で表されます。&lt;/p&gt;
+
+&lt;p&gt;太郎君と二郎君はこれらの中継局をすべて自由に使用することができ、
+また、太郎君と二郎君は無線機を持って2次元平面上を自由に移動できるとするとき、
+太郎君と二郎君が、「直接」または「中継局を用いて間接的に」会話ができる
+太郎君と二郎君の直線距離(ユークリッド距離)の最大を求めてください。&lt;/p&gt;
+
+&lt;p&gt;$N\leqq10^3$、$|p(x,y)|\leqq10^3$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder074 貯金箱の退屈</title>
