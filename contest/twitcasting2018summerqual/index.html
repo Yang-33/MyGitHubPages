@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>TwitCasting2018SummerQual &middot; Yang33 Home</title>
+    <meta name="generator" content="Hugo 0.40.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Yang33">
+    
+      <meta name="description" content="サイトの説明">
+    
+    
+    <link rel="canonical" href="https://yang33-kassa.jp/contest/twitcasting2018summerqual/"/>
+    <link rel="icon" href="https://yang33-kassa.jp/favicon.ico">
+    <link rel="apple-touch-icon" href="https://yang33-kassa.jp/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/style.css">
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/monokai.css">
+    <link rel="stylesheet" href="https://yang33-kassa.jp/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/jp_fonts.css"> 
+    <script src="https://use.edgefonts.net/source-code-pro.js"></script>  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/vs2015.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/jp_fonts.css">
+    
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/custom.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="TwitCasting2018SummerQual" />
+<meta property="og:description" content="
+
+問題概要
+
+相手が持っている数を当てる、Hit and Blow/Bulls and Cows/numer0n)0と呼ばれるゲームがある。(ルールは一緒)
+相手は$N$桁の重複のない数字を持っている。自分が予想して数字を言うと、予測した数の各桁の数が存在するか/位置も正しいかを教えてくれる。
+手順が短く、回答の時間が短いほど得点が高い。得点を最大化せよ。(マラソン形式?)
+ただし、0987654321という数字も存在する。(leading zeroも考慮せよ)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yang33-kassa.jp/contest/twitcasting2018summerqual/" />
+
+
+
+<meta property="article:published_time" content="2018-07-12T01:25:08&#43;09:00"/>
+
+<meta property="article:modified_time" content="2018-07-12T01:25:08&#43;09:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="TwitCasting2018SummerQual">
+<meta itemprop="description" content="
+
+問題概要
+
+相手が持っている数を当てる、Hit and Blow/Bulls and Cows/numer0n)0と呼ばれるゲームがある。(ルールは一緒)
+相手は$N$桁の重複のない数字を持っている。自分が予想して数字を言うと、予測した数の各桁の数が存在するか/位置も正しいかを教えてくれる。
+手順が短く、回答の時間が短いほど得点が高い。得点を最大化せよ。(マラソン形式?)
+ただし、0987654321という数字も存在する。(leading zeroも考慮せよ)">
+
+
+<meta itemprop="datePublished" content="2018-07-12T01:25:08&#43;09:00" />
+<meta itemprop="dateModified" content="2018-07-12T01:25:08&#43;09:00" />
+<meta itemprop="wordCount" content="0">
+
+
+
+<meta itemprop="keywords" content="parallel, binary-indexed-tree," />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TwitCasting2018SummerQual"/>
+<meta name="twitter:description" content="
+
+問題概要
+
+相手が持っている数を当てる、Hit and Blow/Bulls and Cows/numer0n)0と呼ばれるゲームがある。(ルールは一緒)
+相手は$N$桁の重複のない数字を持っている。自分が予想して数字を言うと、予測した数の各桁の数が存在するか/位置も正しいかを教えてくれる。
+手順が短く、回答の時間が短いほど得点が高い。得点を最大化せよ。(マラソン形式?)
+ただし、0987654321という数字も存在する。(leading zeroも考慮せよ)"/>
+<meta name="twitter:site" content="@__KasSA"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://yang33-kassa.jp/" id="logo">
+          
+          <i class="logo" style="background-image: url('https://yang33-kassa.jp/css/images/logo.png')"></i>
+          
+          <span class="site-title">Yang33 Home</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/">Home</a>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+          <a class="main-nav-link" href="/about/">About</a>
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/algorithms/">Algorithms</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/tags/">Tags</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/categories/">Categories</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/links/">Links</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/archives/">Archives</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://yang33-kassa.jp/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://yang33-kassa.jp/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/">Home</a></td>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+          <td><a class="main-nav-link" href="/about/">About</a></td>
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/algorithms/">Algorithms</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/tags/">Tags</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/categories/">Categories</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/links/">Links</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/archives/">Archives</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://yang33-kassa.jp/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="https://www.gravatar.com/avatar/6380971ec3a96b3039069083913daf85?s=100&d=identicon"/>
+      
+      <h2 id="name">Yang33</h2>
+      <h3 id="title">Student</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Earth</span>
+      
+          <a id="follow" href="https://github.com/yang-33">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        100
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          67
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/yang-33" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/__KasSA" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="https://yang33-kassa.jp/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+
+        <header class="article-header">
+    <a href="https://yang33-kassa.jp/contest/twitcasting2018summerqual/">
+    <h1 class="article-title" itemprop="name">
+        TwitCasting2018SummerQual
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2018-07-12 01:25:08 &#43;0900 DST" itemprop="datePublished">2018-07-12</time>
+       
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/categories/other-contest">other-contest</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/parallel">parallel</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/binary-indexed-tree"> binary-indexed-tree</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+-->
+
+<h2 id="問題概要">問題概要</h2>
+
+<p>相手が持っている数を当てる、<a href="https://ja.wikipedia.org/wiki/Numer0n">Hit and Blow/Bulls and Cows/numer0n)0</a>と呼ばれるゲームがある。(ルールは一緒)<br />
+相手は$N$桁の重複のない数字を持っている。自分が予想して数字を言うと、予測した数の各桁の数が存在するか/位置も正しいかを教えてくれる。
+手順が短く、回答の時間が短いほど得点が高い。得点を最大化せよ。(マラソン形式?)<br />
+ただし、<code>0987654321</code>という数字も存在する。(leading zeroも考慮せよ)</p>
+
+<p>
+<a href="https://twitcasting.tv/internship2018.php">https://twitcasting.tv/internship2018.php</a> (問題はもう掲載されていない)</p>
+
+<h2 id="解法">解法</h2>
+
+<p>自分は2つ解法を考えたのでどちらも書いておく。<br />
+基本的な方針は一緒で、答えとなりうるN桁の数を先に列挙しておいて、質問から得られるhit/blowの情報に一致しないものを削除していく。<br />
+次に質問する候補は、残ったものから適当に選択する。<br />
+これを繰り返すと期待値的には9回ぐらいで解を求めることができる。(非直感的だけどすごい)</p>
+
+<p>プログラムのボトルネックは削除のパートだったのとhttp通信を手軽に書きたかったことから、通信はPythonで予測の部分はC++で書いた。<a href="http://pybind11.readthedocs.io/en/stable/">pybind11</a>というライブラリがとても便利だった。</p>
+
+<h4 id="方針1">方針1</h4>
+
+<p>先に列挙してから削除を行うので、削除を高速に行いたい。また、集合の中の値をランダムに選択できると嬉しい。<br />
+set<string>を考える。削除・検索を$O(logX)$でできるので良さそう。ランダムアクセスはできないが、存在しない値を入れて、</p>
+
+<pre><code>string s = &quot;ランダムな値&quot; 
+auto it = SET.find(s);
+it++; 
+auto origin = SET.find(s);
+SET.erase(origin)
+</code></pre>
+
+<p>をすれば実質ランダムな値を選択することができる。<br />
+したがって操作は$O(logX)$でできる。速そう。
+<code>unordered_set</code>にすると更に少し速くなった。ここまでで<strong>110万点</strong>。</p>
+
+<p>次に10桁の候補の数が$3628800$個しか無いので、配列に入れれそうな気がしてくる。<br />
+0/1の値をもつ配列を使用するとすると、削除は$O(1)$で、検索は$O(X)$になる。BITを用いると削除$O(logX)$,検索はBIT上を二分探索で$O(logX)$で行うことができる。<strong>113万点</strong>。</p>
+
+<p>10回以内に当てられるとすると、$O(logX)$も馬鹿にできない気持ちになる。<br />
+削除がたくさん行われるので、削除は$O(1)$で行ってまだ候補になっている数を<code>rand()</code>で発見したほうがいいかもしれないので試す。113万点で変わらないが、スコアの期待値は高くなった。</p>
+
+<p>結局、set→unordered_set→自作平衡二分木→BIT+二分探索→配列→bitsetとたくさんプログラムを書いたが、BITが一番良かった。</p>
+
+<h4 id="方針2">方針2</h4>
+
+<p>並列化する。<br />
+方針1ではBITを用いて要素の削除や検索を操作1回につき$O(logX)$に高速化していたが、視点を変えて並列化する。<br />
+すると愚直$O(X)$でも各操作は独立しているのでとても高速に処理をすることができる。<br />
+僕はC++を使っていたので、openMPを使ってfor文を並列化した。家のパソコンはコア数が8だったが、方針1と一緒の速度が出た。<br />
+コア数を増やすとオーべーヘッドを加味してももっと速くする事ができそう。
+1-3位の人にはこれをやった人がいるらしい。</p>
+
+<h3 id="感想">感想</h3>
+
+<p>大学の先輩は僕より順位が高かったので悔しかった。<br />
+大学のスパコンかEC2/HPCが使えたら何点取れたかとても気になるけど申請が必要みたいで時間切れになってしまった。</p>
+
+<p>みんなが知っているゲームだけど一般化できるとは思っていなかったので面白かったです！<br />
+トップの人にも追いつけそうで追いつけなかったので力の差を感じました。</p>
+
+<h2 id="ソース">ソース</h2>
+
+<!-- 4 -->
+
+<h4 id="方針1-1">方針1</h4>
+
+<pre style="font-family:Migu 1M;color:gainsboro;background:#1e1e1e;"><span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;unordered_set&gt;</span>
+<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;unordered_map&gt;</span>
+<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;string&gt;</span>
+<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;map&gt;</span>
+<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;iostream&gt;</span>
+<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;vector&gt;</span>
+<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;algorithm&gt;</span>
+<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;time.h&gt;</span>
+<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;assert.h&gt;</span>
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment" style="color:#57a64a;">/*&nbsp;適当なlong&nbsp;long&nbsp;の乱数&nbsp;*/</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">long</span>&nbsp;<span class="keyword" style="color:#569cd6;">long</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">myrand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">abs</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">rand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">*</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">rand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">2311</span>&nbsp;<span class="operator" style="color:#b4b4b4;">*</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">rand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">1992</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">class</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">TwitCastingSummerQual2018</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">public</span><span class="operator" style="color:#b4b4b4;">:</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">TwitCastingSummerQual2018</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">:</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">BitSet</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#88ff88;">3628800</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">20</span><span class="operator" style="color:#b4b4b4;">),</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#88ff88;">10</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">genarateCandidate</span><span class="operator" style="color:#b4b4b4;">();</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">cout</span>&nbsp;<span class="cppOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="string" style="color:#d69d85;">&quot;Candidate&nbsp;:=&quot;</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">BitSet</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">sum</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#88ff88;">3628800</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">20</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppFunctionTemplate - identifier - (TRANSIENT)" style="color:#c8c8c8;">endl</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">srand</span><span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">static_cast</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">unsigned</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">time</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppMacro - identifier - (TRANSIENT)" style="color:#bd63c5;">NULL</span><span class="operator" style="color:#b4b4b4;">)));</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">temp</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">GetSetNum</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">temp</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">RandomGetFromSet</span><span class="operator" style="color:#b4b4b4;">();</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">temp</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">void</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">ClearNum</span><span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">a</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">b</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">pair</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">result</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">a</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">b</span>&nbsp;<span class="operator" style="color:#b4b4b4;">};</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">clearSet</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">temp</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">result</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">private</span><span class="operator" style="color:#b4b4b4;">:</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">BIT</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">BitSet</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">unordered_map</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">StoI</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">unordered_map</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">ItoS</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="comment" style="color:#57a64a;">//&nbsp;削除：BIT&nbsp;=0にする(O(logN))</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="comment" style="color:#57a64a;">//&nbsp;存在する要素はBIT.lowerでできる</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="comment" style="color:#57a64a;">//&nbsp;1の要素を発見したら、この位置に対応するstring&nbsp;をmapから持ってくる</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">void</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">clearSet</span><span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&amp;</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">guessNum</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">pair</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;&amp;</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="operator" style="color:#b4b4b4;">;)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">pos</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">BitSet</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">lower_bound</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">pos</span>&nbsp;<span class="operator" style="color:#b4b4b4;">==</span>&nbsp;<span class="number" style="color:#88ff88;">3628800</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">10</span><span class="operator" style="color:#b4b4b4;">)</span><span class="keyword" style="color:#569cd6;">break</span><span class="operator" style="color:#b4b4b4;">;;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">removeIt</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">guessNum</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">ItoS</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">pos</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">))</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span><span class="comment" style="color:#57a64a;">//&nbsp;実体は削除しないほうが速いと思ったがそうでもない…</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">BitSet</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">add</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">pos</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="operator" style="color:#b4b4b4;">-</span><span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">else</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">++;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="comment" style="color:#57a64a;">//&nbsp;ランダムに取る</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">RandomGetFromSet</span><span class="operator" style="color:#b4b4b4;">()</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">Sum</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">BitSet</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">sum</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#88ff88;">3628800</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">10</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">-</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">;</span><span class="comment" style="color:#57a64a;">//&nbsp;番兵の分</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">Sum</span>&nbsp;<span class="operator" style="color:#b4b4b4;">==</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">cerr</span>&nbsp;<span class="cppOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="string" style="color:#d69d85;">&quot;Sum:=&nbsp;ZERO&nbsp;(p_p)&quot;</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppFunctionTemplate - identifier - (TRANSIENT)" style="color:#c8c8c8;">endl</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppMacro - identifier - (TRANSIENT)" style="color:#bd63c5;">assert</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">randPosSum</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">myrand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">%</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">Sum</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">pos</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">BitSet</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">lower_bound</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">randPosSum</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">ItoS</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">pos</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">void</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">genarateCandidate</span><span class="operator" style="color:#b4b4b4;">()</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">unordered_set</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">&gt;</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">Se</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">vector</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ordernum</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#88ff88;">10</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&lt;</span>&nbsp;<span class="number" style="color:#88ff88;">10</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">++)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ordernum</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">do</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">S</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="string" style="color:#d69d85;">&#39;0&#39;</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&lt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">++)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">S</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ordernum</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">IsCandidateNum</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">S</span><span class="operator" style="color:#b4b4b4;">))</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">Se</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">insert</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">S</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>&nbsp;<span class="keyword" style="color:#569cd6;">while</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">next_permutation</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">begin</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ordernum</span><span class="operator" style="color:#b4b4b4;">),</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">end</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ordernum</span><span class="operator" style="color:#b4b4b4;">)));</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">id</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">auto</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&amp;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">it</span>&nbsp;<span class="operator" style="color:#b4b4b4;">:</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">Se</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">StoI</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">it</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">id</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">ItoS</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">id</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">it</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">BitSet</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">add</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">id</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">id</span><span class="operator" style="color:#b4b4b4;">++;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">BitSet</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">add</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#88ff88;">3628800</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">10</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">bool</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">IsCandidateNum</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">&amp;</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">s</span><span class="operator" style="color:#b4b4b4;">)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">auto</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">si</span>&nbsp;<span class="operator" style="color:#b4b4b4;">:</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">s</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">count</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">s</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">begin</span><span class="operator" style="color:#b4b4b4;">(),</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">s</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">end</span><span class="operator" style="color:#b4b4b4;">(),</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">si</span><span class="operator" style="color:#b4b4b4;">))</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="keyword" style="color:#569cd6;">false</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="keyword" style="color:#569cd6;">true</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">bool</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">removeIt</span><span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&amp;</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">guessNum</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&amp;</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">ts</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">pair</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;&amp;</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">pair</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">;</span><span class="comment" style="color:#57a64a;">//&nbsp;hit&nbsp;and&nbsp;blow</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">first</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">second</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&lt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="operator" style="color:#b4b4b4;">++</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">guessNum</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">==</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">ts</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">++</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">first</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">else</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">j</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">j</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&lt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="operator" style="color:#b4b4b4;">++</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">j</span><span class="operator" style="color:#b4b4b4;">)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                    <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">guessNum</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">==</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">ts</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">j</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">++</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">second</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">first</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">first</span><span class="operator" style="color:#b4b4b4;">)</span><span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="keyword" style="color:#569cd6;">true</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">second</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">second</span><span class="operator" style="color:#b4b4b4;">)</span><span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="keyword" style="color:#569cd6;">true</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span>&nbsp;<span class="cppOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">!=</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator" style="color:#b4b4b4;">};</span></pre>
+
+<h4 id="方針2-1">方針2</h4>
+
+<pre style="font-family:Migu 1M;color:gainsboro;background:#1e1e1e;">&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;unordered_set&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;unordered_map&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;string&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;map&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;iostream&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;vector&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;algorithm&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;bitset&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;time.h&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;assert.h&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;omp.h&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment" style="color:#57a64a;">/*&nbsp;適当なlong&nbsp;long&nbsp;の乱数&nbsp;*/</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">long</span>&nbsp;<span class="keyword" style="color:#569cd6;">long</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">myrand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">abs</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">rand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">*</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">rand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">2311</span>&nbsp;<span class="operator" style="color:#b4b4b4;">*</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">rand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">1992</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">class</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">TwitCastingSummerQual2018</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">public</span><span class="operator" style="color:#b4b4b4;">:</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">TwitCastingSummerQual2018</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">:</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#88ff88;">10</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">genarateCandidate</span><span class="operator" style="color:#b4b4b4;">();</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">srand</span><span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">static_cast</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">unsigned</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">time</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppMacro - identifier - (TRANSIENT)" style="color:#bd63c5;">NULL</span><span class="operator" style="color:#b4b4b4;">)));</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">temp</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">GetSetNum</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">temp</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">RandomGetFromSet</span><span class="operator" style="color:#b4b4b4;">();</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">temp</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">void</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">ClearNum</span><span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">a</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">b</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">pair</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">result</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">a</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">b</span>&nbsp;<span class="operator" style="color:#b4b4b4;">};</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">clearSet</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">temp</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">result</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">private</span><span class="operator" style="color:#b4b4b4;">:</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">bitset</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="number" style="color:#88ff88;">36288020</span><span class="operator" style="color:#b4b4b4;">&gt;</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">bs</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">unordered_map</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">StoI</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">ItoS</span><span class="operator" style="color:#b4b4b4;">[</span><span class="number" style="color:#88ff88;">3628820</span><span class="operator" style="color:#b4b4b4;">];</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">void</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">clearSet</span><span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&amp;</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">guessNum</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">pair</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;&amp;</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#pragma</span>&nbsp;<span class="identifier">omp</span>&nbsp;<span class="identifier">parallel</span>&nbsp;<span class="keyword" style="color:#569cd6;">for</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&lt;</span>&nbsp;<span class="number" style="color:#88ff88;">3628810</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">++)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">bs</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">removeIt</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">guessNum</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">ItoS</span><span class="operator" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">],</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">))</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                    <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">bs</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="comment" style="color:#57a64a;">//&nbsp;ランダムに取る</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">RandomGetFromSet</span><span class="operator" style="color:#b4b4b4;">()</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">while</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ran</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">myrand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">%</span>&nbsp;<span class="number" style="color:#88ff88;">3628</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">bs</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ran</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                    <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">ItoS</span><span class="operator" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ran</span><span class="operator" style="color:#b4b4b4;">];</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ran</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">myrand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">%</span>&nbsp;<span class="number" style="color:#88ff88;">3628801</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">bs</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ran</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                    <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">ItoS</span><span class="operator" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ran</span><span class="operator" style="color:#b4b4b4;">];</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">void</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">genarateCandidate</span><span class="operator" style="color:#b4b4b4;">()</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">unordered_set</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">&gt;</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">Se</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">vector</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ordernum</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#88ff88;">10</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&lt;</span>&nbsp;<span class="number" style="color:#88ff88;">10</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">++)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ordernum</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">do</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">S</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="string" style="color:#d69d85;">&#39;0&#39;</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&lt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">++)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">S</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ordernum</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">IsCandidateNum</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">S</span><span class="operator" style="color:#b4b4b4;">))</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">Se</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">insert</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">S</span><span class="operator" style="color:#b4b4b4;">);</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>&nbsp;<span class="keyword" style="color:#569cd6;">while</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">next_permutation</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">begin</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ordernum</span><span class="operator" style="color:#b4b4b4;">),</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">end</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ordernum</span><span class="operator" style="color:#b4b4b4;">)));</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">id</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">auto</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&amp;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">it</span>&nbsp;<span class="operator" style="color:#b4b4b4;">:</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">Se</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">StoI</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">it</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">id</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">ItoS</span><span class="operator" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">id</span><span class="operator" style="color:#b4b4b4;">]</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">it</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">bs</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">id</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">id</span><span class="operator" style="color:#b4b4b4;">++;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">bool</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">IsCandidateNum</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">&amp;</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">s</span><span class="operator" style="color:#b4b4b4;">)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">auto</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">si</span>&nbsp;<span class="operator" style="color:#b4b4b4;">:</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">s</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">count</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">s</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">begin</span><span class="operator" style="color:#b4b4b4;">(),</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">s</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">end</span><span class="operator" style="color:#b4b4b4;">(),</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">si</span><span class="operator" style="color:#b4b4b4;">))</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="keyword" style="color:#569cd6;">false</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="keyword" style="color:#569cd6;">true</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">bool</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">removeIt</span><span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&amp;</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">guessNum</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&amp;</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">ts</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">const</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">pair</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;&amp;</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">pair</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">;</span><span class="comment" style="color:#57a64a;">//&nbsp;hit&nbsp;and&nbsp;blow</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">first</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">second</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&lt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="operator" style="color:#b4b4b4;">++</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">guessNum</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">==</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">ts</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">++</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">first</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">else</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                <span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">j</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#88ff88;">0</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">j</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&lt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">LEN</span><span class="operator" style="color:#b4b4b4;">;</span>&nbsp;<span class="operator" style="color:#b4b4b4;">++</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">j</span><span class="operator" style="color:#b4b4b4;">)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;                    <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">guessNum</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">==</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">ts</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">j</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">++</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">second</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">first</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">first</span><span class="operator" style="color:#b4b4b4;">)</span><span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="keyword" style="color:#569cd6;">true</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;            <span class="keyword" style="color:#569cd6;">if</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">second</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">second</span><span class="operator" style="color:#b4b4b4;">)</span><span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="keyword" style="color:#569cd6;">true</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">checkState</span>&nbsp;<span class="cppOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">!=</span>&nbsp;<span class="cppParameter - identifier - (TRANSIENT)" style="color:#7f7f7f;">hitAndBlow</span><span class="operator" style="color:#b4b4b4;">;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator" style="color:#b4b4b4;">};</span></pre>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://yang33-kassa.jp/contest/twitcasting2018summerqual/" data-id="93bd269de1586ca0845194c4c655542f" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://yang33-kassa.jp/contest/twitcasting2018summerqual/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+    <div style="float:left;" class="hatena">
+    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/contest/twitcasting2018summerqual/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+    <div style="float:left;" class="twitter">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/contest/twitcasting2018summerqual/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/contest/twitcasting2018summerqual/" ></a>
+    </div>
+   
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+    
+    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</footer>
+
+    </div>
+
+    
+
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yang33-kassa-jp" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/contest/twitcasting2018summerqual/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/other-contest">
+                        other-contest
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/contest/twitcasting2018summerqual/" class="title">TwitCasting2018SummerQual</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-07-12 01:25:08 &#43;0900 DST" itemprop="datePublished">2018-07-12</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder095-100/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder095-100/" class="title">Yukicoder095-100</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-07-07 14:54:47 &#43;0900 DST" itemprop="datePublished">2018-07-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder094/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder094/" class="title">Yukicoder094 圏外です。(EASY)</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-07-07 14:31:26 &#43;0900 DST" itemprop="datePublished">2018-07-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder093/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder093/" class="title">Yukicoder093 ペガサス</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-07-07 14:17:39 &#43;0900 DST" itemprop="datePublished">2018-07-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder092/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder092/" class="title">Yukicoder092 逃走経路</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-07-07 14:11:40 &#43;0900 DST" itemprop="datePublished">2018-07-07</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://yang33-kassa.jp/tags/2d-grid" style="font-size: 12px;">2d-grid(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/2d-imos%E6%B3%95" style="font-size: 12px;">2d-imos法(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/about-yang33" style="font-size: 12px;">about-yang33(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/bfs" style="font-size: 12px;">bfs(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/bigint" style="font-size: 12px;">bigint(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/binary-indexed-tree" style="font-size: 12px;">binary-indexed-tree(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/binary-search" style="font-size: 12px;">binary-search(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/bipartite-graph" style="font-size: 12px;">bipartite-graph(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/bitdp" style="font-size: 12px;">bitdp(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/brackets" style="font-size: 12px;">brackets(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/brute-force-search" style="font-size: 12px;">brute-force-search(4)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/calendar" style="font-size: 12px;">calendar(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/caliper" style="font-size: 12px;">caliper(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/combination" style="font-size: 12px;">combination(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/cyclic-group" style="font-size: 12px;">cyclic-group(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/dfs" style="font-size: 12px;">dfs(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/dijkstra" style="font-size: 12px;">dijkstra(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/dp" style="font-size: 12px;">dp(16)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83" style="font-size: 12px;">dp復元(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/expected-value" style="font-size: 12px;">expected-value(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/factoring" style="font-size: 12px;">factoring(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/fibonacci" style="font-size: 12px;">fibonacci(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/fraction" style="font-size: 12px;">fraction(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/gauss-seidel" style="font-size: 12px;">gauss-seidel(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/gcd-lcm" style="font-size: 12px;">gcd-lcm(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/geometry" style="font-size: 12px;">geometry(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/graph" style="font-size: 12px;">graph(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/greedy" style="font-size: 12px;">greedy(4)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/grundy%E6%95%B0" style="font-size: 12px;">grundy数(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/hamiltonian-cycle" style="font-size: 12px;">hamiltonian-cycle(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/implementation" style="font-size: 12px;">implementation(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/integral" style="font-size: 12px;">integral(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/interval-scheduling" style="font-size: 12px;">interval-scheduling(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/leap-year" style="font-size: 12px;">leap-year(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/lp-dual" style="font-size: 12px;">lp-dual(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/manhattan" style="font-size: 12px;">manhattan(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/math" style="font-size: 12px;">math(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/meet-in-the-middle" style="font-size: 12px;">meet-in-the-middle(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/memo%E5%8C%96%E5%86%8D%E5%B8%B0" style="font-size: 12px;">memo化再帰(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/mincostflow" style="font-size: 12px;">mincostflow(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/nim" style="font-size: 12px;">nim(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/parallel" style="font-size: 12px;">parallel(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/pazzle" style="font-size: 12px;">pazzle(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/periodicity" style="font-size: 12px;">periodicity(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/polynomial-interpolation" style="font-size: 12px;">polynomial-interpolation(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/powmod" style="font-size: 12px;">powmod(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/prime-number" style="font-size: 12px;">prime-number(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/priority-queue" style="font-size: 12px;">priority-queue(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/probability" style="font-size: 12px;">probability(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/proof" style="font-size: 12px;">proof(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/quadratic-function" style="font-size: 12px;">quadratic-function(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/right-first-search" style="font-size: 12px;">right-first-search(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simulation" style="font-size: 12px;">simulation(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simultaneous-equations" style="font-size: 12px;">simultaneous-equations(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simultaneous-linear-congruences" style="font-size: 12px;">simultaneous-linear-congruences(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/sqrt-decomposition" style="font-size: 12px;">sqrt-decomposition(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/strongly-connected-component-decomposition" style="font-size: 12px;">strongly-connected-component-decomposition(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/union-find" style="font-size: 12px;">union-find(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/unionfind" style="font-size: 12px;">unionfind(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/warshall-floyd" style="font-size: 12px;">warshall-floyd(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/xor" style="font-size: 12px;">xor(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E3%81%97%E3%82%83%E3%81%8F%E3%81%A8%E3%82%8A%E6%B3%95" style="font-size: 12px;">しゃくとり法(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E5%95%8F%E9%A1%8C%E9%9B%86%E3%81%BE%E3%81%A8%E3%82%81" style="font-size: 12px;">問題集まとめ(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E5%BE%A9%E7%BF%92" style="font-size: 12px;">復習(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E6%8C%BF%E5%85%A5dp" style="font-size: 12px;">挿入dp(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E8%AA%A4%E5%B7%AE" style="font-size: 12px;">誤差(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E9%96%89%E8%B7%AF%E6%A4%9C%E5%87%BA" style="font-size: 12px;">閉路検出(1)</a>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/aoj">
+                    aoj
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/blog">
+                    blog
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/other-contest">
+                    other-contest
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                    yukicoder
+                </a>
+                <span class="category-list-count">95</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%BE%E3%81%A8%E3%82%81">
+                    アルゴリズムまとめ
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018
+      Yang33Kassa - Powered by <a href="//gohugo.io">Hugo</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://yang33-kassa.jp/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://yang33-kassa.jp/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']]
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>
