@@ -464,7 +464,7 @@ SET.erase(origin)
 
 <h4 id="方針1-1">方針1</h4>
 
-<pre style="font-family:Migu 1M;color:gainsboro;background:#1e1e1e;"><span class="preprocessor keyword" style="color:#9b9b9b;">&nbsp;&nbsp;&nbsp;&nbsp;#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;unordered_set&gt;</span>
+<pre style="font-family:Migu 1M;color:gainsboro;background:#1e1e1e;">&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;unordered_set&gt;</span>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;unordered_map&gt;</span>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;string&gt;</span>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;map&gt;</span>
@@ -473,7 +473,8 @@ SET.erase(origin)
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;algorithm&gt;</span>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;time.h&gt;</span>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d69d85;">&lt;assert.h&gt;</span>
-<pre style="font-family:Migu 1M;color:gainsboro;background:#1e1e1e;">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">using</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">type</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">;</span>
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">using</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">type</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">;</span>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">struct</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">BIT</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>&nbsp;<span class="comment" style="color:#57a64a;">//&nbsp;1-index</span>
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">N</span><span class="operator" style="color:#b4b4b4;">;</span>
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">nn</span><span class="operator" style="color:#b4b4b4;">;</span>
@@ -512,7 +513,10 @@ SET.erase(origin)
 &nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
 &nbsp;&nbsp;&nbsp;&nbsp;        <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">x</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">1</span><span class="operator" style="color:#b4b4b4;">;</span>
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator" style="color:#b4b4b4;">};</span></pre> 
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator" style="color:#b4b4b4;">};</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment" style="color:#57a64a;">/*&nbsp;適当なlong&nbsp;long&nbsp;の乱数&nbsp;*/</span>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">long</span>&nbsp;<span class="keyword" style="color:#569cd6;">long</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">myrand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">abs</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">rand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">*</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">rand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">2311</span>&nbsp;<span class="operator" style="color:#b4b4b4;">*</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">rand</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#88ff88;">1992</span><span class="operator" style="color:#b4b4b4;">);</span>
@@ -542,6 +546,8 @@ SET.erase(origin)
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">unordered_map</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="cppMemberField - identifier - (TRANSIENT)" style="color:#dadada;">ItoS</span><span class="operator" style="color:#b4b4b4;">;</span>
 &nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="comment" style="color:#57a64a;">//&nbsp;削除：BIT&nbsp;=0にする(O(logN))</span>
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="comment" style="color:#57a64a;">//&nbsp;存在する要素はBIT.lowerでできる</span>
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="comment" style="color:#57a64a;">//&nbsp;1の要素を発見したら、この位置に対応するstring&nbsp;をmapから持ってくる</span>
@@ -559,6 +565,7 @@ SET.erase(origin)
 &nbsp;&nbsp;&nbsp;&nbsp;            <span class="operator" style="color:#b4b4b4;">}</span>
 &nbsp;&nbsp;&nbsp;&nbsp;        <span class="operator" style="color:#b4b4b4;">}</span>
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="comment" style="color:#57a64a;">//&nbsp;ランダムに取る</span>
 &nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span>&nbsp;<span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">RandomGetFromSet</span><span class="operator" style="color:#b4b4b4;">()</span>
