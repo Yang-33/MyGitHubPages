@@ -34,10 +34,10 @@
 
 問題概要
 
-相手が持っている数を当てる、Hit and Blow/Bulls and Cows/numer0nと呼ばれるゲームがある。(ルールは一緒)
+相手が持っている数を当てる、Hit and Blow/Bulls and Cows/numer0nと呼ばれるゲームがある。全部ルールは一緒。
 相手は$N$桁の重複のない数字を持っている。自分が予想して数字を言うと、予測した数の各桁の数が存在するか/位置も正しいかを教えてくれる。
-回答の時間が短いほど得点が高い。得点を最大化せよ。(マラソン形式?)
-ただし、0987654321という数字も存在する。(leading zeroも考慮せよ)" />
+回答の時間が短いほど得点が高い。得点を最大化せよ。
+ただし、0987654321という数字も存在する。(leading zero)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yang33-kassa.jp/contest/twitcasting2018summerqual/" />
 
@@ -64,10 +64,10 @@
 
 問題概要
 
-相手が持っている数を当てる、Hit and Blow/Bulls and Cows/numer0nと呼ばれるゲームがある。(ルールは一緒)
+相手が持っている数を当てる、Hit and Blow/Bulls and Cows/numer0nと呼ばれるゲームがある。全部ルールは一緒。
 相手は$N$桁の重複のない数字を持っている。自分が予想して数字を言うと、予測した数の各桁の数が存在するか/位置も正しいかを教えてくれる。
-回答の時間が短いほど得点が高い。得点を最大化せよ。(マラソン形式?)
-ただし、0987654321という数字も存在する。(leading zeroも考慮せよ)">
+回答の時間が短いほど得点が高い。得点を最大化せよ。
+ただし、0987654321という数字も存在する。(leading zero)">
 
 
 <meta itemprop="datePublished" content="2018-07-12T01:25:08&#43;09:00" />
@@ -84,10 +84,10 @@
 
 問題概要
 
-相手が持っている数を当てる、Hit and Blow/Bulls and Cows/numer0nと呼ばれるゲームがある。(ルールは一緒)
+相手が持っている数を当てる、Hit and Blow/Bulls and Cows/numer0nと呼ばれるゲームがある。全部ルールは一緒。
 相手は$N$桁の重複のない数字を持っている。自分が予想して数字を言うと、予測した数の各桁の数が存在するか/位置も正しいかを教えてくれる。
-回答の時間が短いほど得点が高い。得点を最大化せよ。(マラソン形式?)
-ただし、0987654321という数字も存在する。(leading zeroも考慮せよ)"/>
+回答の時間が短いほど得点が高い。得点を最大化せよ。
+ただし、0987654321という数字も存在する。(leading zero)"/>
 <meta name="twitter:site" content="@__KasSA"/>
 
     
@@ -393,10 +393,10 @@ categories   : 記事のdirectory
 
 <h2 id="問題概要">問題概要</h2>
 
-<p>相手が持っている数を当てる、<a href="https://ja.wikipedia.org/wiki/Numer0n">Hit and Blow/Bulls and Cows/numer0n</a>と呼ばれるゲームがある。(ルールは一緒)<br />
+<p>相手が持っている数を当てる、<a href="https://ja.wikipedia.org/wiki/Numer0n">Hit and Blow/Bulls and Cows/numer0n</a>と呼ばれるゲームがある。全部ルールは一緒。<br />
 相手は$N$桁の重複のない数字を持っている。自分が予想して数字を言うと、予測した数の各桁の数が存在するか/位置も正しいかを教えてくれる。
-回答の時間が短いほど得点が高い。得点を最大化せよ。(マラソン形式?)<br />
-ただし、<code>0987654321</code>という数字も存在する。(leading zeroも考慮せよ)</p>
+回答の時間が短いほど得点が高い。得点を最大化せよ。<br />
+ただし、<code>0987654321</code>という数字も存在する。(leading zero)</p>
 
 <p>
 <a href="https://twitcasting.tv/internship2018.php">https://twitcasting.tv/internship2018.php</a> (問題はもう掲載されていない)</p>
@@ -416,6 +416,7 @@ categories   : 記事のdirectory
 set<string>を考える。削除・検索を$O(logX)$でできるので良さそう。ランダムアクセスはできないが、存在しない値を入れて、</p>
 
 <pre><code>string s = &quot;ランダムな値&quot; 
+SET.insert(s);
 auto it = SET.find(s);
 it++; 
 auto origin = SET.find(s);

@@ -24,10 +24,10 @@ categories   : 記事のdirectory
 
 &lt;h2 id=&#34;問題概要&#34;&gt;問題概要&lt;/h2&gt;
 
-&lt;p&gt;相手が持っている数を当てる、&lt;a href=&#34;https://ja.wikipedia.org/wiki/Numer0n&#34;&gt;Hit and Blow/Bulls and Cows/numer0n&lt;/a&gt;と呼ばれるゲームがある。(ルールは一緒)&lt;br /&gt;
+&lt;p&gt;相手が持っている数を当てる、&lt;a href=&#34;https://ja.wikipedia.org/wiki/Numer0n&#34;&gt;Hit and Blow/Bulls and Cows/numer0n&lt;/a&gt;と呼ばれるゲームがある。全部ルールは一緒。&lt;br /&gt;
 相手は$N$桁の重複のない数字を持っている。自分が予想して数字を言うと、予測した数の各桁の数が存在するか/位置も正しいかを教えてくれる。
-回答の時間が短いほど得点が高い。得点を最大化せよ。(マラソン形式?)&lt;br /&gt;
-ただし、&lt;code&gt;0987654321&lt;/code&gt;という数字も存在する。(leading zeroも考慮せよ)&lt;/p&gt;</description>
+回答の時間が短いほど得点が高い。得点を最大化せよ。&lt;br /&gt;
+ただし、&lt;code&gt;0987654321&lt;/code&gt;という数字も存在する。(leading zero)&lt;/p&gt;</description>
     </item>
     
   </channel>
