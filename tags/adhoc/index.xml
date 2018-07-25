@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adhoc on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/adhoc/</link>
+    <description>Recent content in Adhoc on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 25 Jul 2018 09:17:39 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/adhoc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Educational Codeforces 047</title>
+      <link>https://yang33-kassa.jp/codeforces/edu047/</link>
+      <pubDate>Wed, 25 Jul 2018 09:17:39 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/codeforces/edu047/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;!--コメント--&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://codeforces.com/contest/1009&#34;&gt;Educational Codeforces Round 47&lt;/a&gt;&lt;br /&gt;
+B問題思いつかなかった　悲しい
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

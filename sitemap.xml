@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yang33-kassa.jp/codeforces/edu047/</loc>
+    <lastmod>2018-07-25T09:17:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/codeforces/cf496/</loc>
     <lastmod>2018-07-25T08:38:23+09:00</lastmod>
   </url>
@@ -524,7 +529,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2018/</loc>
-    <lastmod>2018-07-25T08:38:23+09:00</lastmod>
+    <lastmod>2018-07-25T09:17:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -548,7 +553,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2018-07/</loc>
-    <lastmod>2018-07-25T08:38:23+09:00</lastmod>
+    <lastmod>2018-07-25T09:17:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -577,6 +582,12 @@
   </url>
   
   <url>
+    <loc>https://yang33-kassa.jp/tags/adhoc/</loc>
+    <lastmod>2018-07-25T09:17:39+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/categories/aoj/</loc>
     <lastmod>2018-02-22T00:18:59+09:00</lastmod>
     <priority>0</priority>
@@ -584,7 +595,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/</loc>
-    <lastmod>2018-07-25T08:38:23+09:00</lastmod>
+    <lastmod>2018-07-25T09:17:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -662,13 +673,13 @@
   
   <url>
     <loc>https://yang33-kassa.jp/codeforces/</loc>
-    <lastmod>2018-07-25T08:38:23+09:00</lastmod>
+    <lastmod>2018-07-25T09:17:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yang33-kassa.jp/categories/codeforces/</loc>
-    <lastmod>2018-07-25T08:38:23+09:00</lastmod>
+    <lastmod>2018-07-25T09:17:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -711,6 +722,12 @@
   <url>
     <loc>https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83/</loc>
     <lastmod>2018-04-07T02:16:41+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/tags/dsu-on-tree/</loc>
+    <lastmod>2018-07-25T09:17:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -843,6 +860,12 @@
   <url>
     <loc>https://yang33-kassa.jp/tags/nim/</loc>
     <lastmod>2018-04-07T02:16:31+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/tags/oeis/</loc>
+    <lastmod>2018-07-25T09:17:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -998,7 +1021,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/</loc>
-    <lastmod>2018-07-25T08:38:23+09:00</lastmod>
+    <lastmod>2018-07-25T09:17:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
