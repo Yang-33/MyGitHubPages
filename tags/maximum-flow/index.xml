@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maximum Flow on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/maximum-flow/</link>
+    <description>Recent content in Maximum Flow on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 02 Aug 2018 00:09:29 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/maximum-flow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yukicoder171-180</title>
+      <link>https://yang33-kassa.jp/yukicoder/yukicoder171-180/</link>
+      <pubDate>Thu, 02 Aug 2018 00:09:29 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/yukicoder/yukicoder171-180/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;!--コメント--&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

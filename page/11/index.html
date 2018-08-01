@@ -39,7 +39,7 @@
 
 
 
-<meta property="og:updated_time" content="2018-02-22T00:18:59&#43;09:00"/>
+<meta property="og:updated_time" content="2018-04-07T01:48:36&#43;09:00"/>
 
 
 
@@ -221,12 +221,12 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        103
+        104
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          71
+          74
         
         <span>
             Tags
@@ -304,6 +304,176 @@
     <section id="main">
     
     
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder001/">
+    <h1 class="article-title" itemprop="name">
+        Yukicoder001 道のショートカット
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2018-04-07 01:48:36 &#43;0900 DST" itemprop="datePublished">2018-04-07</time>
+       
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">yukicoder</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/dijkstra">dijkstra</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <p>毎日解いた分の問題全部の解説を自分用に書いていたのですが、どうせならホームページに書いていこうと思って書いていくことにしました。</p>
+
+<h2 id="問題概要">問題概要</h2>
+
+<!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+-->
+
+<p>$N$個の街があり、$V$個の道路がある。各道路にはコストと通過するのにかかる単位時間が定められている。
+今$C$までのコストを使っても良いので$1$から$N$の街へ移動するのに必要な最小の単位時間を答えよ。</p>
+
+<p></p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://yang33-kassa.jp/yukicoder/yukicoder001/">
+                    続きを読む
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder001/" data-id="a862bf6cb7111ba2a856fdc72fa8658a" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder001/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+    <div style="float:left;" class="hatena">
+    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder001/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+    <div style="float:left;" class="twitter">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder001/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder001/" ></a>
+    </div>
+   
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+    
+    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</footer>
+
+    </div>
+</article>
 
 <article class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
@@ -501,6 +671,32 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder171-180/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                        yukicoder
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder171-180/" class="title">Yukicoder171-180</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-08-02 00:09:29 &#43;0900 DST" itemprop="datePublished">2018-08-02</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="https://yang33-kassa.jp/yukicoder/yukicoder161-170/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
@@ -603,32 +799,6 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://yang33-kassa.jp/yukicoder/yukicoder095-100/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/yukicoder">
-                        yukicoder
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://yang33-kassa.jp/yukicoder/yukicoder095-100/" class="title">Yukicoder095-100</a></p>
-                    <p class="item-date">
-                        <time datetime="2018-07-07 14:54:47 &#43;0900 DST" itemprop="datePublished">2018-07-07</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -686,7 +856,7 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
         <a href="https://yang33-kassa.jp/tags/caliper" style="font-size: 12px;">caliper(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/combination" style="font-size: 12px;">combination(1)</a>
+        <a href="https://yang33-kassa.jp/tags/combination" style="font-size: 12px;">combination(2)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/cyclic-group" style="font-size: 12px;">cyclic-group(1)</a>
@@ -698,7 +868,7 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
         <a href="https://yang33-kassa.jp/tags/dijkstra" style="font-size: 12px;">dijkstra(2)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/dp" style="font-size: 12px;">dp(16)</a>
+        <a href="https://yang33-kassa.jp/tags/dp" style="font-size: 12px;">dp(17)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83" style="font-size: 12px;">dp復元(1)</a>
@@ -707,7 +877,7 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
         <a href="https://yang33-kassa.jp/tags/dsu-on-tree" style="font-size: 12px;">dsu-on-tree(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/expected-value" style="font-size: 12px;">expected-value(4)</a>
+        <a href="https://yang33-kassa.jp/tags/expected-value" style="font-size: 12px;">expected-value(5)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/factoring" style="font-size: 12px;">factoring(3)</a>
@@ -743,6 +913,9 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
         <a href="https://yang33-kassa.jp/tags/implementation" style="font-size: 12px;">implementation(2)</a>
         
         
+        <a href="https://yang33-kassa.jp/tags/inequality" style="font-size: 12px;">inequality(1)</a>
+        
+        
         <a href="https://yang33-kassa.jp/tags/integral" style="font-size: 12px;">integral(1)</a>
         
         
@@ -759,6 +932,9 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
         
         
         <a href="https://yang33-kassa.jp/tags/math" style="font-size: 12px;">math(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/maximum-flow" style="font-size: 12px;">maximum-flow(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/meet-in-the-middle" style="font-size: 12px;">meet-in-the-middle(1)</a>
@@ -812,7 +988,7 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
         <a href="https://yang33-kassa.jp/tags/shortest-path-dag" style="font-size: 12px;">shortest-path-dag(1)</a>
         
         
-        <a href="https://yang33-kassa.jp/tags/simulation" style="font-size: 12px;">simulation(3)</a>
+        <a href="https://yang33-kassa.jp/tags/simulation" style="font-size: 12px;">simulation(4)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/simultaneous-equations" style="font-size: 12px;">simultaneous-equations(1)</a>
@@ -825,6 +1001,9 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
         
         
         <a href="https://yang33-kassa.jp/tags/strongly-connected-component-decomposition" style="font-size: 12px;">strongly-connected-component-decomposition(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/ternary-search" style="font-size: 12px;">ternary-search(1)</a>
         
         
         <a href="https://yang33-kassa.jp/tags/union-find" style="font-size: 12px;">union-find(2)</a>
@@ -907,7 +1086,7 @@ $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
                 <a class="category-list-link" href="https://yang33-kassa.jp/categories/yukicoder">
                     yukicoder
                 </a>
-                <span class="category-list-count">96</span>
+                <span class="category-list-count">97</span>
             </li>
             
             <li class="category-list-item">
