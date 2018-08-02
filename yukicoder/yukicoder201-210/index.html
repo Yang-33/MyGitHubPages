@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title>Yukicoder040 多項式の割り算 &middot; Yang33 Home</title>
+    <title>Yukicoder201-210 &middot; Yang33 Home</title>
     <meta name="generator" content="Hugo 0.40.1" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,7 +10,7 @@
       <meta name="description" content="サイトの説明">
     
     
-    <link rel="canonical" href="https://yang33-kassa.jp/yukicoder/yukicoder040/"/>
+    <link rel="canonical" href="https://yang33-kassa.jp/yukicoder/yukicoder201-210/"/>
     <link rel="icon" href="https://yang33-kassa.jp/favicon.ico">
     <link rel="apple-touch-icon" href="https://yang33-kassa.jp/apple-touch-icon.png"/>
     <link rel="stylesheet" href="https://yang33-kassa.jp/css/style.css">
@@ -29,25 +29,20 @@
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="Yukicoder040 多項式の割り算" />
+    <meta property="og:title" content="Yukicoder201-210" />
 <meta property="og:description" content="
 
-問題概要
 
-与えられた多項式$A[D]*x^D&#43;A[D-1]*x^{D-1}&#43;&hellip;&#43;A[1]*x&#43;A[0]$
-を $x^3−x$ で割った余りを出力してください。
-
-$0\leqq D\leqq10^4$、$-10^2\leqq A[i]\leqq10^2$
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://yang33-kassa.jp/yukicoder/yukicoder040/" />
+<meta property="og:url" content="https://yang33-kassa.jp/yukicoder/yukicoder201-210/" />
 
 
 
-<meta property="article:published_time" content="2018-04-14T00:20:25&#43;09:00"/>
+<meta property="article:published_time" content="2018-08-02T20:58:32&#43;09:00"/>
 
-<meta property="article:modified_time" content="2018-04-14T00:20:25&#43;09:00"/>
+<meta property="article:modified_time" content="2018-08-02T20:58:32&#43;09:00"/>
 
 
 
@@ -61,37 +56,27 @@ $0\leqq D\leqq10^4$、$-10^2\leqq A[i]\leqq10^2$
 
     
     
-<meta itemprop="name" content="Yukicoder040 多項式の割り算">
+<meta itemprop="name" content="Yukicoder201-210">
 <meta itemprop="description" content="
 
-問題概要
 
-与えられた多項式$A[D]*x^D&#43;A[D-1]*x^{D-1}&#43;&hellip;&#43;A[1]*x&#43;A[0]$
-を $x^3−x$ で割った余りを出力してください。
-
-$0\leqq D\leqq10^4$、$-10^2\leqq A[i]\leqq10^2$
 
 ">
 
 
-<meta itemprop="datePublished" content="2018-04-14T00:20:25&#43;09:00" />
-<meta itemprop="dateModified" content="2018-04-14T00:20:25&#43;09:00" />
+<meta itemprop="datePublished" content="2018-08-02T20:58:32&#43;09:00" />
+<meta itemprop="dateModified" content="2018-08-02T20:58:32&#43;09:00" />
 <meta itemprop="wordCount" content="0">
 
 
 
-<meta itemprop="keywords" content="Implementation," />
+<meta itemprop="keywords" content="sqrt-decomposition,dp,memo化再帰,priority-queue," />
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Yukicoder040 多項式の割り算"/>
+<meta name="twitter:title" content="Yukicoder201-210"/>
 <meta name="twitter:description" content="
 
-問題概要
 
-与えられた多項式$A[D]*x^D&#43;A[D-1]*x^{D-1}&#43;&hellip;&#43;A[1]*x&#43;A[0]$
-を $x^3−x$ で割った余りを出力してください。
-
-$0\leqq D\leqq10^4$、$-10^2\leqq A[i]\leqq10^2$
 
 "/>
 <meta name="twitter:site" content="@__KasSA"/>
@@ -343,9 +328,9 @@ $0\leqq D\leqq10^4$、$-10^2\leqq A[i]\leqq10^2$
         
 
         <header class="article-header">
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder040/">
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder201-210/">
     <h1 class="article-title" itemprop="name">
-        Yukicoder040 多項式の割り算
+        Yukicoder201-210
     </h1>
     </a>
     <div class="article-meta">
@@ -353,7 +338,7 @@ $0\leqq D\leqq10^4$、$-10^2\leqq A[i]\leqq10^2$
         
         <div class="article-date">
             <i class="fa fa-calendar"></i>
-            <time datetime="2018-04-14 00:20:25 &#43;0900 DST" itemprop="datePublished">2018-04-14</time>
+            <time datetime="2018-08-02 20:58:32 &#43;0900 DST" itemprop="datePublished">2018-08-02</time>
        
         </div>
         
@@ -378,7 +363,19 @@ $0\leqq D\leqq10^4$、$-10^2\leqq A[i]\leqq10^2$
                 <i class="fa fa-tags"></i>
                 
                 
-                <a class="article-category-link" href="https://yang33-kassa.jp/tags/implementation">Implementation</a>
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/sqrt-decomposition">sqrt-decomposition</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/dp">dp</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/memo%E5%8C%96%E5%86%8D%E5%B8%B0">memo化再帰</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/tags/priority-queue">priority-queue</a>
                 
                 
             </div>
@@ -393,82 +390,94 @@ tags         : 記事のType
 categories   : 記事のdirectory
 -->
 
-<h2 id="問題概要">問題概要</h2>
-
-<p>与えられた多項式$A[D]*x^D+A[D-1]*x^{D-1}+&hellip;+A[1]*x+A[0]$<br />
-を $x^3−x$ で割った余りを出力してください。</p>
-
-<p>$0\leqq D\leqq10^4$、$-10^2\leqq A[i]\leqq10^2$</p>
+<!--コメント-->
 
 <p></p>
 
-<p><a href="http://yukicoder.me/problems/no/040">yukicoder040</a></p>
+<h3 id="yukicoder201-yukicoderじゃんけん-https-yukicoder-me-problems-no-201"><a href="https://yukicoder.me/problems/no/201">yukicoder201 yukicoderじゃんけん</a></h3>
 
-<h2 id="解法">解法</h2>
+<p>rateが非常に大きいので整数の比較はできない。桁の大きさが異なるときはそのまま判定できて、同じ時は一番大きい数字の桁からみていけばよい。<br />
+計算量:$O(|S|)$<br />
+<a href="https://yukicoder.me/submissions/276204">Submission</a></p>
 
-<p>解法1:多項式の割り算の筆算をそのまま書く。$O(N)$<br />
-解法2:$(与式) = Q(x)(x+1)x(x-1) + ax^2 + bx + c$<br />
-なので、$x=1,0,-1$を代入して連立方程式を解く。$O(NlogD)$</p>
+<h3 id="yukicoder202-1円玉投げ-https-yukicoder-me-problems-no-202"><a href="https://yukicoder.me/problems/no/202">yukicoder202 1円玉投げ</a></h3>
 
-<p>計算量:$O(N)$ or $O(NlogD)$</p>
+<p>愚直だと$O(N^2)$担ってしまう。座標の制限から、適当にグリッドを分割してそこに点を配置して愚直に近傍の円に引っかるかを調べれば良い。<br />
+分割サイズは適当に50ぐらいで十分な気がする。<br />
+計算量:$O(Nk)$ $k$:分割サイズ<br />
+<a href="https://yukicoder.me/submissions/276211">Submission</a></p>
 
-<h2 id="ソース">ソース</h2>
+<h3 id="yukicoder203-ゴールデン-ウィーク-1-https-yukicoder-me-problems-no-203"><a href="https://yukicoder.me/problems/no/203">yukicoder203 ゴールデン・ウィーク(1)</a></h3>
 
-<!-- 4 -->
+<p>実際に調べれば良い。<br />
+計算量:$O(|S|)$<br />
+<a href="https://yukicoder.me/submissions/276212">Submission</a></p>
 
-<pre style="font-family:Migu 1M;color:gainsboro;background:#1e1e1e;">&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#include</span>&nbsp;<span class="string" style="color:#d89483;">&lt;bits/stdc++.h&gt;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">using</span>&nbsp;<span class="keyword" style="color:#569cd6;">namespace</span>&nbsp;<span class="cppNamespace - identifier - (TRANSIENT)" style="color:#c8c8c8;">std</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">using</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">VS</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">vector</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">string</span><span class="operator" style="color:#b4b4b4;">&gt;;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">using</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">LL</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="keyword" style="color:#569cd6;">long</span>&nbsp;<span class="keyword" style="color:#569cd6;">long</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">using</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">VI</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">vector</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">&gt;;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">using</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">VVI</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">vector</span><span class="operator" style="color:#b4b4b4;">&lt;</span><span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">VI</span><span class="operator" style="color:#b4b4b4;">&gt;;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#define</span>&nbsp;<span class="cppMacro - identifier - (TRANSIENT)" style="color:#bd63c5;">FOR</span><span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">i</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="identifier">s</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="identifier">e</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">i</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">s</span><span class="operator" style="color:#b4b4b4;">);</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">i</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&lt;</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">e</span><span class="operator" style="color:#b4b4b4;">);</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">i</span><span class="operator" style="color:#b4b4b4;">)++)</span>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="preprocessor keyword" style="color:#9b9b9b;">#define</span>&nbsp;<span class="cppMacro - identifier - (TRANSIENT)" style="color:#bd63c5;">FORR</span><span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">i</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="identifier">s</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="identifier">e</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="keyword" style="color:#569cd6;">for</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">int</span><span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">i</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">s</span><span class="operator" style="color:#b4b4b4;">);</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">i</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">&gt;</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">e</span><span class="operator" style="color:#b4b4b4;">);</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">i</span><span class="operator" style="color:#b4b4b4;">)--)</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">LL</span>&nbsp;<span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">N</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">LL</span>&nbsp;<span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">ans</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#66ff8c;">0LL</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">main</span><span class="operator" style="color:#b4b4b4;">()</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">cin</span><span class="operator" style="color:#b4b4b4;">.</span><span class="cppMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">tie</span><span class="operator" style="color:#b4b4b4;">(</span><span class="number" style="color:#66ff8c;">0</span><span class="operator" style="color:#b4b4b4;">);</span>
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">ios_base</span><span class="operator" style="color:#b4b4b4;">::</span><span class="cppStaticMemberFunction - identifier - (TRANSIENT)" style="color:#c8c8c8;">sync_with_stdio</span><span class="operator" style="color:#b4b4b4;">(</span><span class="keyword" style="color:#569cd6;">false</span><span class="operator" style="color:#b4b4b4;">);</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">cin</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&gt;&gt;</span>&nbsp;<span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">N</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppType - identifier - (TRANSIENT)" style="color:#4ec9b0;">VI</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">a</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">N</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#66ff8c;">1</span><span class="operator" style="color:#b4b4b4;">);</span>
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppMacro - identifier - (TRANSIENT)" style="color:#bd63c5;">FOR</span><span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">i</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="number" style="color:#66ff8c;">0</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">N</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#66ff8c;">1</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
-&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">cin</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&gt;&gt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">a</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppMacro - identifier - (TRANSIENT)" style="color:#bd63c5;">FORR</span><span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">N</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="number" style="color:#66ff8c;">3</span>&nbsp;<span class="operator" style="color:#b4b4b4;">-</span>&nbsp;<span class="number" style="color:#66ff8c;">1</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
-&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">a</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">-</span>&nbsp;<span class="number" style="color:#66ff8c;">2</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+=</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">a</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">a</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#66ff8c;">0</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">int</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">idx</span>&nbsp;<span class="operator" style="color:#b4b4b4;">=</span>&nbsp;<span class="number" style="color:#66ff8c;">2</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">while</span>&nbsp;<span class="operator" style="color:#b4b4b4;">(</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">idx</span><span class="operator" style="color:#b4b4b4;">&amp;&amp;</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">a</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">idx</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="operator" style="color:#b4b4b4;">==</span>&nbsp;<span class="number" style="color:#66ff8c;">0</span><span class="operator" style="color:#b4b4b4;">)</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">idx</span><span class="operator" style="color:#b4b4b4;">--;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">cout</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">idx</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="cppFunctionTemplate - identifier - (TRANSIENT)" style="color:#c8c8c8;">endl</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="cppMacro - identifier - (TRANSIENT)" style="color:#bd63c5;">FOR</span><span class="operator" style="color:#b4b4b4;">(</span><span class="identifier">i</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="number" style="color:#66ff8c;">0</span><span class="operator" style="color:#b4b4b4;">,</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">idx</span>&nbsp;<span class="operator" style="color:#b4b4b4;">+</span>&nbsp;<span class="number" style="color:#66ff8c;">1</span><span class="operator" style="color:#b4b4b4;">)</span>&nbsp;<span class="operator" style="color:#b4b4b4;">{</span>
-&nbsp;&nbsp;&nbsp;&nbsp;        <span class="cppGlobalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">cout</span>&nbsp;<span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">a</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span><span class="cppMemberOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">]</span>&nbsp;<span class="cppOperator - operator - (TRANSIENT)" style="color:#b4b4b4;">&lt;&lt;</span>&nbsp;<span class="string" style="color:#d89483;">&quot;&nbsp;\n&quot;</span><span class="operator" style="color:#b4b4b4;">[</span><span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">i</span>&nbsp;<span class="operator" style="color:#b4b4b4;">==</span>&nbsp;<span class="cppLocalVariable - identifier - (TRANSIENT)" style="color:#c8c8c8;">idx</span><span class="operator" style="color:#b4b4b4;">];</span>
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="operator" style="color:#b4b4b4;">}</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;    <span class="keyword" style="color:#569cd6;">return</span>&nbsp;<span class="number" style="color:#66ff8c;">0</span><span class="operator" style="color:#b4b4b4;">;</span>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator" style="color:#b4b4b4;">}</span>
-</pre>
+<h3 id="yukicoder204-ゴールデン-ウィーク-2-https-yukicoder-me-problems-no-204"><a href="https://yukicoder.me/problems/no/204">yukicoder204 ゴールデン・ウィーク(2)</a></h3>
+
+<p>問題文をしっかり読めば簡単。与えられた表以外にも平日は存在するので、休日の開始箇所を16箇所決めてその中の最大値を出力すれば良い。<br />
+計算量:$O(|S|^2)$<br />
+<a href="https://yukicoder.me/submissions/276218">Submission</a></p>
+
+<h3 id="yukicoder205-マージして辞書順最小-https-yukicoder-me-problems-no-205"><a href="https://yukicoder.me/problems/no/205">yukicoder205 マージして辞書順最小</a></h3>
+
+<p>現在選択できるものについて最大の文字列を選択することになる。$N$個の中から最大のものを選択するだけでこれは実現できる。<br />
+priority_queueだと実装がかなり楽。<br />
+計算量:$O(\sum |s_i| log \sum s_i)$<br />
+<a href="https://yukicoder.me/submissions/276219">Submission</a></p>
+
+<h3 id="yukicoder206-数の積集合を求めるクエリ-https-yukicoder-me-problems-no-206"><a href="https://yukicoder.me/problems/no/206">yukicoder206 数の積集合を求めるクエリ</a></h3>
+
+<p>Aの列とBの列を準備し、Bの列をシフトさせていく。このときの一致数が各クエリの答えになる。<br />
+列の長さは$N$以下であることと、AとBの列をシフトさせていくときの操作はFFTらしさを感じるのでこれを考えてみる。<br />
+FFTでは$c[k] = \sum a[i]*b[k-i] $の計算を高速にできたので、今回はa[i+q] = b[i]をこの式に適用できればいいことになる。<br />
+これはBの列を反転すれば実現できたことになるので、FFTを終えたら答えはc[N+q]を見て行けば良い。<br />
+いいFFTの問題そう。<br />
+計算量:$O(NlogN+Q)$<br />
+<a href="https://yukicoder.me/submissions/276220">Submission</a></p>
+
+<h3 id="yukicoder207-世界のなんとか-https-yukicoder-me-problems-no-207"><a href="https://yukicoder.me/problems/no/207">yukicoder207 世界のなんとか</a></h3>
+
+<p>愚直に見ればよい。<br />
+計算量:$O(B-A)$<br />
+<a href="https://yukicoder.me/problems/no/207">Submission</a></p>
+
+<h3 id="yukicoder208-王将-https-yukicoder-me-problems-no-208"><a href="https://yukicoder.me/problems/no/208">yukicoder208 王将</a></h3>
+
+<p>斜めに移動できるので、だいたい$max(X,Y)$で移動できる。<br />
+ただし、$y=|x|$上に邪魔な点と目標のマスへ行くときはダメなので$+1$回必要。<br />
+計算量:$O(1)$<br />
+<a href="https://yukicoder.me/submissions/276223">Submission</a></p>
+
+<h3 id="yukicoder209-longest-mountain-subsequence-https-yukicoder-me-problems-no-209"><a href="https://yukicoder.me/problems/no/209">yukicoder209 Longest Mountain Subsequence</a></h3>
+
+<p>一番大きい値の左右から愚直に見ていくことを考える。その過程で何度も同じ比較を行うことになる。ここはメモ化できそうなので、前2個の選択を保存した配列を準備して、メモ化再帰を繰り返せば良い。<br />
+計算量:$O(N^3)$<br />
+<a href="https://yukicoder.me/submissions/276234">Submission</a></p>
+
+<h3 id="yukicoder210-探し物はどこですか-https-yukicoder-me-problems-no-210"><a href="https://yukicoder.me/problems/no/210">yukicoder210 探し物はどこですか?</a></h3>
+
+<p>回数の期待値を最小化するにあたって、見つけられる確率が高い部屋からみればよい。<br />
+最大のものを見つける操作をこうそくにできればよいので、priority_queueで最大確率を持ってこれば良い。<br />
+試行回数は$10^6$ぐらいで良いらしい。よくわからない。<br />
+計算量:$O(TRYlogN)$ (TRY:試行回数)<br />
+<a href="https://yukicoder.me/submissions/276244">Submission</a></p>
         </div>
         <footer class="article-footer">
-    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder040/" data-id="f93caf857ede1904a43e8704b36ed0b9" class="article-share-link">
+    <a data-url="https://yang33-kassa.jp/yukicoder/yukicoder201-210/" data-id="878d28f0ca7cc549cfbbf8cd464a2225" class="article-share-link">
         <i class="fa fa-share"></i>
         Share
     </a>
     
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder040/#disqus_thread" class="article-comment-link">
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder201-210/#disqus_thread" class="article-comment-link">
         Comments
     </a>
     
     <div style="float:left;" class="hatena">
-    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder040/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/yukicoder/yukicoder201-210/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
     </div>
     <div style="float:left;" class="twitter">
-    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder040/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder040/" ></a>
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/yukicoder/yukicoder201-210/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/yukicoder/yukicoder201-210/" ></a>
     </div>
    
     <script>
@@ -554,21 +563,14 @@ categories   : 記事のdirectory
     
 <nav id="article-nav">
     
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder039/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="https://yang33-kassa.jp/yukicoder/yukicoder191-200/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">
           Older
       </strong>
-      <div class="article-nav-title">Yukicoder039 桁の数字を入れ替え</div>
+      <div class="article-nav-title">Yukicoder191-200</div>
     </a>
     
 
-    
-    <a href="https://yang33-kassa.jp/yukicoder/yukicoder041/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">
-          Newer
-      </strong>
-      <div class="article-nav-title">Yukicoder041 貯金箱の溜息EASY)</div>
-    </a>
     
 </nav>
 
