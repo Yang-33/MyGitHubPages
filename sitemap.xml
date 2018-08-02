@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yang33-kassa.jp/yukicoder/yukicoder191-200/</loc>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/yukicoder/yukicoder181-190/</loc>
     <lastmod>2018-08-02T17:45:54+09:00</lastmod>
   </url>
@@ -543,8 +548,14 @@
   </url>
   
   <url>
+    <loc>https://yang33-kassa.jp/tags/</loc>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/archives/2018/</loc>
-    <lastmod>2018-08-02T17:45:54+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -574,7 +585,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2018-08/</loc>
-    <lastmod>2018-08-02T17:45:54+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -616,7 +627,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/</loc>
-    <lastmod>2018-08-02T17:45:54+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1054,7 +1065,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/tags/</loc>
-    <lastmod>2018-04-13T19:21:50+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1090,19 +1101,19 @@
   
   <url>
     <loc>https://yang33-kassa.jp/</loc>
-    <lastmod>2018-08-02T17:45:54+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yang33-kassa.jp/categories/yukicoder/</loc>
-    <lastmod>2018-08-02T17:45:54+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yang33-kassa.jp/yukicoder/</loc>
-    <lastmod>2018-08-02T17:45:54+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
