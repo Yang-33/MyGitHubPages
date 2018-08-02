@@ -548,12 +548,6 @@
   </url>
   
   <url>
-    <loc>https://yang33-kassa.jp/tags/</loc>
-    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://yang33-kassa.jp/archives/2018/</loc>
     <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
@@ -795,7 +789,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/tags/fibonacci/</loc>
-    <lastmod>2018-04-14T14:25:13+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -825,7 +819,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/tags/geometry/</loc>
-    <lastmod>2018-07-07T14:54:47+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -837,7 +831,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/tags/greedy/</loc>
-    <lastmod>2018-08-02T17:45:54+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -891,7 +885,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/tags/manhattan/</loc>
-    <lastmod>2018-05-05T01:16:05+09:00</lastmod>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1065,13 +1059,19 @@
   
   <url>
     <loc>https://yang33-kassa.jp/tags/</loc>
-    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
+    <lastmod>2018-04-13T19:21:50+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yang33-kassa.jp/tags/ternary-search/</loc>
     <lastmod>2018-08-02T00:09:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/tags/tree-dp/</loc>
+    <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
