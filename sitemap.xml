@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yang33-kassa.jp/atcoder/mujin2018/</loc>
+    <lastmod>2018-08-05T23:25:23+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/yukicoder/yukicoder201-210/</loc>
     <lastmod>2018-08-02T20:58:32+09:00</lastmod>
   </url>
@@ -554,7 +559,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2018/</loc>
-    <lastmod>2018-08-02T20:58:32+09:00</lastmod>
+    <lastmod>2018-08-05T23:25:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -584,7 +589,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2018-08/</loc>
-    <lastmod>2018-08-02T20:58:32+09:00</lastmod>
+    <lastmod>2018-08-05T23:25:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -626,7 +631,19 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/</loc>
-    <lastmod>2018-08-02T20:58:32+09:00</lastmod>
+    <lastmod>2018-08-05T23:25:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/categories/atcoder/</loc>
+    <lastmod>2018-08-05T23:25:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/atcoder/</loc>
+    <lastmod>2018-08-05T23:25:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -752,13 +769,13 @@
   
   <url>
     <loc>https://yang33-kassa.jp/tags/dijkstra/</loc>
-    <lastmod>2018-04-13T02:02:41+09:00</lastmod>
+    <lastmod>2018-08-05T23:25:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yang33-kassa.jp/tags/dp/</loc>
-    <lastmod>2018-08-02T20:58:32+09:00</lastmod>
+    <lastmod>2018-08-05T23:25:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -920,7 +937,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/tags/memo%E5%8C%96%E5%86%8D%E5%B8%B0/</loc>
-    <lastmod>2018-08-02T20:58:32+09:00</lastmod>
+    <lastmod>2018-08-05T23:25:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1106,7 +1123,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/</loc>
-    <lastmod>2018-08-02T20:58:32+09:00</lastmod>
+    <lastmod>2018-08-05T23:25:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   

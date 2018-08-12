@@ -6,10 +6,28 @@
     <description>Recent content in Dijkstra on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Apr 2018 02:02:41 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 05 Aug 2018 23:25:23 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/dijkstra/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mujin Programming Challenge 2018</title>
+      <link>https://yang33-kassa.jp/atcoder/mujin2018/</link>
+      <pubDate>Sun, 05 Aug 2018 23:25:23 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/atcoder/mujin2018/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;!--コメント--&gt;
+
+&lt;p&gt;院試4日前だけど出ました。&lt;br /&gt;
+久しぶりにTシャツを得た!
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Yukicoder020 砂漠のオアシス</title>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Atcoders on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/atcoder/</link>
+    <description>Recent content in Atcoders on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 05 Aug 2018 23:25:23 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/atcoder/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mujin Programming Challenge 2018</title>
+      <link>https://yang33-kassa.jp/atcoder/mujin2018/</link>
+      <pubDate>Sun, 05 Aug 2018 23:25:23 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/atcoder/mujin2018/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;!--コメント--&gt;
+
+&lt;p&gt;院試4日前だけど出ました。&lt;br /&gt;
+久しぶりにTシャツを得た!
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
