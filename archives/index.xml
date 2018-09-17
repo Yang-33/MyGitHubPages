@@ -6,7 +6,7 @@
     <description>Recent content in Archives on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 05 Aug 2018 23:25:23 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 18 Sep 2018 00:14:11 +0900</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/archives/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>2018</title>
       <link>https://yang33-kassa.jp/archives/2018/</link>
-      <pubDate>Sun, 05 Aug 2018 23:25:23 +0900</pubDate>
+      <pubDate>Tue, 18 Sep 2018 00:14:11 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/archives/2018/</guid>
       <description></description>
@@ -62,6 +62,15 @@
       <pubDate>Sun, 05 Aug 2018 23:25:23 +0900</pubDate>
       
       <guid>https://yang33-kassa.jp/archives/2018-08/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2018 09</title>
+      <link>https://yang33-kassa.jp/archives/2018-09/</link>
+      <pubDate>Tue, 18 Sep 2018 00:14:11 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/archives/2018-09/</guid>
       <description></description>
     </item>
     
