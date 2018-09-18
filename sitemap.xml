@@ -3,8 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://yang33-kassa.jp/post/testpage/</loc>
-    <lastmod>2018-09-18T00:14:11+09:00</lastmod>
+    <loc>https://yang33-kassa.jp/post/forcia-summer-intern2018/</loc>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
   </url>
   
   <url>
@@ -563,14 +563,8 @@
   </url>
   
   <url>
-    <loc>https://yang33-kassa.jp/tags/</loc>
-    <lastmod>2018-09-18T00:14:11+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://yang33-kassa.jp/archives/2018/</loc>
-    <lastmod>2018-09-18T00:14:11+09:00</lastmod>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -606,7 +600,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2018-09/</loc>
-    <lastmod>2018-09-18T00:14:11+09:00</lastmod>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -648,7 +642,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/</loc>
-    <lastmod>2018-09-18T00:14:11+09:00</lastmod>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -684,7 +678,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/tags/binary-search/</loc>
-    <lastmod>2018-07-26T23:52:50+09:00</lastmod>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -702,7 +696,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/categories/blog/</loc>
-    <lastmod>2018-04-14T16:23:25+09:00</lastmod>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -757,6 +751,12 @@
   <url>
     <loc>https://yang33-kassa.jp/tags/combination/</loc>
     <lastmod>2018-08-02T00:09:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/tags/compression/</loc>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1008,7 +1008,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/post/</loc>
-    <lastmod>2018-09-18T00:14:11+09:00</lastmod>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1051,6 +1051,12 @@
   <url>
     <loc>https://yang33-kassa.jp/tags/right-first-search/</loc>
     <lastmod>2018-05-05T01:32:25+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/tags/rust/</loc>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1098,7 +1104,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/tags/</loc>
-    <lastmod>2018-09-18T00:14:11+09:00</lastmod>
+    <lastmod>2018-04-13T19:21:50+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1140,13 +1146,13 @@
   
   <url>
     <loc>https://yang33-kassa.jp/</loc>
-    <lastmod>2018-09-18T00:14:11+09:00</lastmod>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yang33-kassa.jp/categories/yukicoder/</loc>
-    <lastmod>2018-09-18T00:14:11+09:00</lastmod>
+    <lastmod>2018-08-02T20:58:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
