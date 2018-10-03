@@ -1,0 +1,8 @@
+#!/bin/bash
+
+hugo new $1 || sakura.exe $1
+
+
+
+
+
