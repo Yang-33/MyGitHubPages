@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Top on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/tags/top/</link>
+    <description>Recent content in Top on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 11 Oct 2018 13:32:27 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/tags/top/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>tops</title>
+      <link>https://yang33-kassa.jp/mathematics/tops/</link>
+      <pubDate>Thu, 11 Oct 2018 13:32:27 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/mathematics/tops/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;!--コメント--&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
