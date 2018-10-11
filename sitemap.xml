@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yang33-kassa.jp/mathematics/numbertheoryalgorithm/</loc>
+    <lastmod>2018-10-11T10:31:37+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/post/forcia-summer-intern2018/</loc>
     <lastmod>2018-09-18T00:12:13+09:00</lastmod>
   </url>
@@ -564,7 +569,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2018/</loc>
-    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
+    <lastmod>2018-10-11T10:31:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -601,6 +606,12 @@
   <url>
     <loc>https://yang33-kassa.jp/archives/2018-09/</loc>
     <lastmod>2018-09-18T00:12:13+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/archives/2018-10/</loc>
+    <lastmod>2018-10-11T10:31:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -642,7 +653,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/</loc>
-    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
+    <lastmod>2018-10-11T10:31:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -935,6 +946,18 @@
   </url>
   
   <url>
+    <loc>https://yang33-kassa.jp/mathematics/</loc>
+    <lastmod>2018-10-11T10:31:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/categories/mathematics/</loc>
+    <lastmod>2018-10-11T10:31:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/tags/matrix/</loc>
     <lastmod>2018-08-02T17:45:54+09:00</lastmod>
     <priority>0</priority>
@@ -967,6 +990,12 @@
   <url>
     <loc>https://yang33-kassa.jp/tags/nim/</loc>
     <lastmod>2018-04-07T02:16:31+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/tags/numbertheory/</loc>
+    <lastmod>2018-10-11T10:31:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1146,7 +1175,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/</loc>
-    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
+    <lastmod>2018-10-11T10:31:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
