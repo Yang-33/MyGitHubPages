@@ -386,6 +386,21 @@ categories   : 記事のdirectory
 
 <h2 id="10-11-二次篩法"><sup>10</sup>&frasl;<sub>11</sub> 二次篩法</h2>
 
+<p>代数体を用いた素因数分解アルゴリズム(確率的アルゴリズム)。<br />
+数体ふるい法も存在する。こちらは$O(e^{\sqrt{(log(n)log(log(n)))}})$と書かれている</p>
+
+<h3 id="大体の流れ">大体の流れ</h3>
+
+<p>$N$を素因数分解したい。<br />
+ところで、$X^2-Y^2 = N$とするような$X,Y$を発見できれば$X^2-Y^2$は$N$の倍数なので、$X-Y$、$X+Y$は$N$の素因数を持つ。<br />
+このことから、$X^2-N=Y^2$となるようなXを発見することを試みる。$A_i = \sqrt{N}+j$などとおいたときの$A_i^2-N$を素因数分解する。<br />
+すると、$\prod _{i∈S} (A_i^2-N) = \prod _{k∈P} p_k^{e_k}$ となる。<br />
+素数の指数部がすべて偶数となるような集合$S$を選択すると、<br />
+$\prod A_i^2 + N*k = ( \prod _{k∈P} p_k^{e_k/2})^2$より、<br />
+目的の$X^2-Y^2$を求めることができた。これのうち、$gcd(X-Y,N)$がNの素因数でありそう(そうでない場合もある)。という話</p>
+
+<h3 id="説明">説明</h3>
+
 <p>今$L$の素因子を知りたい。
 $P = {p1,p2,p3,..,}$ となっていて、<br />
 $ (n/pi) = 1 ⇔ x^2 ≡ n$ mod $pi$<br />
@@ -430,21 +445,21 @@ $x^2 ≡ n$ mod $p_j$の<strong>解の情報</strong>から、$p|b_i$となる$b
 <p>$x^2-x&rsquo;^2$mod $P$<br />
 $∴ 0≡(x+x&rsquo;)(x-x&rsquo;)$ mod $p_j$<br />
 $∴ x&rsquo;≡ ±x$ mod $p_j$ えーこれは$-x$に対応するものも存在することに注意(適当に表を作ると出てこない時がある)<br />
-すなわち、$p_j|b<em>j$ ⇒ $ p</em>{j}|b_{i±p} $</p>
+すなわち、<img src="https://latex.codecogs.com/gif.latex?p_j|b_j&space;\Rightarrow&space;p_{j}|b_{i\pm&space;p}"/></p>
 
 <p>$b_i$ について見たときも、なんかいい感じに分布している(適当すぎるだろ)<br />
-ちゃんと書くと、$b_i$が$p_j$で割り切れるならば$p_j$行ごとに対応する$b_x$が存在する。</p>
+ちゃんと書くと、$b_i$が$p_j$で割り切れるならば$p_j$行ごとに対応する$b_x$が存在する。<br />
+同様に、<img src="https://latex.codecogs.com/gif.latex?p_j^e|b_j&space;\Rightarrow&space;p_{j}^e|b_{i\pm&space;p}^e"/></p>
 
-<p>同様に、$p_j^e|b_j⇒ p<em>j^e | b</em>{i±p_j^e}$</p>
-
-<p>つまり、$p_j^e$行ごとに$p_j^e$で割れる。</p>
-
-<p>-x,xについて考えると、表が2種類できることになる。(こともある)</p>
+<p>つまり、$p_j^e$行ごとに$p_j^e$で割れる。<br />
+-x,xについて考えると、表が2種類できることになる。(こともある)</p>
 
 <p>一番大きい場所を見つければ良い</p>
 
 <p><a href="http://www.ne.senshu-u.ac.jp/~proj26-15/hurui.pdf">有用なリンク</a><br />
 <a href="https://www.slideshare.net/junpeitsuji/in-58784607">わかりやすい</a></p>
+
+<p>これによって、大きい$N$に対しても割と高速に素因数分解を行うことができた！</p>
         </div>
         <footer class="article-footer">
     <a data-url="https://yang33-kassa.jp/mathematics/numbertheoryalgorithm/" data-id="abda21ac9c943e47f1bd431f99c128f3" class="article-share-link">
