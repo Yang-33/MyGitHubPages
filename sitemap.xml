@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://yang33-kassa.jp/mathematics/numbertheoryalgorithmclass/%E6%95%B0%E8%AB%96%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E7%89%B9%E8%AB%9603/</loc>
-    <lastmod>2018-10-18T10:31:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/mathematics/tops/</loc>
-    <lastmod>2018-10-11T13:32:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/mathematics/numbertheoryalgorithmclass/%E6%95%B0%E8%AB%96%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E7%89%B9%E8%AB%9602/</loc>
-    <lastmod>2018-10-11T10:31:37+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://yang33-kassa.jp/post/forcia-summer-intern2018/</loc>
     <lastmod>2018-09-18T00:12:13+09:00</lastmod>
   </url>
@@ -579,7 +564,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2018/</loc>
-    <lastmod>2018-10-18T10:31:37+09:00</lastmod>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -616,12 +601,6 @@
   <url>
     <loc>https://yang33-kassa.jp/archives/2018-09/</loc>
     <lastmod>2018-09-18T00:12:13+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/archives/2018-10/</loc>
-    <lastmod>2018-10-18T10:31:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -663,7 +642,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/</loc>
-    <lastmod>2018-10-18T10:31:37+09:00</lastmod>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -956,18 +935,6 @@
   </url>
   
   <url>
-    <loc>https://yang33-kassa.jp/mathematics/</loc>
-    <lastmod>2018-10-18T10:31:37+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/categories/mathematics/</loc>
-    <lastmod>2018-10-18T10:31:37+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://yang33-kassa.jp/tags/matrix/</loc>
     <lastmod>2018-08-02T17:45:54+09:00</lastmod>
     <priority>0</priority>
@@ -1000,12 +967,6 @@
   <url>
     <loc>https://yang33-kassa.jp/tags/nim/</loc>
     <lastmod>2018-04-07T02:16:31+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://yang33-kassa.jp/tags/numbertheory/</loc>
-    <lastmod>2018-10-18T10:31:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1154,12 +1115,6 @@
   </url>
   
   <url>
-    <loc>https://yang33-kassa.jp/tags/top/</loc>
-    <lastmod>2018-10-11T13:32:27+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://yang33-kassa.jp/tags/tree-dp/</loc>
     <lastmod>2018-08-02T18:28:35+09:00</lastmod>
     <priority>0</priority>
@@ -1191,7 +1146,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/</loc>
-    <lastmod>2018-10-18T10:31:37+09:00</lastmod>
+    <lastmod>2018-09-18T00:12:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
