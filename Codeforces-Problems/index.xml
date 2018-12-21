@@ -24,7 +24,9 @@
 0からN-1への最長距離を変えないようにそれぞれ辺の重み$c(u,v)$を$0$以上の整数だけ増やす。&lt;br /&gt;
 最大でどれだけ増やせるか。&lt;br /&gt;
 $N\leqq10^2$、$M\leqq10^3$、$c(u,v)\leqq10^3$
-&lt;/p&gt;</description>
+&lt;/p&gt;
+なんかここに情報が入るっぽい
+</description>
     </item>
     
   </channel>
