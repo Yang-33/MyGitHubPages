@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table td {
+max-width: 100px;
+text-overflow: ellipsis;
+overflow-wrap : break-word;
+overflow: hidden;
+}
+
+
+.dataTables_filter { display: none; }
+
+.dropdown-toggle::after {
+    visibility: hidden;
+}
