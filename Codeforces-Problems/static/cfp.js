@@ -1,6 +1,5 @@
 document.getElementById("submitUsername").onclick = function() {
 	var username = document.getElementById("username")
-	console.log(username.value)
 	changeBackColorDefault("td")
 	usernameProcess(username.value)
 };
