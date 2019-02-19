@@ -90,5 +90,16 @@ function usernameProcess(username){
 	xmlHttpRequest.open( 'GET', 'https://codeforces.com/api/user.status?handle='+username, true );
 	xmlHttpRequest.responseType = 'json';
 	xmlHttpRequest.send( null );
-
 }
+
+function parseurl(){
+	var parser = new URL(location.href);
+	var username = parser.searchParams.get("user");
+	if (username !== "" && username !== null){
+		console.log(username);
+		changeBackColorDefault("td");
+		usernameProcess(username);
+	}
+}
+parseurl();
+
