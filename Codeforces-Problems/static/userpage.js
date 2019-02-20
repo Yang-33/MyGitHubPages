@@ -158,7 +158,7 @@ function exec(handle) {
             $("#maxDown").html(maxDown?maxDown + "<a href=\"" + con_url + maxDownCon + "\" target=\"_blank\"> (" + maxDownCon + ") </a>":'---');
             */
         });
-        console.log("exec end.")
+
     };
 
 
@@ -371,11 +371,12 @@ function calc_streaks(handle) {
 
     console.log(longestStreak);
     console.log(currentStreak);
-    console.log("username:", handle);
     datesarray = [];
     // 
     $("#streak").removeClass("hidden");
     $('.handle-text').html(handle);
+    if (longestStreak == 0) longestStreak = "not impl";
+    if (currentStreak == 0) currentStreak = "not impl";
     $("#maxStreak").html(longestStreak + " days");
     $("#nowStreak").html(currentStreak + " days");
 }
@@ -384,16 +385,16 @@ function parseurl() {
     var parser = new URL(location.href);
     var username = parser.searchParams.get("user");
     if (username !== "" && username !== null) {
-        var g = function (username) {
-            Promise.resolve()
-                .then(() => {
-                    exec(username);
-                })
-                .then(() => {
-                    calc_streaks(username);
-                })
-        }
-        g();
+
+        $.when(
+            console.log("UKUCHAN1"),
+            exec(username),
+            console.log("UKUCHAN2")
+        ).done(function () {
+            console.log("UKUCHAN3");
+            calc_streaks(username);
+            console.log("UKUCHAN4");
+        });
     }
 }
 function copyusername() {
@@ -404,13 +405,13 @@ function copyusername() {
     }
 }
 
-var f = function () {
-    Promise.resolve()
-        .then(() => {
-            copyusername();
-        })
-        .then(() => {
-            parseurl();
-        })
-}
-f();
+//var promise = Promise.resolve();
+//promise
+//    .then(exec(username))
+//    .then(calc_streaks)
+
+$.when(
+    copyusername()
+).done(function () {
+    parseurl();
+});
