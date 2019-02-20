@@ -10,6 +10,7 @@ var totalSub = 0;
 var heatmap = {};
 var heatmapData = {};
 var years = 0;
+var datesarray = []; // streak
 
 var req1, req2;
 
@@ -80,6 +81,7 @@ function exec(handle) {
 
                 //updating the heatmap
                 var date = new Date(sub.creationTimeSeconds * 1000);  // submission date
+                datesarray.push(date);
                 date.setHours(0, 0, 0, 0);
                 if (heatmap[date.valueOf()] === undefined) heatmap[date.valueOf()] = 1;
                 else heatmap[date.valueOf()]++;
@@ -155,12 +157,6 @@ function exec(handle) {
             $("#maxUp").html(maxUp + "<a href=\"" + con_url + maxUpCon + "\" target=\"_blank\"> (" + maxUpCon + ") </a>");
             $("#maxDown").html(maxDown?maxDown + "<a href=\"" + con_url + maxDownCon + "\" target=\"_blank\"> (" + maxDownCon + ") </a>":'---');
             */
-            // UKU.
-            $("#streak").removeClass("hidden");
-            $('.handle-text').html(handle);
-            $("#maxStreak").html("not impl" + " days");
-            $("#nowStreak").html("not impl" + " days");
-
         });
 
     };
@@ -317,11 +313,75 @@ function err_message(div, msg) {
     $("#" + div).addClass("is-invalid");
 }
 
+sortDates = dates => {
+    return dates
+        .sort(function (a, b) {
+            return (
+                moment(moment(b).startOf("day")).format("X") -
+                moment(moment(a).startOf("day")).format("X")
+            );
+        })
+        .reverse();
+};
+
+
+function TimeFormatter(num) {
+    let date = moment(num);
+    return date.format("Y-MM-DD");
+}
+
+function calc_streaks() {
+    datesarray = sortDates(datesarray);
+    let longestStreak = 0;
+    let currentStreak = 0;
+    let lastAcceptedDate = "None";
+
+    if (datesarray.length > 0) {
+        currentStreak = 1;
+        longestStreak = 1;
+        lastAcceptedDate = TimeFormatter(
+            datesarray[0].getTime()
+        );
+    }
+    for (i = 0; i < datesarray.length; i++) {
+        second = datesarray[i].getTime() / 1000;
+        if (i > 0) {
+            let yesterday = TimeFormatter(
+                (second - 24 * 3600) * 1000
+            );
+            if (lastAcceptedDate === yesterday) {
+                currentStreak += 1;
+            } else if (lastAcceptedDate < yesterday) {
+                longestStreak = Math.max(longestStreak, currentStreak);
+                currentStreak = 1;
+            }
+        }
+        lastAcceptedDate = TimeFormatter(second * 1000);
+    }
+    longestStreak = Math.max(longestStreak, currentStreak);
+    let yesterday = TimeFormatter(
+        new Date().getTime() - 24 * 3600 * 1000
+    );
+    if (lastAcceptedDate < yesterday) {
+        currentStreak = 0;
+    }
+
+    console.log(longestStreak);
+    console.log(currentStreak);
+    datesarray = [];
+    // UKU.
+    $("#streak").removeClass("hidden");
+    $('.handle-text').html(handle);
+    $("#maxStreak").html(longestStreak + " days");
+    $("#nowStreak").html(currentStreak + " days");
+}
+
 function parseurl() {
     var parser = new URL(location.href);
     var username = parser.searchParams.get("user");
     if (username !== "" && username !== null) {
         exec(username);
+        calc_streaks();
     }
 }
 function copyusername() {
