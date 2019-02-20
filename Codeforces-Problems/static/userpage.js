@@ -313,14 +313,14 @@ function drawCharts() {
         currentStreak = 0;
     }
 
-    console.log(longestStreak);
-    console.log(currentStreak);
+    //console.log(longestStreak);
+    //console.log(currentStreak);
     datesarray = [];
     // 
     $("#streak").removeClass("hidden");
     $('.handle-text').html(handle);
-    if (longestStreak == 0) longestStreak = "not impl";
-    if (currentStreak == 0) currentStreak = "not impl";
+    //if (longestStreak == 0) longestStreak = "not impl";
+    //if (currentStreak == 0) currentStreak = "not impl";
     $("#maxStreak").html(longestStreak + " days");
     $("#nowStreak").html(currentStreak + " days");
 
