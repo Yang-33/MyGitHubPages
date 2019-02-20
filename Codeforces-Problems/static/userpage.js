@@ -384,16 +384,16 @@ function parseurl() {
     var parser = new URL(location.href);
     var username = parser.searchParams.get("user");
     if (username !== "" && username !== null) {
-
-        $.when(
-            console.log("UKUCHAN1"),
-            exec(username),
-            console.log("UKUCHAN2")
-        ).done(function () {
-            console.log("UKUCHAN3");
-            calc_streaks(username);
-            console.log("UKUCHAN4");
-        });
+        var g = function (username) {
+            Promise.resolve()
+                .then(() => {
+                    exec(username);
+                })
+                .then(() => {
+                    calc_streaks(username);
+                })
+        }
+        g();
     }
 }
 function copyusername() {
@@ -404,13 +404,13 @@ function copyusername() {
     }
 }
 
-//var promise = Promise.resolve();
-//promise
-//    .then(exec(username))
-//    .then(calc_streaks)
-
-$.when(
-    copyusername()
-).done(function () {
-    parseurl();
-});
+var f = function () {
+    Promise.resolve()
+        .then(() => {
+            copyusername();
+        })
+        .then(() => {
+            parseurl();
+        })
+}
+f();
