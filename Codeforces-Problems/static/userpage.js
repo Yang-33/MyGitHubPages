@@ -321,7 +321,6 @@ function parseurl() {
     var parser = new URL(location.href);
     var username = parser.searchParams.get("user");
     if (username !== "" && username !== null) {
-        changeBackColorDefault("td");
         exec(username);
     }
 }
