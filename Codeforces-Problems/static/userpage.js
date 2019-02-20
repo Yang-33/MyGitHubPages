@@ -380,8 +380,11 @@ function parseurl() {
     var parser = new URL(location.href);
     var username = parser.searchParams.get("user");
     if (username !== "" && username !== null) {
-        exec(username);
-        calc_streaks();
+        $.when(
+            exec(username)
+        ).done(function () {
+            calc_streaks();
+        });
     }
 }
 function copyusername() {
@@ -391,5 +394,8 @@ function copyusername() {
         document.getElementById("username").value = username;
     }
 }
-copyusername();
-parseurl();
+$.when(
+    copyusername()
+).done(function () {
+    parseurl();
+});
