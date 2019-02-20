@@ -1,115 +1,57 @@
+
 <!doctype html>
-<html lang="jp">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="description" content="CF で解いた問題の管理">
-    <link rel="icon" href="https://yang33-kassa.jp/Codeforces-Problems/static/favicon.ico">
-    <link rel="apple-touch-icon" href="https://yang33-kassa.jp/Codeforces-Problems/static/apple-touch-icon-152x152.png" sizes="152x152">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="https://yang33-kassa.jp/Codeforces-Problems/static/cf.css">
-    <!--datatables-->
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.css" />
-    <script src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.js">
-    </script>
-    <script src="https://yang33-kassa.jp/Codeforces-Problems/static/contesttable.js">
-    </script>
-    <link rel="stylesheet" type="text/css" href="https://yang33-kassa.jp/Codeforces-Problems/static/contest.css">
-    <title>CodeforcesProblems
-    </title>
-  </head>
-  <style type="text/css">
-  </style>
-  <body>
-    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-      <div class="container">
-        <a href="https://yang33-kassa.jp/Codeforces-Problems">
-          <img src="https://yang33-kassa.jp/Codeforces-Problems/static/logo.png" width="40%" height="40%">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-          </span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarResponsive">
-          <ul class="navbar-nav mr-auto navbar-right">
-            <li class="nav-item active">
-              <a class="nav-link" href="https://yang33-kassa.jp/Codeforces-Problems">コンテスト一覧　
-              </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="https://yang33-kassa.jp/Codeforces-Problems/list">問題一覧　
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://twitter.com/__KasSA" target="_blank">お問い合わせ　
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" id="themes">
-                TODO
-                <span class="caret">
-                </span>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="themes">
-                <a class="dropdown-item" href="">要望/不具合等ありましたら是非お問い合わせまでお願いします。
-                </a>
-                <div class="dropdown-divider">
-                </div>
-                <a class="dropdown-item" href="">絞り込みをちゃんと書く
-                </a>
-                <a class="dropdown-item" href="">ratedのみ表示
-                </a>
-                <a class="dropdown-item" href="">ライバル機能
-                </a>
-                <a class="dropdown-item" href="">デザインを何とかする
-                </a>
-                <a class="dropdown-item" href="">URLパラメータを使用して自動で表示
-                </a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" id="download">
-                Links 
-                <span class="caret">
-                </span>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="download">
-                <a class="dropdown-item" href="https://codeforces.com/" target="_blank">Codeforces
-                </a>
-                <div class="dropdown-divider">
-                </div>
-                <a class="dropdown-item" href="https://cfstatistics.herokuapp.com/" target="_blank">codeforces statistics
-                </a>
-                <a class="dropdown-item" href="http://codeforced.github.io/handle/" target="_blank">codeforces handle
-                </a>
-                <div class="dropdown-divider">
-                </div>
-                <a class="dropdown-item" href="https://kenkoooo.com/atcoder/" target="_blank">AtCoder Problems
-                </a>
-                <a class="dropdown-item" href="http://atcoder-scores.herokuapp.com/" target="_blank">AtCoder Scores
-                </a>
-                <div class="dropdown-divider">
-                </div>
-                <a class="dropdown-item" href="https://ia7ck0.appspot.com/csa-ume" target="_blank">CSA ume
-                </a>
-                <a class="dropdown-item" href="https://shugyo.hadrori.jp/" target="_blank">修行
-                </a>
-                <div class="dropdown-divider">
-                </div>
-                <a class="dropdown-item" href="http://aoj-icpc.ichyo.jp/" target="_blank">AOJ-ICPC
-                </a>
-                <a class="dropdown-item" href="https://joi.goodbaton.com/" target="_blank">AOJ/AtCoder-JOI
-                </a>
-                <a class="dropdown-item" href="http://minami.chu.jp/aoj/" target="_blank">AOJカテゴリー別問題集
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="CF で解いた問題の管理">
+  <link rel="icon" href="https://yang33-kassa.jp/Codeforces-Problems/static/favicon.ico">
+  <link rel="apple-touch-icon" href="https://yang33-kassa.jp/Codeforces-Problems/static/apple-touch-icon-152x152.png" sizes="152x152">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Codeforces Problems</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://yang33-kassa.jp/Codeforces-Problems/static/cf.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.css">
+  <script src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.js"></script>
+  <script src="https://yang33-kassa.jp/Codeforces-Problems/static/contesttable.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://yang33-kassa.jp/Codeforces-Problems/static/contest.css">
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <div class="layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+      <div class="mdl-layout__header-row mdl-color--indigo-800">
+        <span class="mdl-layout-title mdl-color-text--grey-50">Codeforces Problems</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a href="https://yang33-kassa.jp/Codeforces-Problems/" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--grey-50"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">list</i> Contests <span class="mdl-ripple"></span></a>
+          <a href="https://yang33-kassa.jp/Codeforces-Problems/list/" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--grey-50"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation"> search </i> Problems <span class="mdl-ripple"></span></a>
+          <a href="https://yang33-kassa.jp/Codeforces-Problems/userpage/" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--grey-50"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation"> mood</i> Userpage<span class="mdl-ripple"></span></a>
+          <a href="https://twitter.com/__KasSA" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--grey-50"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">sms</i> contacts <span class="mdl-ripple"></span></a>
+          <a href="https://yang33-kassa.jp/Codeforces-Problems/link/" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--grey-50"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">transfer_within_a_station</i> Link <span class="mdl-ripple"></span></a>
+        </nav>
       </div>
+    </header>
+    <!-- TODO：ここも書き換える-->
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only ">
+      <span id='logo'>CFP</span>
+      <nav class="navigation mdl-navigation ">
+        <a href="https://yang33-kassa.jp/Codeforces-Problems/" class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">list</i> Contests </a>
+        <a href="https://yang33-kassa.jp/Codeforces-Problems/list/" class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">search</i> Problems</a>
+        <a href="https://yang33-kassa.jp/Codeforces-Problems/userpage/" class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">mood</i>Userpage</a>
+        <a href="https://twitter.com/__KasSA" class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">sms</i> Contacts </a>
+        <a href="https://yang33-kassa.jp/Codeforces-Problems/link/" class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">transfer_within_a_station</i> Link </a>
+      </nav>
     </div>
+    
+    
+    <main>
     <!--for contest-->
     <div class="container">
       <div class="jumbotron">
@@ -136,6 +78,49 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td   > Codeforces Round #540 (Div. 3) </td>
+<td class=" 1118A">
+<a href="https://codeforces.com/contest/1118/problem/A" target="_blank">
+A:Water Buying
+</a>
+</td>
+<td class=" 1118B">
+<a href="https://codeforces.com/contest/1118/problem/B" target="_blank">
+B:Tanya and Candies
+</a>
+</td>
+<td class=" 1118C">
+<a href="https://codeforces.com/contest/1118/problem/C" target="_blank">
+C:Palindromic Matrix
+</a>
+</td>
+<td class=" 1118D1">
+<a href="https://codeforces.com/contest/1118/problem/D1" target="_blank">
+D1:Coffee and Coursework (Easy version)
+</a>
+</td>
+<td class=" 1118D2">
+<a href="https://codeforces.com/contest/1118/problem/D2" target="_blank">
+D2:Coffee and Coursework (Hard Version)
+</a>
+</td>
+<td class=" 1118E">
+<a href="https://codeforces.com/contest/1118/problem/E" target="_blank">
+E:Yet Another Ball Problem
+</a>
+</td>
+<td class=" 1118F1">
+<a href="https://codeforces.com/contest/1118/problem/F1" target="_blank">
+F1:Tree Cutting (Easy Version)
+</a>
+</td>
+<td class=" 1118F2">
+<a href="https://codeforces.com/contest/1118/problem/F2" target="_blank">
+F2:Tree Cutting (Hard Version)
+</a>
+</td>
+</tr>
 <tr>
 <td   > Educational Codeforces Round 60 (Rated for Div. 2) </td>
 <td class=" 1117A">
@@ -173,41 +158,6 @@ F:Crisp String
 G:Recursive Queries
 </a>
 </td>
-<td></td>
-</tr>
-<tr>
-<td   > Codeforces Round #539 (Div. 1) </td>
-<td class=" 1109A 1113C">
-<a href="https://codeforces.com/contest/1109/problem/A" target="_blank">
-A:Sasha and a Bit of Relax
-</a>
-</td>
-<td class=" 1109B 1113D">
-<a href="https://codeforces.com/contest/1109/problem/B" target="_blank">
-B:Sasha and One More Name
-</a>
-</td>
-<td class=" 1109C 1113E">
-<a href="https://codeforces.com/contest/1109/problem/C" target="_blank">
-C:Sasha and a Patient Friend
-</a>
-</td>
-<td class=" 1109D 1113F">
-<a href="https://codeforces.com/contest/1109/problem/D" target="_blank">
-D:Sasha and Interesting Fact from Graph Theory
-</a>
-</td>
-<td class=" 1109E">
-<a href="https://codeforces.com/contest/1109/problem/E" target="_blank">
-E:Sasha and a Very Easy Test
-</a>
-</td>
-<td class=" 1109F">
-<a href="https://codeforces.com/contest/1109/problem/F" target="_blank">
-F:Sasha and Algorithm of Silence's Sounds
-</a>
-</td>
-<td></td>
 <td></td>
 </tr>
 <tr>
@@ -275,6 +225,41 @@ E:Arithmetic Progression
 <td class=" 1114F">
 <a href="https://codeforces.com/contest/1114/problem/F" target="_blank">
 F:Please, another Queries on Array?
+</a>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td   > Codeforces Round #539 (Div. 1) </td>
+<td class=" 1109A 1113C">
+<a href="https://codeforces.com/contest/1109/problem/A" target="_blank">
+A:Sasha and a Bit of Relax
+</a>
+</td>
+<td class=" 1109B 1113D">
+<a href="https://codeforces.com/contest/1109/problem/B" target="_blank">
+B:Sasha and One More Name
+</a>
+</td>
+<td class=" 1109C 1113E">
+<a href="https://codeforces.com/contest/1109/problem/C" target="_blank">
+C:Sasha and a Patient Friend
+</a>
+</td>
+<td class=" 1109D 1113F">
+<a href="https://codeforces.com/contest/1109/problem/D" target="_blank">
+D:Sasha and Interesting Fact from Graph Theory
+</a>
+</td>
+<td class=" 1109E">
+<a href="https://codeforces.com/contest/1109/problem/E" target="_blank">
+E:Sasha and a Very Easy Test
+</a>
+</td>
+<td class=" 1109F">
+<a href="https://codeforces.com/contest/1109/problem/F" target="_blank">
+F:Sasha and Algorithm of Silence's Sounds
 </a>
 </td>
 <td></td>
@@ -35142,6 +35127,11 @@ C:Ancient Berland Circus
     <!-- table end -->
     <!-- あ -->
     </div>
+    
+    </main>
+  </div>
+  
+</body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -35152,5 +35142,5 @@ C:Ancient Berland Circus
     </script>
     <script src="https://yang33-kassa.jp/Codeforces-Problems/static/cfp.js">
     </script>
-  </body>
+
 </html>
