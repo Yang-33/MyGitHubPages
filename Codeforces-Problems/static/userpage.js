@@ -184,6 +184,9 @@ function exec(handle) {
             heatmap.draw(heatmapData, heatmapOptions);
         }
     });
+
+
+
 };
 
 function drawCharts() {
@@ -330,7 +333,7 @@ function TimeFormatter(num) {
     return date.format("Y-MM-DD");
 }
 
-function calc_streaks() {
+function calc_streaks(handle) {
     datesarray = sortDates(datesarray);
     let longestStreak = 0;
     let currentStreak = 0;
@@ -369,7 +372,7 @@ function calc_streaks() {
     console.log(longestStreak);
     console.log(currentStreak);
     datesarray = [];
-    // UKU.
+    // 
     $("#streak").removeClass("hidden");
     $('.handle-text').html(handle);
     $("#maxStreak").html(longestStreak + " days");
@@ -380,10 +383,15 @@ function parseurl() {
     var parser = new URL(location.href);
     var username = parser.searchParams.get("user");
     if (username !== "" && username !== null) {
+
         $.when(
-            exec(username)
+            console.log("UKUCHAN1"),
+            exec(username),
+            console.log("UKUCHAN2")
         ).done(function () {
-            calc_streaks();
+            console.log("UKUCHAN3");
+            calc_streaks(username);
+            console.log("UKUCHAN4");
         });
     }
 }
@@ -394,6 +402,12 @@ function copyusername() {
         document.getElementById("username").value = username;
     }
 }
+
+//var promise = Promise.resolve();
+//promise
+//    .then(exec(username))
+//    .then(calc_streaks)
+
 $.when(
     copyusername()
 ).done(function () {
