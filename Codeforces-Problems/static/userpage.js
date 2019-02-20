@@ -158,7 +158,7 @@ function exec(handle) {
             $("#maxDown").html(maxDown?maxDown + "<a href=\"" + con_url + maxDownCon + "\" target=\"_blank\"> (" + maxDownCon + ") </a>":'---');
             */
         });
-
+        console.log("exec end.")
     };
 
 
@@ -371,6 +371,7 @@ function calc_streaks(handle) {
 
     console.log(longestStreak);
     console.log(currentStreak);
+    console.log("username:", handle);
     datesarray = [];
     // 
     $("#streak").removeClass("hidden");
