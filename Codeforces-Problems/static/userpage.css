@@ -322,10 +322,10 @@ body {
 }
 
 table#streaktable {
-    font-size: 24px;
+    font-size: 20px;
 }
 
-th#streakth{
+th.streakth{
     font-size: 20px;
 }
 
