@@ -48,26 +48,21 @@
 
         <!--for list-->
         <div class="container">
-            <div class="jumbotron">
-                <h3>
-                    Codeforces Problemset
-                </h3>
-                <p class="lead">
-                    feature: Narrow down the problems
-                </p>
-                <div class="boxes">
-                    <input type="checkbox" id="box-1" name="check1" onclick="flipTagshowhide(this.checked)" />
-                    <label for="box-1">
-                        Show / Hide Problems tags
+                <div class="handle-card mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col">
+                    <h3>Codeforces Problemset</h3>
+                    <p class="lead">feature: Narrow down the problems</p>
+                    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+                        <input type="checkbox" id="switch-2" class="mdl-switch__input" name="check1" onclick="flipTagshowhide(this.checked)">
+                        <span class="mdl-switch__label"> Show / Hide Problems tags </span>
                     </label>
+                    <form class="" action="." method="get">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" placeholder="Input Username(uwi)" id="username" name="user">
+                        </div>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" id="submitUsername">Search Username</button>
+                    </form>
                 </div>
-                <form class="form-inline my-2 my-lg-0" action="." method="get">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search Username(uwi)" id="username" name="user">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="submitUsername">
-                        Search Username
-                    </button>
-                </form>
-            </div>
+
             <!-- problem list --><table id="tablelist" class="table table-striped table-hover table-responsive table-bordered cell-border">
 <thead>
 <tr>
