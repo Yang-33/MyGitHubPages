@@ -44,7 +44,7 @@
       </div>
     </header>
     <div class="mdl-layout__drawer mdl-layout--small-screen-only ">
-      <span id='logo'>CFP</span>
+      <span id='logo'>CF Problems</span>
       <nav class="navigation mdl-navigation ">
         <a href="https://yang33-kassa.jp/Codeforces-Problems/" class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">list</i> Contests </a>
         <a href="https://yang33-kassa.jp/Codeforces-Problems/list/" class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">search</i> Problems</a>
@@ -64,9 +64,9 @@
           </form>
         </div>
         <div id="streak" class="hidden to-hide card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--6-col-desktop">
-          <table class="mdl-data-table mdl-js-data-table">
+          <table id="streaktable" class="mdl-data-table mdl-js-data-table">
             <tr class="mdl-color--light-blue-900">
-              <th class="mdl-data-table__cell--non-numeric mdl-color-text--blue-50">Streaks of</th>
+              <th id="streakth" class="mdl-data-table__cell--non-numeric mdl-color-text--blue-50">Streaks of</th>
               <th class="handle-text mdl-color-text--blue-50"></th>
             </tr>
             <tr>
@@ -99,7 +99,7 @@
 
 
         <div id="unsolvedCon" class="hidden to-hide card mdl-shadow--2dp mdl-cell mdl-cell--8-col">
-          <span id="unsolvedTitle">Unsolved</span>
+          <span id="unsolvedTitle">Unsolved Problems</span>
           <div class="vertical-space"></div>
           <div class="to-clear" id="unsolvedList"></div>
         </div>
