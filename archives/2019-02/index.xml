@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019 02 on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/archives/2019-02/</link>
+    <description>Recent content in 2019 02 on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 28 Feb 2019 00:10:41 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/archives/2019-02/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019/02 日記</title>
+      <link>https://yang33-kassa.jp/diary/201902/</link>
+      <pubDate>Thu, 28 Feb 2019 00:10:41 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/diary/201902/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;!--コメント--&gt;
+
+&lt;p&gt;今までは全ての解いた問題全部の概要と解説をGitHubに，タグや難易度，復習問題管理をspreadsheetに書いていた．&lt;/p&gt;
+
+&lt;p&gt;復習問題管理以外に価値はないことがわかってきたので解法メモを書いておくべきと思ったものは時系列順にここに全部書くことにした．&lt;/p&gt;
+
+&lt;p&gt;競技プログラミング以外の話も書くかも．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

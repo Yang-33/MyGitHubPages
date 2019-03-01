@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>2019/02 日記 &middot; Yang33 Home</title>
+    <meta name="generator" content="Hugo 0.40.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Yang33">
+    
+      <meta name="description" content="yang33&#39;s home. competitive programming &amp; data structures.">
+    
+    
+    <link rel="canonical" href="https://yang33-kassa.jp/diary/201902/"/>
+    <link rel="icon" href="https://yang33-kassa.jp/favicon.ico">
+    <link rel="apple-touch-icon" href="https://yang33-kassa.jp/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/style.css">
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/monokai.css">
+    <link rel="stylesheet" href="https://yang33-kassa.jp/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/jp_fonts.css"> 
+    <script src="https://use.edgefonts.net/source-code-pro.js"></script>  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/vs2015.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/jp_fonts.css">
+    
+    <link rel="stylesheet" href="https://yang33-kassa.jp/css/custom.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    
+    <meta name="og:image" content="https://yang33-kassa.jp//apple-touch-icon.png" />
+    <meta property="og:title" content="2019/02 日記" />
+<meta property="og:description" content="
+
+
+
+今までは全ての解いた問題全部の概要と解説をGitHubに，タグや難易度，復習問題管理をspreadsheetに書いていた．
+
+復習問題管理以外に価値はないことがわかってきたので解法メモを書いておくべきと思ったものは時系列順にここに全部書くことにした．
+
+競技プログラミング以外の話も書くかも．
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yang33-kassa.jp/diary/201902/" />
+
+
+
+<meta property="article:published_time" content="2019-02-28T00:10:41&#43;09:00"/>
+
+<meta property="article:modified_time" content="2019-02-28T00:10:41&#43;09:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="2019/02 日記">
+<meta itemprop="description" content="
+
+
+
+今までは全ての解いた問題全部の概要と解説をGitHubに，タグや難易度，復習問題管理をspreadsheetに書いていた．
+
+復習問題管理以外に価値はないことがわかってきたので解法メモを書いておくべきと思ったものは時系列順にここに全部書くことにした．
+
+競技プログラミング以外の話も書くかも．
+
+">
+
+
+<meta itemprop="datePublished" content="2019-02-28T00:10:41&#43;09:00" />
+<meta itemprop="dateModified" content="2019-02-28T00:10:41&#43;09:00" />
+<meta itemprop="wordCount" content="0">
+
+
+
+<meta itemprop="keywords" content="" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="2019/02 日記"/>
+<meta name="twitter:description" content="
+
+
+
+今までは全ての解いた問題全部の概要と解説をGitHubに，タグや難易度，復習問題管理をspreadsheetに書いていた．
+
+復習問題管理以外に価値はないことがわかってきたので解法メモを書いておくべきと思ったものは時系列順にここに全部書くことにした．
+
+競技プログラミング以外の話も書くかも．
+
+"/>
+<meta name="twitter:site" content="@__KasSA"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://yang33-kassa.jp/" id="logo">
+          
+          <i class="logo" style="background-image: url('https://yang33-kassa.jp/css/images/logo.png')"></i>
+          
+          <span class="site-title">Yang33 Home</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/">Home</a>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+          <a class="main-nav-link" href="/about/">About</a>
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/algorithms/">Algorithms</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/tags/">Tags</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/categories/">Categories</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/links/">Links</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://yang33-kassa.jp/archives/">Archives</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://yang33-kassa.jp/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://yang33-kassa.jp/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/">Home</a></td>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+          <td><a class="main-nav-link" href="/about/">About</a></td>
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/algorithms/">Algorithms</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/tags/">Tags</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/categories/">Categories</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/links/">Links</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://yang33-kassa.jp/archives/">Archives</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://yang33-kassa.jp/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="https://www.gravatar.com/avatar/6380971ec3a96b3039069083913daf85?s=100&d=identicon"/>
+      
+      <h2 id="name">Yang33</h2>
+      <h3 id="title">Student</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Earth</span>
+      
+          <a id="follow" href="https://github.com/yang-33">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        117
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          83
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/yang-33" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/__KasSA" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="https://yang33-kassa.jp/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+
+        <header class="article-header">
+    <a href="https://yang33-kassa.jp/diary/201902/">
+    <h1 class="article-title" itemprop="name">
+        2019/02 日記
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-02-28 00:10:41 &#43;0900 DST" itemprop="datePublished">2019-02-28</time>
+       
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://yang33-kassa.jp/categories/diary">diary</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+-->
+
+<!--コメント-->
+
+<p>今までは全ての解いた問題全部の概要と解説をGitHubに，タグや難易度，復習問題管理をspreadsheetに書いていた．</p>
+
+<p>復習問題管理以外に価値はないことがわかってきたので解法メモを書いておくべきと思ったものは時系列順にここに全部書くことにした．</p>
+
+<p>競技プログラミング以外の話も書くかも．</p>
+
+<p></p>
+
+<h4 id="2月">2月</h4>
+
+<p>卒研してました．最初はROSを触っていたけど最終的に点群ライブラリであるところのPCLのドキュメントを読みまくってライブラリを改造するみたいなことをしていました．
+疲れた．あとアカデミックの人の文章力に驚いた．足向けて寝れない．(これは罠で誰にも足を向けて寝られない)</p>
+
+<h5 id="2月下旬">2月下旬</h5>
+
+<p>卒研が終わったのでDockerの本と並行して離散凸解析を読み始めた．マトロイドっぽいものも出てきて2色の最小全域木とかを雰囲気をせず解けるようになった．</p>
+
+<p>あと友達に誘ってもらってCAのBaseCampに行ってきた．各セッションはそこまで学びがなかったけど社長のファーストキャリアの重要性の話には考えざるを得なくなった．言ってよかった．<br />
+なんか懇親会に変な人がたくさんいて楽しかった．</p>
+
+<p>翌日リクルートテクノロジーズのフロントエンド高速化コンテストに参加してきた．チームメイトが優秀で優勝した．特に何も貢献できた気がしないのでホテルで全部再現したりして知識をつけ直した．
+フロントエンドへのイメージがガラリと変わって楽しかった．</p>
+
+<p>得た知見でCodeforces Problemsを若干高速化した．service workerを入れると更に速くなるっぽいけどまだできていない．issueとして立ててあるのでいつか必ずやる．</p>
+
+<h5 id="28">28</h5>
+
+<p>2ヶ月ぶりに競技プログラミングをやる時間と気持ちを得たので再開した．</p>
+
+<p>3月はABC*3+ARC*2をやっていきたいね</p>
+
+<p><strong>ABC119 D LazyFaith:</strong> ソート済みの列に対して，X-&gt;s-&gt;tの移動経路は二分探索できるのでOK．番兵をいれるといい感じにできるのは見落としていた…(実装初心者) <a href="https://beta.atcoder.jp/contests/abc119/submissions/4374298">submission</a></p>
+
+<p><strong>ABC118 D Match Matching:</strong> ちょうどN本つかってできる値の最大値を見つけたい．
+dp(n):=n本マッチ棒をつかってできる最大値として，
+dpの型をstringにすればよい．stringは辞書順でやってしまうので，O(N)の比較関数を書いて対処する．O(N^2) <a href="https://beta.atcoder.jp/contests/abc118/submissions/4384457">submission</a></p>
+
+<p><strong>ABC117 D XXOR:</strong> まずXORの和なので2進展開したときに各桁独立してみて良い．X以下の数字を全探索する際，独立していることからlogX回，最適な0/1を選択していけば良い．この際X未満かどうかわからないとXよりも大きい数字をつくってしまうので，桁DPでよく使うlessフラグをもってやれば良い．O(N*logX) <a href="https://beta.atcoder.jp/contests/abc117/submissions/4387801">submission</a></p>
+
+<p><strong>ABC116 D Various Sushi:</strong> 寿司を種類ごとにまとめてやると種類で全探索できる気がした．これだとdpになりそうで，O(N^2)を下回ることはできなさそう．
+種類で見ないように方針転換する．ネタの美味しさを降順でとっておく．
+このとき，交換をすることで種類を増やせば最適解にあたりそう．
+ネタの種類を増やすので，減らさないほうがいいのはそれはそう(降順に取っているので減らすことに旨味が0)各種類のネタで2番目以降の美味しさを全部保存しておき，その最小値を取れば良い．これはheap等で簡単に実現できる．(なんか全部multisetでいい気がしてきている(どっちもとれるので)) <a href="https://atcoder.jp/contests/abc116/submissions/4398117">submission</a></p>
+
+<p><strong>ABC115 D Christmas:</strong> 再帰的につくれらたバーガーから，端からX枚に含まれるPの数をカウントする．あるレベルのバーガーに含まれるB,Pの総数と，Pのみの総数はレベルが低いものから線形で数えることができる．
+実際に木を下るさいにこれらの情報をもとに移動する．あるLV-1バーガーよりもXが大きい=下る必要がない=計算を端折れる より，バーガーでできる木の高さまでしかたどる必要がない．O(N) <a href="https://atcoder.jp/contests/abc115/submissions/4398396">submission</a></p>
+
+<p><strong>ABC114 D 756:</strong> 約数が75になるとは，N!に含まれる素因数の個数p_iについて，75=Π(p_i+1)が成り立つことである．これは場合分けやdpでできる．
+場合分けのほうが計算量が少ないが，楽にやるならdpだと思う．(ただし思いつかないといけないのでこれは精進&hellip;) <a href="https://atcoder.jp/contests/abc114/submissions/4400525">submission1</a> <a href="https://atcoder.jp/contests/abc114/submissions/4400645">submission2(dp)</a></p>
+
+<p><strong>ABC113 D Number of Amidakuji:</strong> 上の段からdpすれば良さそう．ある段の横線について，validの条件を満たすものが存在し，これらの遷移でdpをしていけばよい．validの条件を満たすものはO(2^w)で全列挙しても間に合う．ちゃんと読んでなくて2^(W-k)とかが遷移に生えて，コーディングが終わってから気がついた．ちゃんと読もう．(読んでないのはスタートラインにすら立てておらず本当に最悪なので) <a href="https://beta.atcoder.jp/contests/abc113/submissions/4401199">submission</a></p>
+
+<p><strong>ABC112 D Partition:</strong> まず素因数分解をする．a_iそれぞれがpの倍数である時，gcdがpとなる．したがってp*(N+k), (k≧0)となるNの分解があるかを見て，あるならpの最大値をansとして保存していけば良い．O(√M)<a href="https://atcoder.jp/contests/abc112/submissions/3352428">submission</a></p>
+
+<p><strong>ABC111 D Robot Arms:</strong> d_iが与えられたとして，これらが全ての配置をみたすかどうかはx+yのパリティを見れば分かる．[これ気がつくの結構難しいと思うけどどうすればいいのかな] というのは，x,yのどちらかにd_iを使う際，x+yの偶奇は変わらないので，全てのx+yのパリティが一致している必要がある．
+パリティが一致していて，奇数の時を考える．アームは2べきで作ると良さそうというのは直感で分かる．配置可能な領域を書くと次の白点のようになる．</p>
+
+<p>
+<figure class="center">
+    
+        <img src="/images/manhattan.png" width="320" height="640" />
+    
+    
+</figure>
+
+ひし形なのでマンハッタン．回転すれば良いということが分かる．(色付きが回転後)
+すると，かなり嬉しい．d_iは(-d_i,0),(d_i,0),(0,-d_i),(0,d_i)のいづれかを選択して(x,y)を作らなければならなかったが，回転させることで(-d_i,-d_i),(d_i,d_i),(-d_i,d_i),(d_i,-d_i)となり，x,yで独立して値を生成することを考えることができる．
+2べきで値を作るとして，必ずx,yを作ることができる．(それはそうなので)
+したがって(0,0)から候補を全部みて，(x+y,x-y)により近づく進路を見れば良い．O(N)</p>
+
+<p>これはパリティも配置可能な領域も見れていなかったので要復習．
+配置可能な領域は実験だけど，まずパリティに気がつく必要があって，これは本当にどうすればいいのかわからない．<a href="https://beta.atcoder.jp/contests/abc111/submissions/4408819">submission</a></p>
+
+<p><strong>ABC110 D Factorizetaion:</strong> これいつかのARCになかったかい．．<a href="https://atcoder.jp/contests/arc004/tasks/arc004_4">https://atcoder.jp/contests/arc004/tasks/arc004_4</a>
+素数ごとに見て良い．素因数分解して，各素数をN個に複数個割り振ってもいい組わせなので，nCr(N,N-1+p_cnt)の積を取れば良い．<a href="https://beta.atcoder.jp/contests/abc110/submissions/4409308">submission</a></p>
+
+<p><strong>ABC109 D Make Them Even:</strong> 奇数の場所を移動させていけば最後には1or0個になる事がわかる．一筆書きで移動できればよく，これを実装すれば良い．<a href="https://beta.atcoder.jp/contests/abc109/submissions/4409501">submission</a></p>
+
+<p><strong>ABC108 D All Your Paths are Different Lengths:</strong> 2べきでやるのは当然．グラフを変に構築するのは筋が悪い．(いつもそうだよね)
+N-1=$\sum 2^k$ のときは S-(1,0)-[1]-(2,0)-[2]-(4,0)-[3]&hellip;と繋げば良い．(括弧は辺の値)
+ではNがそうでない場合はどうすればよいか．$\sum 2^k$ で小さい方から連続して選択するとそれらの値は1から連続していることを利用する．
+N-1=$\sum 2^k$ + Pのとき，Pを$\sum 2^i$ の集合に分割してしまえば良い．すると，(0,1,2,3,4,5,6,7)[+128] + (0,1)[+136]   みたいにできる．
+実装は結構適当にできる．
+連続している値を利用するのがポイント．<a href="https://atcoder.jp/contests/abc108/submissions/4410435">submission</a></p>
+
+<p><strong>ABC107 D Median of Medians:</strong> 中央値は面倒なのでX以上の値が列の過半数に置き換える!(素振り)<br />
+すると問題を次のように言い換える事ができる．</p>
+
+<ol>
+<li>X以上の値が過半数含まれる連続部分列の総数は?</li>
+<li>また，これの総数が連続部分列の数の過半数を占めるか?</li>
+</ol>
+
+<p>1はX以上を1,X未満を-1とした列の累積和でcsum(R)-csum(L)≧0をあるRについて高速にLを取得できれば良い．これはBITでできる．
+2は1で求まった個数について，N<em>(N+1)/2の半分，N</em>(N+1)/4以上であれば良い．
+最初の二分探索パートからO(Nlog^2N)で解ける．
+これはCFでもTCOでも出ていたので解けないとダメそう．
+csum(R)-csum(L)&gt;0とかcsum(R)-csum(L)≧0はX以下か，X以上かによるので，その都度ちゃんと確認する．<a href="https://atcoder.jp/contests/abc107/submissions/4411175">submission</a></p>
+
+<p><strong>ABC106 D AtCoder Express 2:</strong> DQueryの弱い版．クエリと線分をRでソートする．あるRについて，線分のLに+1して，クエリは[L,R]の総和を見れば良い．これはあるRについてのあるあるっぽい．永続でもまあ良い．<br />
+制約が弱いので，L,Rを二次元にplotしてもよい．すると二次元領域に点を加え，正方形の総和を見ることになる．これは適当なデータ構造や前処理をいい感じにやることでできる．<a href="https://atcoder.jp/contests/abc106/submissions/4412150">submission</a></p>
+
+<p><strong>ABC105 D Candy DIstribution:</strong> 区間和がmod M で等しいような数を数え上げれば良い．例のごとくprefixsumを持つ．するとindexR(これはprefixsum)にたいして，csum(R)-csum(L) = 0(mod M)であるものを数えることになり，これはmapでO(NlogN)でできる．<a href="https://atcoder.jp/contests/abc105/submissions/4414135">submission</a></p>
+
+<p><strong>ABC104 D We Love ABC:</strong> これ結構時間がかかった．
+ABBBBBCCみたいなのを考える．Cを見つけたときに，どのBを選んでも良い．これはオートマトンのdpっぽくみるとABCが2番目まで完成しているときに，3番目を選ぶ動作になる．(nx(3)+=dp(2))
+すると他の遷移も見えてきて，ある文字が来た時，stepさせてもいいし，stepさせないということもできる．(後でstepすれば良いため)<br />
+?のときは当然全部できて，stepしないパターンも3種類ある点に注意．<br />
+結局，ABCとなるように3つ選択することが大事で，dpも選択した状態をもっていると考えるとかなり自然．
+これ50分ぐらいかかったので要復習．
+<a href="https://atcoder.jp/contests/abc104/submissions/4414976">submission</a></p>
+
+<h4 id="最後に">最後に</h4>
+
+<p>2月は筋トレと睡眠と卒研を頑張った．3月は競技プログラミングを無限にやりたい．あといろいろな人に勧めてもらったことをやっていきたい．</p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://yang33-kassa.jp/diary/201902/" data-id="f102484d815e944898067430e890475a" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://yang33-kassa.jp/diary/201902/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+    <div style="float:left;" class="hatena">
+    <a href="http://b.hatena.ne.jp/entry/https://yang33-kassa.jp/diary/201902/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+    <div style="float:left;" class="twitter">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yang33-kassa.jp/diary/201902/" data-via="__KasSA" data-counturl="https://yang33-kassa.jp/diary/201902/" ></a>
+    </div>
+   
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+    
+    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</footer>
+
+    </div>
+
+    
+
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yang33-kassa-jp" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/diary/201902/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/diary">
+                        diary
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/diary/201902/" class="title">2019/02 日記</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-02-28 00:10:41 &#43;0900 DST" itemprop="datePublished">2019-02-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/srm/srm616-620-div1easy/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/topcoder">
+                        topcoder
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/srm/srm616-620-div1easy/" class="title">SRM616 620 Div1easy</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-31 18:31:16 &#43;0900 DST" itemprop="datePublished">2018-12-31</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/srm/srm611-615-div1easy/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/topcoder">
+                        topcoder
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/srm/srm611-615-div1easy/" class="title">SRM611 615 Div1easy</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-31 18:03:58 &#43;0900 DST" itemprop="datePublished">2018-12-31</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/srm/srm606-610-div1easy/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/topcoder">
+                        topcoder
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/srm/srm606-610-div1easy/" class="title">SRM606 610 Div1easy</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-31 02:20:30 &#43;0900 DST" itemprop="datePublished">2018-12-31</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://yang33-kassa.jp/srm/srm601-605-div1easy/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://yang33-kassa.jp/categories/topcoder">
+                        topcoder
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://yang33-kassa.jp/srm/srm601-605-div1easy/" class="title">SRM601 605 Div1easy</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-31 02:18:30 &#43;0900 DST" itemprop="datePublished">2018-12-31</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://yang33-kassa.jp/tags/2d-grid" style="font-size: 12px;">2d-grid(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/2d-imos%E6%B3%95" style="font-size: 12px;">2d-imos法(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/about-yang33" style="font-size: 12px;">about-yang33(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/adhoc" style="font-size: 12px;">adhoc(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/bfs" style="font-size: 12px;">bfs(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/bigint" style="font-size: 12px;">bigint(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/binary-indexed-tree" style="font-size: 12px;">binary-indexed-tree(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/binary-search" style="font-size: 12px;">binary-search(6)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/bipartite-graph" style="font-size: 12px;">bipartite-graph(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/bitdp" style="font-size: 12px;">bitdp(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/brackets" style="font-size: 12px;">brackets(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/brute-force-search" style="font-size: 12px;">brute-force-search(4)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/calendar" style="font-size: 12px;">calendar(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/caliper" style="font-size: 12px;">caliper(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/chinese-remainder-theorem" style="font-size: 12px;">chinese-remainder-theorem(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/combination" style="font-size: 12px;">combination(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/compression" style="font-size: 12px;">compression(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/cyclic-group" style="font-size: 12px;">cyclic-group(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/dfs" style="font-size: 12px;">dfs(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/digit-dp" style="font-size: 12px;">digit-dp(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/dijkstra" style="font-size: 12px;">dijkstra(4)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/dp" style="font-size: 12px;">dp(21)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/dp%E5%BE%A9%E5%85%83" style="font-size: 12px;">dp復元(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/dsu-on-tree" style="font-size: 12px;">dsu-on-tree(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/euler-phi" style="font-size: 12px;">euler-phi(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/expected-value" style="font-size: 12px;">expected-value(6)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/factoring" style="font-size: 12px;">factoring(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/fibonacci" style="font-size: 12px;">fibonacci(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/fraction" style="font-size: 12px;">fraction(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/game" style="font-size: 12px;">game(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/garner" style="font-size: 12px;">garner(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/gauss-seidel" style="font-size: 12px;">gauss-seidel(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/gcd-lcm" style="font-size: 12px;">gcd-lcm(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/geometry" style="font-size: 12px;">geometry(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/graph" style="font-size: 12px;">graph(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/greedy" style="font-size: 12px;">greedy(8)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/grundy%E6%95%B0" style="font-size: 12px;">grundy数(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/hamiltonian-cycle" style="font-size: 12px;">hamiltonian-cycle(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/implementation" style="font-size: 12px;">implementation(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/inequality" style="font-size: 12px;">inequality(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/integral" style="font-size: 12px;">integral(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/interval-scheduling" style="font-size: 12px;">interval-scheduling(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/leap-year" style="font-size: 12px;">leap-year(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/lp-dual" style="font-size: 12px;">lp-dual(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/manhattan" style="font-size: 12px;">manhattan(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/math" style="font-size: 12px;">math(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/matrix" style="font-size: 12px;">matrix(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/maximum-flow" style="font-size: 12px;">maximum-flow(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/meet-in-the-middle" style="font-size: 12px;">meet-in-the-middle(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/memo%E5%8C%96%E5%86%8D%E5%B8%B0" style="font-size: 12px;">memo化再帰(4)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/mincostflow" style="font-size: 12px;">mincostflow(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/nim" style="font-size: 12px;">nim(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/oeis" style="font-size: 12px;">oeis(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/parallel" style="font-size: 12px;">parallel(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/pazzle" style="font-size: 12px;">pazzle(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/periodicity" style="font-size: 12px;">periodicity(4)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/polynomial-interpolation" style="font-size: 12px;">polynomial-interpolation(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/powmod" style="font-size: 12px;">powmod(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/prime-number" style="font-size: 12px;">prime-number(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/priority-queue" style="font-size: 12px;">priority-queue(3)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/probability" style="font-size: 12px;">probability(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/proof" style="font-size: 12px;">proof(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/quadratic-function" style="font-size: 12px;">quadratic-function(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/right-first-search" style="font-size: 12px;">right-first-search(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/rust" style="font-size: 12px;">rust(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/shortest-path-dag" style="font-size: 12px;">shortest-path-dag(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simulation" style="font-size: 12px;">simulation(4)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simultaneous-equations" style="font-size: 12px;">simultaneous-equations(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/simultaneous-linear-congruences" style="font-size: 12px;">simultaneous-linear-congruences(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/sqrt-decomposition" style="font-size: 12px;">sqrt-decomposition(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/strongly-connected-component-decomposition" style="font-size: 12px;">strongly-connected-component-decomposition(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/ternary-search" style="font-size: 12px;">ternary-search(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/tree-dp" style="font-size: 12px;">tree-dp(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/union-find" style="font-size: 12px;">union-find(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/unionfind" style="font-size: 12px;">unionfind(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/warshall-floyd" style="font-size: 12px;">warshall-floyd(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/xor" style="font-size: 12px;">xor(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E3%81%97%E3%82%83%E3%81%8F%E3%81%A8%E3%82%8A%E6%B3%95" style="font-size: 12px;">しゃくとり法(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E5%95%8F%E9%A1%8C%E9%9B%86%E3%81%BE%E3%81%A8%E3%82%81" style="font-size: 12px;">問題集まとめ(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E5%BE%A9%E7%BF%92" style="font-size: 12px;">復習(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E6%8C%BF%E5%85%A5dp" style="font-size: 12px;">挿入dp(1)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E8%AA%A4%E5%B7%AE" style="font-size: 12px;">誤差(2)</a>
+        
+        
+        <a href="https://yang33-kassa.jp/tags/%E9%96%89%E8%B7%AF%E6%A4%9C%E5%87%BA" style="font-size: 12px;">閉路検出(1)</a>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/aoj">
+                    aoj
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/atcoder">
+                    atcoder
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/blog">
+                    blog
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/codeforces">
+                    codeforces
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/diary">
+                    diary
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/other-contest">
+                    other-contest
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/post">
+                    post
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/topcoder">
+                    topcoder
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/yukicoder">
+                    yukicoder
+                </a>
+                <span class="category-list-count">100</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://yang33-kassa.jp/categories/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%BE%E3%81%A8%E3%82%81">
+                    アルゴリズムまとめ
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019
+      Yang33Kassa - Powered by <a href="//gohugo.io">Hugo</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-102575488-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="https://yang33-kassa.jp/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://yang33-kassa.jp/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']]
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>
