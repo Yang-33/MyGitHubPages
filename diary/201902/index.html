@@ -443,7 +443,7 @@ dpの型をstringにすればよい．stringは辞書順でやってしまうの
 
 <p><strong>ABC113 D Number of Amidakuji:</strong> 上の段からdpすれば良さそう．ある段の横線について，validの条件を満たすものが存在し，これらの遷移でdpをしていけばよい．validの条件を満たすものはO(2^w)で全列挙しても間に合う．ちゃんと読んでなくて2^(W-k)とかが遷移に生えて，コーディングが終わってから気がついた．ちゃんと読もう．(読んでないのはスタートラインにすら立てておらず本当に最悪なので) <a href="https://beta.atcoder.jp/contests/abc113/submissions/4401199">submission</a></p>
 
-<p><strong>ABC112 D Partition:</strong> まず素因数分解をする．a_iそれぞれがpの倍数である時，gcdがpとなる．したがってp*(N+k), (k≧0)となるNの分解があるかを見て，あるならpの最大値をansとして保存していけば良い．O(√M)<a href="https://atcoder.jp/contests/abc112/submissions/3352428">submission</a></p>
+<p><strong>ABC112 D Partition:</strong> まず素因数分解をする．a_iそれぞれがpの倍数である時，gcdがpとなる．したがってp*(N+k), (k≧0)となるMの分解があるかを見て，あるならpの最大値をansとして保存していけば良い．O(√M)<a href="https://atcoder.jp/contests/abc112/submissions/3352428">submission</a></p>
 
 <p><strong>ABC111 D Robot Arms:</strong> d_iが与えられたとして，これらが全ての配置をみたすかどうかはx+yのパリティを見れば分かる．[これ気がつくの結構難しいと思うけどどうすればいいのかな] というのは，x,yのどちらかにd_iを使う際，x+yの偶奇は変わらないので，全てのx+yのパリティが一致している必要がある．
 パリティが一致していて，奇数の時を考える．アームは2べきで作ると良さそうというのは直感で分かる．配置可能な領域を書くと次の白点のようになる．</p>
