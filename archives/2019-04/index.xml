@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019 04 on Yang33 Home</title>
+    <link>https://yang33-kassa.jp/archives/2019-04/</link>
+    <description>Recent content in 2019 04 on Yang33 Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 10 Apr 2019 15:04:55 +0900</lastBuildDate>
+    
+	<atom:link href="https://yang33-kassa.jp/archives/2019-04/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019/04 日記 01-10日</title>
+      <link>https://yang33-kassa.jp/diary/201904-1/</link>
+      <pubDate>Wed, 10 Apr 2019 15:04:55 +0900</pubDate>
+      
+      <guid>https://yang33-kassa.jp/diary/201904-1/</guid>
+      <description>&lt;!-- 
+tags         : 記事のType
+categories   : 記事のdirectory
+--&gt;
+
+&lt;!--コメント--&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
