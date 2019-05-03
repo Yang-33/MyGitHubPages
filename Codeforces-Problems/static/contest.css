@@ -325,10 +325,11 @@ overflow: hidden;
   table-layout: fixed;
   word-wrap: break-word;
   white-space: normal;
+  margin-top: 20px;
 }
 
 .mdl-data-table a{
-  color: #337ab7 !important;
+  color: #0078df !important;
 }
 
 .mdl-data-table td{
@@ -336,4 +337,7 @@ overflow: hidden;
   padding-left: 7px !important;
   padding-right: 7px !important;
   padding-bottom: 7px !important;
+}
+a.virtual-url {
+  color: #55caff !important;
 }
