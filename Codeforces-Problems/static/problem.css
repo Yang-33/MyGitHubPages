@@ -323,4 +323,12 @@ html { height: 100%; }
 
 a {
     color: #337ab7;
- 
+}
+
+label.mdl-switch{
+    width: 250px !important;
+    padding-left: 0px !important;
+}
+
+
+
