@@ -141,7 +141,6 @@ function filtertable(minpoint,maxpoint,minsolved,maxsolved){
           }
         }
       );
-      console.log("!!");
 }
 
 
@@ -161,9 +160,7 @@ for (var i = 0; i < headers.length; i++) {
   });
 }
 
-// ダメダメ
-headers[2].click();
-headers[2].click();
+
 
 // CODE IS HERE
 function parseurl_uku(){
@@ -177,16 +174,16 @@ function parseurl_uku(){
 		changeBackColorDefault("td");
 		usernameProcess(username);
 	}
-	if (minpoint === ""){
+	if (minpoint === "" || minpoint === null){
 		minpoint = NaN;
 	}
-	if (maxpoint === ""){
+	if (maxpoint === "" || maxpoint === null){
 		maxpoint = NaN;
 	}
-	if (minsolved === ""){
+	if (minsolved === "" || minsolved === null){
 		minsolved = NaN;
 	}
-	if (maxsolved === ""){
+	if (maxsolved === "" || maxsolved === null){
 		maxsolved = NaN;
 	}
 	filtertable(minpoint,maxpoint,minsolved,maxsolved);
@@ -221,3 +218,6 @@ function copyusername_uku(){
 copyusername_uku();
 parseurl_uku();
 
+// ダメダメ
+headers[2].click();
+headers[2].click();
