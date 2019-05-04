@@ -34,7 +34,6 @@ header {
 .handle-card {
     padding: 20px 50px;
     margin: auto;
-    max-height: 250px;
     clear: both;
     text-align: center;
 }
@@ -321,8 +320,8 @@ html { height: 100%; }
     border-radius: 10px;
 }
 
-a {
-    color: #337ab7;
+.mdl-data-table a{
+    color: #0078df !important;
 }
 
 label.mdl-switch{
@@ -331,9 +330,26 @@ label.mdl-switch{
 }
 
 .mdl-layout {
-  background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
 .handle-card{
-  margin-top: 10px;
+    margin-top: 10px;
+    max-height: unset !important;
 }
+
+.mdl-data-table {
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    white-space: normal;
+    margin-top: 20px;
+}
+
+.mdl-data-table td {
+   text-align: left !important;
+}
+.mdl-data-table th {
+   text-align: left !important;
+}
+
