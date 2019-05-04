@@ -330,5 +330,10 @@ label.mdl-switch{
     padding-left: 0px !important;
 }
 
+.mdl-layout {
+  background-color: #f5f5f5;
+}
 
-
+.handle-card{
+  margin-top: 10px;
+}
