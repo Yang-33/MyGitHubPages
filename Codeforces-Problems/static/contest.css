@@ -337,7 +337,24 @@ overflow: hidden;
   padding-left: 7px !important;
   padding-right: 7px !important;
   padding-bottom: 7px !important;
+  text-align: left !important;
+}
+
+.mdl-data-table th{
+  padding-top: 7px !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  padding-bottom: 7px !important;
+  text-align: left !important;
 }
 a.virtual-url {
   color: #55caff !important;
+}
+
+main {
+  background-color: #f5f5f5;
+}
+
+.handle-card{
+  margin-top: 10px;
 }
