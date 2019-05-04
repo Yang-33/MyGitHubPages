@@ -177,6 +177,18 @@ function parseurl_uku(){
 		changeBackColorDefault("td");
 		usernameProcess(username);
 	}
+	if (minpoint === ""){
+		minpoint = NaN;
+	}
+	if (maxpoint === ""){
+		maxpoint = NaN;
+	}
+	if (minsolved === ""){
+		minsolved = NaN;
+	}
+	if (maxsolved === ""){
+		maxsolved = NaN;
+	}
 	filtertable(minpoint,maxpoint,minsolved,maxsolved);
 	
 }
