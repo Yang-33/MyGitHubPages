@@ -7,10 +7,10 @@ hr {
 }
 
 body{
-  font-family : 'Yu Gothic UI', 'Meirio UI';
+  font-family : 'Noto Sans JP', 'Yu Gothic UI', 'Meirio UI';
+  font-size: 18px;
 }
 .main-nav-link {
-  font-family :  'open sans';
   font-weight: 300;
 }
 
