@@ -6,7 +6,7 @@
     <description>Recent content in About Yang33 on Yang33 Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 10 Feb 2018 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 09:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://yang33-kassa.jp/tags/about-yang33/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,17 +14,16 @@
     <item>
       <title>About</title>
       <link>https://yang33-kassa.jp/about/</link>
-      <pubDate>Sat, 10 Feb 2018 21:49:20 +0200</pubDate>
+      <pubDate>Sun, 10 Nov 2019 09:49:20 +0200</pubDate>
       
       <guid>https://yang33-kassa.jp/about/</guid>
-      <description> 全然書いてません
-このページについて ブログ / なにかしらの解説記事 / アルゴリズムの実装
-はてなブログもあるよ(今は更新していない) 🌟About Yang33 学生。
-🌟 興味(好きなもの)  競技プログラミング テニス マラソン 動物 温泉 DataBase 統計  🌟アカウント Account (LINKをいれる)
-🌟 つかえるもの Skills 🌟 Programing Language  C/C++ Rust Python Java/C# shellscript JavaScript/TypeScript HTML/CSS  🌟 Others  MariaDB PostgreSQL MongoDB  🌟 Service &amp;amp; Software?  hugo Django Flask  🌟 資格 License ?
-🌟 経歴 Affiliation ?
-🌟 賞 Achievement ?
-🌟 作ったもの Production  このページ [Coding Univの訳(リンクまだ)]( ) VjudgeでatcoderのIDを簡単に得て精進を加速させるやつ データベースっぽいもの Codeforces Problems  🌟 発表  DB輪行 昼発表 数論アルゴリズム勉強会 Nimとgrundy数について ゲーム理論  したいこと  [内部リンク]  </description>
+      <description>About this site blog / editorials / examples for algorithm, data structure
+About me うしたぷ
+Account
+ Twitter: @__KasSA GitHub: @Yang-33 Other: ?
+  Education / Career Master of Intelligent Systems, Graduate School of Informatics, Nagoya University
+ April 2019 - Ongoing Researching efficient query processing for GIS database and shortest path problem on 3D-TIN.  Bachelor of Information Engineering, School of Engineering, Nagoya University
+ April 2015 - March 2019 IPSJ#81 Construction of a Detabase System for Analyzing Large Point Cloud Data  investigated upon a matching for point cloud registration and implemented faster algorithm by using a point cloud database and pre-calculating.</description>
     </item>
     
   </channel>

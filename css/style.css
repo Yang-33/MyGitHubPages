@@ -186,7 +186,7 @@ code {
   #main {
     display: inline;
     float: left;
-    width: 52.307692307692314%;
+    width: 72.307692307692314%;
     margin: 0 0.769230769230769%;
   }
 }
@@ -807,7 +807,7 @@ code {
   height: auto;
 }
 .article-header {
-  padding: 20px 20px 0;
+  padding: 20px 40px 0;
 }
 .article-header .article-title {
   display: block;
@@ -867,7 +867,7 @@ a.article-title:hover {
 }
 .article-entry {
   color: #565a5f;
-  padding: 0 20px;
+  padding: 0 40px;
   line-height: 1.6em;
 }
 .article-entry:before,
@@ -881,7 +881,7 @@ a.article-title:hover {
 .article-entry p,
 .article-entry table {
   line-height: 1.6em;
-  margin: 1.6em 0;
+  margin: 0.6em 0;
 }
 .article-entry h1,
 .article-entry h2,
@@ -910,8 +910,8 @@ a.article-title:hover {
 .article-entry ul,
 .article-entry ol,
 .article-entry dl {
-  margin-top: 1.6em;
-  margin-bottom: 1.6em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
 }
 .article-entry img,
 .article-entry video {
@@ -1024,7 +1024,7 @@ a.article-title:hover {
   line-height: 1.6em;
   border-top: 1px solid #eceff2;
   padding-top: 1.6em;
-  margin: 0 20px 20px;
+  margin: 0 40px 20px;
 }
 .article-footer:before,
 .article-footer:after {
