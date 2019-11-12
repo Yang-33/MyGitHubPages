@@ -18,12 +18,12 @@
       
       <guid>https://yang33-kassa.jp/about/</guid>
       <description>About this site blog / editorials / examples for algorithm, data structure
-About me うしたぷ
+About me Student.
 Account
  Twitter: @__KasSA GitHub: @Yang-33 Other: ?
   Education / Career Master of Intelligent Systems, Graduate School of Informatics, Nagoya University
  April 2019 - Ongoing Researching efficient query processing for GIS database and shortest path problem on 3D-TIN.  Bachelor of Information Engineering, School of Engineering, Nagoya University
- April 2015 - March 2019 IPSJ#81 Construction of a Detabase System for Analyzing Large Point Cloud Data  investigated upon a matching for point cloud registration and implemented faster algorithm by using a point cloud database and pre-calculating.</description>
+ April 2015 - March 2019  Construction of a Detabase System for Analyzing Large Point Cloud Data  investigated upon a matching for point cloud registration and implemented faster algorithm by using a point cloud database and pre-calculating.</description>
     </item>
     
   </channel>
