@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yang33-kassa.jp/blog/2019-summary/</loc>
+    <lastmod>2019-12-31T16:05:49+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yang33-kassa.jp/blog/preparation-for-house-moving/</loc>
     <lastmod>2019-11-13T00:08:25+09:00</lastmod>
   </url>
@@ -702,7 +707,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/archives/2019/</loc>
-    <lastmod>2019-11-13T00:08:25+09:00</lastmod>
+    <lastmod>2019-12-31T16:05:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -733,6 +738,12 @@
   <url>
     <loc>https://yang33-kassa.jp/archives/2019-11/</loc>
     <lastmod>2019-11-13T00:08:25+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yang33-kassa.jp/archives/2019-12/</loc>
+    <lastmod>2019-12-31T16:05:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -828,13 +839,13 @@
   
   <url>
     <loc>https://yang33-kassa.jp/categories/blog/</loc>
-    <lastmod>2019-11-13T00:08:25+09:00</lastmod>
+    <lastmod>2019-12-31T16:05:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yang33-kassa.jp/blog/</loc>
-    <lastmod>2019-11-13T00:08:25+09:00</lastmod>
+    <lastmod>2019-12-31T16:05:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1313,7 +1324,7 @@
   
   <url>
     <loc>https://yang33-kassa.jp/</loc>
-    <lastmod>2019-11-13T00:08:25+09:00</lastmod>
+    <lastmod>2019-12-31T16:05:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
