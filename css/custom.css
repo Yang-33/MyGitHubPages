@@ -154,3 +154,6 @@ a.label:focus {
 }
 
 
+::selection {
+  background: rgba(45, 170, 219, 0.3);
+}
