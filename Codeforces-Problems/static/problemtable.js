@@ -1,32 +1,40 @@
 document.getElementById("submitUsername").onclick = function() {
 	var username = document.getElementById("username")
 	changeBackColorDefault("td")
-	usernameProcess(username.value)
+	usernameProcess(username.value);
 };
-        function flipTagshowhide(boolvisible){
-            var elements = document.getElementsByClassName("problem-tag");
-            if (boolvisible){
-                for(i=0;i<elements.length;i++){
-                    elements[i].style.visibility="visible"
-                }
-            }else {
-                for(i=0;i<elements.length;i++){
-                    elements[i].style.visibility="hidden"
-                }
-            }
-        }
 
-function changeBackColorDefault(classname){
+function flipTagshowhide(boolvisible) {
+	var elements = document.getElementsByClassName("problem-tag");
+	if (boolvisible) {
+		for (i = 0; i < elements.length; i++){
+			elements[i].style.visibility = "visible"
+		}
+	} else {
+		for (i = 0; i < elements.length; i++){
+			elements[i].style.visibility = "hidden"
+		}
+	}
+}
+
+function changeBackColorDefault(classname) {
   var elements = document.getElementsByTagName(classname);
   for(i=0;i<elements.length;i++){
     elements[i].style.backgroundColor = "transparent"; // default color
   }
 }      
 
+var filter_all_count = 0;
+var filter_ac_count = 0;
 function changeBackColorAC(classname){
-  var elements = document.getElementsByClassName(classname);
+	var elements = document.getElementsByClassName(classname);
+	var f = 0;
   for(i=0;i<elements.length;i++){
-    elements[i].style.backgroundColor = "#D5EAD8"; // accept color
+	  elements[i].style.backgroundColor = "#D5EAD8"; // accept color
+	  if (f === 0) {
+		  filter_ac_count++;
+		  f = 1;
+	  }
   }
 }
 function changeBackColorWA(classname){
@@ -47,7 +55,8 @@ function disabledTags(classname){ // tag消す
     elements[i].style.visibility="hidden"
   }
 }
-function usernameProcess(username){
+
+function usernameProcess(username) {
 	var xmlHttpRequest = new XMLHttpRequest();
 	xmlHttpRequest.onreadystatechange = function()
 	{
@@ -61,7 +70,7 @@ function usernameProcess(username){
 				for(var i = 0 ; i < usersub.length ; i++){
 					var ProblemId = usersub[i]["problem"]["contestId"] + usersub[i]["problem"]["index"]
 					var Verdict = usersub[i]["verdict"]
-					if (Verdict === "OK"){
+					if (Verdict === "OK") {
 						ProblemState[ProblemId] = "AC"
 	                }else {
 						if ((ProblemId in ProblemState)&&(ProblemState[ProblemId]==="AC"))continue;
@@ -83,7 +92,8 @@ function usernameProcess(username){
 	                	changeBackColorWA(problemId)
 					}
 				}
-	        }
+			}
+			document.getElementById("filtered-problems").textContent = "You've solved " + filter_ac_count + " / "+ filter_all_count+" in filtered problems.";
 	    }
 	}
 
@@ -91,6 +101,7 @@ function usernameProcess(username){
 	xmlHttpRequest.responseType = 'json';
 	xmlHttpRequest.send( null );
 }
+
 
 function parseurl(){
 	var parser = new URL(location.href);
@@ -134,8 +145,9 @@ function filtertable(minpoint,maxpoint,minsolved,maxsolved){
                ( minsolved <= solved_n   && solved_n <= maxsolved )
               )
              )
-          {
-            return true;
+		  {
+			  filter_all_count++;
+			  return true;
           }else{
             return false;
           }
@@ -186,9 +198,9 @@ function parseurl_uku(){
 	if (maxsolved === "" || maxsolved === null){
 		maxsolved = NaN;
 	}
-	filtertable(minpoint,maxpoint,minsolved,maxsolved);
-	
+	filtertable(minpoint, maxpoint, minsolved, maxsolved);
 }
+
 function copyusername_uku(){
 	var parser = new URL(location.href);
 	var username = parser.searchParams.get("user");
@@ -213,7 +225,6 @@ function copyusername_uku(){
 	}
 	
 }
-
 
 copyusername_uku();
 parseurl_uku();
