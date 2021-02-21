@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Gohan/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/Gohan/static/js/main.cc557207.chunk.js",
-    "main.js.map": "/Gohan/static/js/main.cc557207.chunk.js.map",
+    "main.js": "/Gohan/static/js/main.17e3cc43.chunk.js",
+    "main.js.map": "/Gohan/static/js/main.17e3cc43.chunk.js.map",
     "runtime-main.js": "/Gohan/static/js/runtime-main.385b2bda.js",
     "runtime-main.js.map": "/Gohan/static/js/runtime-main.385b2bda.js.map",
-    "static/js/2.35683e9a.chunk.js": "/Gohan/static/js/2.35683e9a.chunk.js",
-    "static/js/2.35683e9a.chunk.js.map": "/Gohan/static/js/2.35683e9a.chunk.js.map",
+    "static/js/2.f3e49d83.chunk.js": "/Gohan/static/js/2.f3e49d83.chunk.js",
+    "static/js/2.f3e49d83.chunk.js.map": "/Gohan/static/js/2.f3e49d83.chunk.js.map",
     "static/js/3.a78a42c8.chunk.js": "/Gohan/static/js/3.a78a42c8.chunk.js",
     "static/js/3.a78a42c8.chunk.js.map": "/Gohan/static/js/3.a78a42c8.chunk.js.map",
     "index.html": "/Gohan/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/Gohan/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.35683e9a.chunk.js.LICENSE.txt": "/Gohan/static/js/2.35683e9a.chunk.js.LICENSE.txt"
+    "static/js/2.f3e49d83.chunk.js.LICENSE.txt": "/Gohan/static/js/2.f3e49d83.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.385b2bda.js",
-    "static/js/2.35683e9a.chunk.js",
+    "static/js/2.f3e49d83.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.cc557207.chunk.js"
+    "static/js/main.17e3cc43.chunk.js"
   ]
 }
