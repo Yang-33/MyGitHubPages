@@ -1,6 +1,6 @@
 {
-  "short_name": "夜ご飯決めるアプリ",
-  "name": "Gohan Apps",
+  "short_name": "Dinner",
+  "name": "夜ご飯を決めるのが楽になるアプリ",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,8 +19,8 @@
     }
   ],
   "default_locale": "ja_JP",
-  "start_url": ".",
-  "scope": ".",
+  "start_url": "/Gohan/",
+  "scope": "/Gohan/",
   "display": "standalone",
   "theme_color": "#63ac3a",
   "background_color": "#ffffff"
