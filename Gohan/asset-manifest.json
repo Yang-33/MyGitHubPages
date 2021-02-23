@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Gohan/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/Gohan/static/js/main.3a9aa120.chunk.js",
-    "main.js.map": "/Gohan/static/js/main.3a9aa120.chunk.js.map",
-    "runtime-main.js": "/Gohan/static/js/runtime-main.d5df974f.js",
-    "runtime-main.js.map": "/Gohan/static/js/runtime-main.d5df974f.js.map",
-    "static/js/2.787ffbfb.chunk.js": "/Gohan/static/js/2.787ffbfb.chunk.js",
-    "static/js/2.787ffbfb.chunk.js.map": "/Gohan/static/js/2.787ffbfb.chunk.js.map",
-    "static/js/3.93c96774.chunk.js": "/Gohan/static/js/3.93c96774.chunk.js",
-    "static/js/3.93c96774.chunk.js.map": "/Gohan/static/js/3.93c96774.chunk.js.map",
+    "main.js": "/Gohan/static/js/main.f90eff18.chunk.js",
+    "main.js.map": "/Gohan/static/js/main.f90eff18.chunk.js.map",
+    "runtime-main.js": "/Gohan/static/js/runtime-main.6258104d.js",
+    "runtime-main.js.map": "/Gohan/static/js/runtime-main.6258104d.js.map",
+    "static/js/2.63349c29.chunk.js": "/Gohan/static/js/2.63349c29.chunk.js",
+    "static/js/2.63349c29.chunk.js.map": "/Gohan/static/js/2.63349c29.chunk.js.map",
+    "static/js/3.38e9ef64.chunk.js": "/Gohan/static/js/3.38e9ef64.chunk.js",
+    "static/js/3.38e9ef64.chunk.js.map": "/Gohan/static/js/3.38e9ef64.chunk.js.map",
     "index.html": "/Gohan/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/Gohan/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.787ffbfb.chunk.js.LICENSE.txt": "/Gohan/static/js/2.787ffbfb.chunk.js.LICENSE.txt"
+    "static/js/2.63349c29.chunk.js.LICENSE.txt": "/Gohan/static/js/2.63349c29.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d5df974f.js",
-    "static/js/2.787ffbfb.chunk.js",
+    "static/js/runtime-main.6258104d.js",
+    "static/js/2.63349c29.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.3a9aa120.chunk.js"
+    "static/js/main.f90eff18.chunk.js"
   ]
 }
