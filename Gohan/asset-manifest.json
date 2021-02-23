@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Gohan/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Gohan/static/js/main.0391ea14.chunk.js",
-    "main.js.map": "/Gohan/static/js/main.0391ea14.chunk.js.map",
+    "main.js": "/Gohan/static/js/main.b1a4e3d1.chunk.js",
+    "main.js.map": "/Gohan/static/js/main.b1a4e3d1.chunk.js.map",
     "runtime-main.js": "/Gohan/static/js/runtime-main.cbc7c9e2.js",
     "runtime-main.js.map": "/Gohan/static/js/runtime-main.cbc7c9e2.js.map",
     "static/js/2.8fc3e35c.chunk.js": "/Gohan/static/js/2.8fc3e35c.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.cbc7c9e2.js",
     "static/js/2.8fc3e35c.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.0391ea14.chunk.js"
+    "static/js/main.b1a4e3d1.chunk.js"
   ]
 }
