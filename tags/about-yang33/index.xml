@@ -20,8 +20,7 @@
       <description>About this site Blog / Editorials / Examples for algorithm and data structure
 About me Account
  GitHub: @Yang-33 LinkedIn: URL  Education / Career Master of Intelligent Systems, Graduate School of Informatics, Nagoya University
- April 2019 - Ongoing I&amp;rsquo;m researching efficient query processing for the GIS database and surface shortest path problems on 3D-TIN.  Bachelor of Information Engineering, School of Engineering, Nagoya University
- April 2015 - March 2019  Construction of a Database System for Analyzing Large Point Cloud Data  I investigated a matching for point cloud registration and implemented a faster algorithm by using a point cloud database and pre-calculating.</description>
+ April 2019 - March 2021 I researched efficient query processing for the GIS database and surface shortest path problems on 3D-TIN.  Yuta Kasai, Kento Sugiura, Yoshiharu Ishikawa, Spatial Skyline Queries on Triangulated Irregular Networks, 17th International Symposium on Spatial and Temporal Databases, Online Conference, pp.</description>
     </item>
     
   </channel>
